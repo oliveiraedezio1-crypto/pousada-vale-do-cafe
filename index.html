@@ -1198,6 +1198,285 @@
       }
     }
 
+
+    /* =========================================================
+       ABERTURA BASEADA NO CROQUI DO PROJETO
+    ========================================================= */
+
+    .croqui-intro {
+      position: relative;
+      background: #f7f0e5;
+      overflow: hidden;
+      padding: 55px 0 85px;
+    }
+
+    .croqui-paper {
+      position: relative;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(255,255,255,.7), transparent 28%),
+        radial-gradient(circle at 85% 75%, rgba(181,138,74,.08), transparent 30%),
+        #f8f2e8;
+      border: 1px solid rgba(86,54,43,.10);
+      box-shadow: 0 15px 45px rgba(45,27,18,.10);
+      padding: 45px 55px 55px;
+    }
+
+    .croqui-title {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .croqui-title .eyebrow {
+      margin-bottom: 6px;
+    }
+
+    .croqui-title h1 {
+      color: var(--marrom-escuro);
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      line-height: 1.05;
+      margin-bottom: 8px;
+    }
+
+    .croqui-title h1 span {
+      color: var(--vermelho);
+    }
+
+    .croqui-subtitle {
+      color: var(--cafe);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.35rem;
+      font-style: italic;
+    }
+
+    .croqui-architecture {
+      width: min(780px, 100%);
+      margin: 5px auto 25px;
+      display: block;
+    }
+
+    .croqui-architecture svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hand-line {
+      fill: none;
+      stroke: #574239;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .hand-line-thin {
+      fill: none;
+      stroke: #7b5b4c;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .hand-text {
+      fill: #704536;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      font-style: italic;
+    }
+
+    /* Três ideias do croqui */
+    .croqui-destinos {
+      display: grid;
+      grid-template-columns: 1.05fr 1fr 1fr;
+      gap: 35px;
+      align-items: start;
+      margin-top: 15px;
+    }
+
+    .croqui-destino {
+      position: relative;
+    }
+
+    .croqui-destino::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      background: rgba(86,54,43,.16);
+      right: -18px;
+      top: 25px;
+      bottom: 20px;
+    }
+
+    .croqui-destino:last-child::after {
+      display: none;
+    }
+
+    .croqui-foto {
+      position: relative;
+      height: 245px;
+      overflow: hidden;
+      border-radius: 44% 56% 48% 52% / 42% 48% 52% 58%;
+      border: 2px solid rgba(86,54,43,.22);
+      background: #ddd;
+      box-shadow: 0 8px 22px rgba(45,27,18,.12);
+    }
+
+    .croqui-foto img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .croqui-foto-label {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%) rotate(-2deg);
+      width: 82%;
+      text-align: center;
+      color: #fff;
+      font-size: 1.45rem;
+      font-weight: bold;
+      text-shadow: 0 2px 10px rgba(0,0,0,.55);
+      line-height: 1.05;
+    }
+
+    .croqui-destino h2 {
+      margin-top: 18px;
+      color: var(--marrom);
+      font-size: 1.65rem;
+      line-height: 1.1;
+      text-align: center;
+    }
+
+    .croqui-destino p {
+      margin-top: 12px;
+      color: #66584e;
+      font-size: .96rem;
+      line-height: 1.65;
+      text-align: center;
+    }
+
+    .croqui-destino .numero {
+      display: block;
+      color: var(--vermelho);
+      font-family: Arial, sans-serif;
+      font-size: .72rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-align: center;
+      margin-top: 12px;
+    }
+
+    /* bloco Pousada exatamente como segunda metade do croqui */
+    .croqui-pousada {
+      margin-top: 65px;
+      padding-top: 42px;
+      border-top: 2px solid rgba(86,54,43,.16);
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .croqui-pousada h2 {
+      color: var(--marrom);
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+
+    .croqui-pousada p {
+      color: #5d5148;
+      margin-bottom: 16px;
+    }
+
+    .croqui-pousada .croqui-frase {
+      padding: 18px 20px;
+      margin: 22px 0;
+      background: rgba(158,63,50,.07);
+      border-left: 4px solid var(--vermelho);
+      color: var(--cafe);
+      font-style: italic;
+    }
+
+    .croqui-info {
+      background: #fff;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: var(--sombra);
+    }
+
+    .croqui-info h3 {
+      color: var(--marrom);
+      margin-bottom: 18px;
+      font-size: 1.5rem;
+    }
+
+    .croqui-info-item {
+      margin: 15px 0;
+      color: #5d5148;
+    }
+
+    .croqui-info-item strong {
+      display: block;
+      color: var(--marrom);
+      margin-bottom: 3px;
+    }
+
+    .croqui-info .btn {
+      margin-top: 8px;
+    }
+
+    @media (max-width: 900px) {
+      .croqui-paper {
+        padding: 30px 25px 40px;
+      }
+
+      .croqui-destinos {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+
+      .croqui-destino::after {
+        width: 70%;
+        height: 1px;
+        right: 15%;
+        top: auto;
+        bottom: -25px;
+      }
+
+      .croqui-destino:last-child::after {
+        display: none;
+      }
+
+      .croqui-pousada {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .croqui-intro {
+        padding: 25px 0 55px;
+      }
+
+      .croqui-paper {
+        padding: 25px 18px 30px;
+      }
+
+      .croqui-foto {
+        height: 220px;
+      }
+
+      .croqui-title h1 {
+        font-size: 2.2rem;
+      }
+
+      .croqui-subtitle {
+        font-size: 1.1rem;
+      }
+    }
+
   </style>
 </head>
 
@@ -1223,10 +1502,10 @@
     </a>
 
     <nav>
-      <a href="#vale">O Vale</a>
+      <a href="#inicio">O Vale</a>
       <a href="#historia">História</a>
       <a href="#ipiabas">Ipiabas</a>
-      <a href="#arredores">Descubra o Vale</a>
+      <a href="#inicio">Descubra o Vale</a>
       <a href="#pousada">Pousada</a>
       <a href="#quartos">Quartos</a>
       <a href="#machado">Café do Machado</a>
@@ -1243,961 +1522,318 @@
 
 <main id="inicio">
 
-<section class="vale-hero hero-desenho" id="inicio">
 
-  <div class="hero-sketch" aria-hidden="true">
-    <svg viewBox="0 0 900 520" role="img">
-      <g class="sketch-line">
-        <!-- telhado principal -->
-        <path d="M115 205 Q235 125 450 160 Q665 125 785 205" />
-        <path d="M150 205 L150 425 L750 425 L750 205" />
-
-        <!-- frontão -->
-        <path d="M325 205 L450 115 L575 205" />
-        <path d="M360 205 L450 145 L540 205" />
-
-        <!-- beiral -->
-        <path d="M135 220 Q450 238 765 220" />
-
-        <!-- janelas superiores -->
-        <rect x="215" y="245" width="90" height="105" rx="3" />
-        <rect x="595" y="245" width="90" height="105" rx="3" />
-
-        <!-- porta central -->
-        <rect x="382" y="245" width="136" height="180" rx="4" />
-        <path d="M450 245 L450 425" />
-        <circle cx="470" cy="335" r="5" />
-
-        <!-- colunas -->
-        <path d="M185 222 L185 425" />
-        <path d="M325 222 L325 425" />
-        <path d="M575 222 L575 425" />
-        <path d="M715 222 L715 425" />
-
-        <!-- escadaria -->
-        <path d="M345 425 L555 425" />
-        <path d="M325 445 L575 445" />
-        <path d="M300 465 L600 465" />
-
-        <!-- jardim / caminho -->
-        <path d="M80 485 Q300 450 450 475 Q610 450 820 485" />
-        <path d="M80 485 Q200 505 315 492" />
-        <path d="M585 492 Q700 505 820 485" />
-
-        <!-- palmeiras -->
-        <path d="M105 460 Q100 390 115 330" />
-        <path d="M795 460 Q800 390 785 330" />
-        <path d="M115 340 Q75 315 55 330" />
-        <path d="M115 340 Q145 300 175 305" />
-        <path d="M785 340 Q755 300 725 305" />
-        <path d="M785 340 Q825 315 845 330" />
-      </g>
-
-      <g class="sketch-note">
-        <text x="450" y="58" text-anchor="middle">POUSADA VALE DO CAFÉ · 1874</text>
-        <text x="450" y="500" text-anchor="middle">Ipiabas · Barra do Piraí · RJ</text>
-      </g>
-    </svg>
-  </div>
-
-  <div class="container hero-overlay">
-
-    <div class="hero-content">
-
-      <div class="eyebrow">
-        Centro Histórico de Ipiabas · Vale do Café
-      </div>
-
-      <h1>
-        Pousada Vale
-        <span>do Café</span>
-      </h1>
-
-      <p>
-        Uma experiência de hospedagem entre arquitetura histórica,
-        natureza e os caminhos do antigo Vale do Café.
-      </p>
-
-      <div class="hero-buttons">
-
-        <a href="#arredores" class="btn btn-primary">
-          Descubra o Vale
-        </a>
-
-        <a href="#pousada" class="btn btn-outline">
-          Conheça a Pousada
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
+<main id="inicio">
 
 <!-- =========================================================
-     2. MAPA ILUSTRADO DO VALE DO CAFÉ
+     ABERTURA — ESTRUTURA DO CROQUI
 ========================================================= -->
 
-<section class="map-section" id="vale">
+<section class="croqui-intro">
 
   <div class="container">
 
-    <div class="section-title">
+    <div class="croqui-paper">
 
-      <div class="eyebrow">
-        Localização
-      </div>
-
-      <h2>
-        O Vale do Café
-      </h2>
-
-      <p>
-        Ipiabas está inserida no território turístico do Vale do Café,
-        no município de Barra do Piraí, no Sul Fluminense.
-      </p>
-
-    </div>
-
-    <div class="map-box">
-
-      <img
-        src="https://www.portalvaledocafe.com.br/images/mapaacesso.jpg"
-        alt="Mapa ilustrado do Vale do Café com Ipiabas e Barra do Piraí"
-        loading="eager"
-      >
-
-      <div class="map-caption">
-        Mapa regional do Vale do Café — destaque para Ipiabas e
-        Barra do Piraí.
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     3. SOBRE O VALE
-========================================================= -->
-
-<section>
-
-  <div class="container">
-
-    <div class="intro-grid">
-
-      <div class="intro-image">
-
-        <img
-          src="https://commons.wikimedia.org/wiki/Special:FilePath/Vale_do_Cafe%2C_RJ_07.jpg?width=2200"
-          alt="Paisagem do Vale do Café"
-          loading="lazy"
-        >
-
-      </div>
-
-      <div class="intro-text">
+      <div class="croqui-title">
 
         <div class="eyebrow">
-          História e cultura
+          Pousada Vale do Café · Ipiabas / Barra do Piraí · RJ
         </div>
 
-        <h2>
-          Uma viagem pelo legado do café
-        </h2>
+        <h1>
+          Pousada Vale do Café
+          <span>— Ipiabas</span>
+        </h1>
 
-        <p>
-          O Vale do Café é a denominação turística da região do
-          Vale do Paraíba Sul Fluminense que teve no café uma de
-          suas principais atividades econômicas durante o século XIX.
-        </p>
-
-        <p>
-          O patrimônio formado naquele período permanece presente
-          em antigas fazendas, casarões, igrejas, caminhos,
-          estações e manifestações culturais.
-        </p>
-
-        <div class="highlight">
-          <strong>
-            O objetivo desta viagem não é apenas conhecer um lugar,
-            mas compreender uma parte importante da formação histórica
-            do Brasil.
-          </strong>
+        <div class="croqui-subtitle">
+          Descubra o Vale do Café
         </div>
 
       </div>
 
-    </div>
 
-  </div>
+      <!-- Arquitetura desenhada, seguindo o elemento central do papel -->
+      <div class="croqui-architecture" aria-label="Desenho arquitetônico da Pousada Vale do Café">
 
-</section>
+        <svg viewBox="0 0 900 430" role="img">
 
+          <!-- céu / enquadramento do desenho -->
+          <path class="hand-line-thin"
+                d="M100 350 Q450 365 800 350" />
 
-<!-- =========================================================
-     4. FAZENDAS E PATRIMÔNIO
-========================================================= -->
+          <!-- telhado -->
+          <path class="hand-line"
+                d="M145 190 Q245 125 450 145 Q655 125 755 190" />
+          <path class="hand-line"
+                d="M170 190 L170 355 L730 355 L730 190" />
 
-<section class="map-section">
+          <!-- frontão -->
+          <path class="hand-line"
+                d="M320 190 L450 105 L580 190" />
+          <path class="hand-line-thin"
+                d="M350 190 L450 130 L550 190" />
 
-  <div class="container">
+          <!-- beiral -->
+          <path class="hand-line"
+                d="M155 205 Q450 220 745 205" />
 
-    <div class="section-title">
+          <!-- janelas -->
+          <rect class="hand-line" x="220" y="235" width="85" height="105" rx="3"/>
+          <rect class="hand-line" x="595" y="235" width="85" height="105" rx="3"/>
 
-      <div class="eyebrow">
-        Patrimônio
-      </div>
+          <!-- porta -->
+          <rect class="hand-line" x="380" y="225" width="140" height="130" rx="3"/>
+          <path class="hand-line-thin" d="M450 225 L450 355"/>
+          <circle cx="475" cy="290" r="4" fill="#7b4433"/>
 
-      <h2>
-        As fazendas do ciclo do café
-      </h2>
+          <!-- colunas / varanda -->
+          <path class="hand-line-thin" d="M190 210 L190 355"/>
+          <path class="hand-line-thin" d="M330 210 L330 355"/>
+          <path class="hand-line-thin" d="M570 210 L570 355"/>
+          <path class="hand-line-thin" d="M710 210 L710 355"/>
 
-      <p>
-        O território preserva diferentes testemunhos arquitetônicos
-        associados à história cafeeira do século XIX.
-      </p>
+          <!-- escada -->
+          <path class="hand-line" d="M350 355 L550 355"/>
+          <path class="hand-line-thin" d="M330 375 L570 375"/>
+          <path class="hand-line-thin" d="M310 395 L590 395"/>
 
-    </div>
+          <!-- pequenas árvores -->
+          <path class="hand-line-thin" d="M115 350 Q110 300 120 260"/>
+          <path class="hand-line-thin" d="M785 350 Q790 300 780 260"/>
 
-    <div class="cards">
+          <path class="hand-line-thin" d="M120 275 Q90 250 70 265"/>
+          <path class="hand-line-thin" d="M120 275 Q145 240 165 250"/>
+          <path class="hand-line-thin" d="M780 275 Q755 240 735 250"/>
+          <path class="hand-line-thin" d="M780 275 Q810 250 830 265"/>
 
-      <article class="card">
+          <text class="hand-text" x="450" y="55" text-anchor="middle">
+            arquitetura histórica · 1874
+          </text>
 
-        <div class="card-image">
-          <img
-            src="https://commons.wikimedia.org/wiki/Special:FilePath/Fazenda_do_Ciclo_do_Caf%C3%A9.jpg?width=1400"
-            alt="Casarão de fazenda do ciclo do café"
-            loading="lazy"
-          >
-        </div>
+          <text class="hand-text" x="450" y="418" text-anchor="middle">
+            Ipiabas · Barra do Piraí · RJ
+          </text>
 
-        <div class="card-content">
-
-          <h3>
-            Casarões históricos
-          </h3>
-
-          <p>
-            Arquiteturas rurais que ajudam a contar a história
-            econômica e social da região.
-          </p>
-
-        </div>
-
-      </article>
-
-
-      <article class="card">
-
-        <div class="card-image">
-          <img
-            src="https://commons.wikimedia.org/wiki/Special:FilePath/Fazenda_do_Ciclo_do_Caf%C3%A9_-_casar%C3%A3o_vista_interna.jpg?width=1400"
-            alt="Interior de casarão histórico do ciclo do café"
-            loading="lazy"
-          >
-        </div>
-
-        <div class="card-content">
-
-          <h3>
-            Memória preservada
-          </h3>
-
-          <p>
-            Ambientes, objetos e detalhes arquitetônicos ajudam
-            a preservar a memória do período.
-          </p>
-
-        </div>
-
-      </article>
-
-
-      <article class="card">
-
-        <div class="card-image">
-          <img
-            src="https://commons.wikimedia.org/wiki/Special:FilePath/Pousada_Fazenda_Ponte_Alta.jpg?width=1400"
-            alt="Fazenda histórica na região de Barra do Piraí"
-            loading="lazy"
-          >
-        </div>
-
-        <div class="card-content">
-
-          <h3>
-            Experiência rural
-          </h3>
-
-          <p>
-            Fazendas históricas transformaram-se em importantes
-            referências culturais e turísticas da região.
-          </p>
-
-        </div>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     5. HISTÓRIA
-========================================================= -->
-
-<section class="history" id="historia">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <div class="eyebrow">
-        Memória
-      </div>
-
-      <h2>
-        O legado do Vale do Café
-      </h2>
-
-      <p>
-        Uma história marcada pelo café, pelas fazendas,
-        pelas ferrovias e pela transformação do território.
-      </p>
-
-    </div>
-
-    <div class="timeline">
-
-      <div class="timeline-item">
-
-        <h3>
-          Século XIX
-        </h3>
-
-        <p>
-          O cultivo do café ganha grande importância econômica
-          no Vale do Paraíba e transforma profundamente a região.
-        </p>
+        </svg>
 
       </div>
 
-      <div class="timeline-item">
-
-        <h3>
-          Fazendas e infraestrutura
-        </h3>
-
-        <p>
-          O crescimento econômico relacionado ao café contribuiu
-          para investimentos em infraestrutura, transporte e
-          construção de grandes propriedades rurais.
-        </p>
-
-      </div>
-
-      <div class="timeline-item">
-
-        <h3>
-          Ferrovias
-        </h3>
-
-        <p>
-          A expansão ferroviária tornou-se parte importante da
-          ligação entre áreas produtoras, centros urbanos e
-          mercados consumidores.
-        </p>
-
-      </div>
-
-      <div class="timeline-item">
-
-        <h3>
-          Patrimônio contemporâneo
-        </h3>
-
-        <p>
-          Atualmente, fazendas, casarões, paisagens e manifestações
-          culturais formam uma das principais bases do turismo histórico
-          do Vale do Café.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     6. IPIABAS
-========================================================= -->
-
-<section id="ipiabas">
-
-  <div class="container">
-
-    <div class="intro-grid">
-
-      <div class="intro-text">
-
-        <div class="eyebrow">
-          Um distrito dentro do Vale
-        </div>
-
-        <h2>
-          Ipiabas
-        </h2>
-
-        <p>
-          Ipiabas é distrito de Barra do Piraí e integra o conjunto
-          de destinos associados ao Vale do Café.
-        </p>
-
-        <p>
-          Seu ambiente combina paisagem serrana, memória ferroviária,
-          arquitetura histórica, gastronomia, hospedagem e experiências
-          ligadas à cultura regional.
-        </p>
-
-        <p>
-          É nesse cenário que está localizada a Pousada Vale do Café.
-        </p>
-
-      </div>
-
-      <div class="intro-image">
-
-        <img
-          src="https://commons.wikimedia.org/wiki/Special:FilePath/Casar%C3%A3o_em_Ipiabas.JPG?width=1400"
-          alt="Casarão em Ipiabas"
-          loading="lazy"
-        >
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     7. POUSADA
-========================================================= -->
-
-<section class="pousada" id="pousada">
-
-  <div class="container">
-
-    <div class="pousada-intro">
-
-      <img
-        src="https://pousada-vale-do-cafe.vercel.app/img/hero-patio.jpg"
-        alt="Fachada e pátio da Pousada Vale do Café"
-        loading="eager"
-      >
-
-      <div>
-
-        <div class="eyebrow">
-          Hospedagem em Ipiabas
-        </div>
-
-        <h2>
-          Pousada<br>
-          Vale do Café
-        </h2>
-
-        <p>
-          Uma hospedagem inserida no cenário histórico e cultural
-          de Ipiabas, pensada para quem deseja conhecer o Vale do Café
-          com conforto e tranquilidade.
-        </p>
-
-        <p>
-          A experiência combina arquitetura, áreas externas,
-          gastronomia, memória e hospitalidade.
-        </p>
-
-        <a
-          href="https://hotels.cloudbeds.com/pt-br/reservas/Et7myl?currency=brl"
-          target="_blank"
-          rel="noopener"
-          class="btn btn-primary"
-        >
-          Ver disponibilidade
-        </a>
-
-      </div>
-
-    </div>
-
-
-    <!-- =====================================================
-         GALERIA — CRONOLOGIA EXATA DO ROTEIRO
-    ====================================================== -->
-
-    <div class="gallery-title">
-
-      <div class="eyebrow">
-        Galeria de fotos
-      </div>
-
-      <h2>
-        Conheça a Pousada
-      </h2>
-
-      <p>
-        Uma sequência visual pensada para apresentar o espaço
-        do primeiro contato até as áreas de convivência.
-      </p>
-
-    </div>
-
-
-    <div class="gallery">
-
-      <!-- 01 FACHADA -->
-
-      <article class="gallery-item">
-
-        <img
-          src="https://pousada-vale-do-cafe.vercel.app/img/hero-patio.jpg"
-          alt="Fachada e pátio de entrada da Pousada Vale do Café"
-          loading="lazy"
-        >
-
-        <div class="gallery-caption">
-
-          <div class="gallery-number">
-            01 · FACHADA
-          </div>
-
-          <h3>
-            Fachada e entrada
-          </h3>
-
-        </div>
-
-      </article>
-
-
-      <!-- 02 LATERAL -->
-
-      <article class="gallery-item">
-
-        <img
-          src="https://pousada-vale-do-cafe.vercel.app/img/varanda-janelas.jpg"
-          alt="Lateral e varanda da Pousada Vale do Café"
-          loading="lazy"
-        >
-
-        <div class="gallery-caption">
-
-          <div class="gallery-number">
-            02 · LATERAL
-          </div>
-
-          <h3>
-            Lateral e varanda
-          </h3>
-
-        </div>
-
-      </article>
-
-
-      <!-- 03 PÁTIO -->
-
-      <article class="gallery-item">
-
-        <img
-          src="https://pousada-vale-do-cafe.vercel.app/img/jardim.jpg"
-          alt="Pátio e jardim da Pousada Vale do Café"
-          loading="lazy"
-        >
-
-        <div class="gallery-caption">
-
-          <div class="gallery-number">
-            03 · PÁTIO
-          </div>
-
-          <h3>
-            Pátio e jardim
-          </h3>
-
-        </div>
-
-      </article>
-
-
-      <!-- 04 PERSPECTIVA -->
-
-      <article class="gallery-item">
-
-        <img
-          src="https://pousada-vale-do-cafe.vercel.app/img/vista-serra.jpg"
-          alt="Vista panorâmica da região a partir da Pousada Vale do Café"
-          loading="lazy"
-        >
-
-        <div class="gallery-caption">
-
-          <div class="gallery-number">
-            04 · PERSPECTIVA
-          </div>
-
-          <h3>
-            Vista e paisagem
-          </h3>
-
-        </div>
-
-      </article>
-
-
-      <!-- 05 SALÃO / CAFÉ -->
-
-      <article class="gallery-item">
-
-        <img
-          src="https://pousada-vale-do-cafe.vercel.app/img/varanda-janelas.jpg"
-          alt="Salão e café da manhã da Pousada Vale do Café"
-          loading="lazy"
-        >
-
-        <div class="gallery-caption">
-
-          <div class="gallery-number">
-            05 · SALÃO / CAFÉ
-          </div>
-
-          <h3>
-            Salão e café
-          </h3>
-
-        </div>
-
-      </article>
-
-
-      <!-- 06 JOGOS -->
-
-      <article class="gallery-item">
-
-        <img
-          src="https://pousada-vale-do-cafe.vercel.app/img/jogos.jpg"
-          alt="Sala de jogos da Pousada Vale do Café"
-          loading="lazy"
-        >
-
-        <div class="gallery-caption">
-
-          <div class="gallery-number">
-            06 · JOGOS
-          </div>
-
-          <h3>
-            Sala de jogos
-          </h3>
-
-        </div>
-
-      </article>
-
-
-      <!-- 07 ÁREA EXTERNA / QUIOSQUE
-           OBS: não utilizar como "deck" até existir uma
-           fotografia real do deck.
-      -->
-
-      <article class="gallery-item">
-
-        <img
-          src="https://pousada-vale-do-cafe.vercel.app/img/quiosque.jpg"
-          alt="Quiosque e área externa da Pousada Vale do Café"
-          loading="lazy"
-        >
-
-        <div class="gallery-caption">
-
-          <div class="gallery-number">
-            07 · ÁREA EXTERNA
-          </div>
-
-          <h3>
-            Quiosque
-          </h3>
-
-        </div>
-
-      </article>
-
-
-      <!-- 08 GRAMADO -->
-
-      <article class="gallery-item">
-
-        <img
-          src="https://pousada-vale-do-cafe.vercel.app/img/gramado.jpg"
-          alt="Gramado e área verde da Pousada Vale do Café"
-          loading="lazy"
-        >
-
-        <div class="gallery-caption">
-
-          <div class="gallery-number">
-            08 · GRAMADO
-          </div>
-
-          <h3>
-            Gramado e área verde
-          </h3>
-
-        </div>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     8. DESCUBRA OS ARREDORES
-========================================================= -->
-
-<section class="destinos" id="arredores">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <div class="eyebrow">
-        Descubra o Vale do Café
-      </div>
-
-      <h2>
-        Três destinos,<br>
-        três experiências
-      </h2>
-
-      <p>
-        A Pousada Vale do Café coloca você no ponto de partida para
-        conhecer três dos destinos mais emblemáticos da região:
-        Ipiabas, Conservatória e Vassouras.
-      </p>
-
-    </div>
-
-    <div class="destinos-grid destinos-destaques">
 
       <!-- =====================================================
-           IPIABAS
+           TRÊS BLOCOS EXATAMENTE COMO NO CROQUI
       ====================================================== -->
 
-      <article class="destino-card destino-card-principal">
+      <div class="croqui-destinos">
 
-        <div class="destino-image">
+        <!-- 01 — VALE DO CAFÉ -->
 
-          <img
-            src="https://revistaporaqui.com.br/Content/images/noticias/WhatsApp%20Image%202025-12-28%20at%2012.32.10.jpeg"
-            alt="Cachoeira de Ipiabas, Barra do Piraí"
-            loading="lazy"
-          >
+        <article class="croqui-destino">
 
-          <span class="destino-tag">Ipiabas</span>
+          <div class="croqui-foto">
 
-        </div>
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Vale_do_Cafe%2C_RJ_08.jpg?width=1600"
+              alt="Paisagem do Vale do Café"
+              loading="eager"
+            >
 
-        <div class="destino-content">
+            <div class="croqui-foto-label">
+              Vale do Café
+            </div>
 
-          <span class="destino-numero">01 · DESTINO PRINCIPAL</span>
+          </div>
 
-          <h3>Ipiabas</h3>
+          <span class="numero">01 · VALE DO CAFÉ</span>
+
+          <h2>
+            Vale do Café
+          </h2>
 
           <p>
-            O destino da própria Pousada. Um distrito de Barra do Piraí
-            onde natureza, patrimônio ferroviário e arquitetura histórica
-            se encontram. Entre os destaques estão a Cachoeira de Ipiabas,
-            o Mirante, o Túnel Velho, a Estação e a Casa da Antiga Remonta.
+            Destino turístico que revela os caminhos e as raízes
+            da cultura brasileira por meio de suas paisagens,
+            fazendas e patrimônio histórico.
           </p>
 
-          <div class="destino-frase">
-            Comece pelo lugar onde você está hospedado.
+        </article>
+
+
+        <!-- 02 — HISTÓRIA / IPIABAS -->
+
+        <article class="croqui-destino">
+
+          <div class="croqui-foto">
+
+            <img
+              src="https://www.ipiabasrj.com.br/wp-content/uploads/2023/09/casarao-ipiabas.jpg"
+              alt="Casarão histórico de Ipiabas"
+              loading="lazy"
+            >
+
+            <div class="croqui-foto-label">
+              Outro História<br>Ipiabas
+            </div>
+
+          </div>
+
+          <span class="numero">02 · HISTÓRIA</span>
+
+          <h2>
+            Volte ao passado
+          </h2>
+
+          <p>
+            Pelos casarões e caminhos de Ipiabas, entre a arquitetura
+            histórica, a memória ferroviária e o cenário que preserva
+            referências do século XIX.
+          </p>
+
+        </article>
+
+
+        <!-- 03 — FAZENDA VALE DO CAFÉ -->
+
+        <article class="croqui-destino">
+
+          <div class="croqui-foto">
+
+            <img
+              src="https://www.portalvaledocafe.com.br/images/fazendas/barra_do_pirai/taquara/01.jpg"
+              alt="Fazenda histórica do Vale do Café"
+              loading="lazy"
+            >
+
+            <div class="croqui-foto-label">
+              Fazenda<br>Vale do Café
+            </div>
+
+          </div>
+
+          <span class="numero">03 · FAZENDAS</span>
+
+          <h2>
+            Onde o tempo parou
+          </h2>
+
+          <p>
+            Faça uma viagem ao passado pelas antigas fazendas,
+            onde história, cultura, arquitetura e o cenário do
+            café do século XIX permanecem vivos.
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <!-- =====================================================
+           POUSADA VALE DO CAFÉ — SEGUNDA PARTE DO CROQUI
+      ====================================================== -->
+
+      <div class="croqui-pousada">
+
+        <div>
+
+          <div class="eyebrow">
+            Hospedagem · Centro Histórico de Ipiabas
+          </div>
+
+          <h2>
+            Pousada Vale do Café
+          </h2>
+
+          <p>
+            Ocupada em um dos casarões do conjunto arquitetônico
+            do Centro Histórico de Ipiabas, a Pousada Vale do Café
+            está envolvida pela natureza e pela atmosfera histórica
+            do distrito.
+          </p>
+
+          <p>
+            Um lugar pensado para receber aqueles que apreciam
+            <strong>história e natureza</strong>, com amplo espaço
+            para lazer e convivência.
+          </p>
+
+          <div class="croqui-frase">
+            “Uma experiência entre o patrimônio histórico,
+            a natureza e a hospitalidade de Ipiabas.”
           </div>
 
           <a
-            href="https://www.ipiabasrj.com.br/pontos-turisticos-em-ipiabas/"
+            href="https://hotels.cloudbeds.com/pt-br/reservas/Et7myl?currency=brl"
             target="_blank"
             rel="noopener"
-            class="destino-link"
+            class="btn btn-primary"
           >
-            Conhecer Ipiabas →
+            Ver disponibilidade
           </a>
 
         </div>
 
-      </article>
 
+        <div class="croqui-info">
 
-      <!-- =====================================================
-           CONSERVATÓRIA
-      ====================================================== -->
+          <h3>
+            Visite a Pousada
+          </h3>
 
-      <article class="destino-card">
+          <div class="croqui-info-item">
 
-        <div class="destino-image">
+            <strong>Endereço</strong>
 
-          <img
-            src="https://commons.wikimedia.org/wiki/Special:FilePath/T%C3%BAnel_Que_Chora.jpg?width=1400"
-            alt="Túnel Que Chora em Conservatória, Valença"
-            loading="lazy"
-          >
+            Rua Vereador José Alves Pegas, 212<br>
+            Ipiabas — Barra do Piraí — RJ
 
-          <span class="destino-tag">Conservatória</span>
+          </div>
 
-        </div>
+          <div class="croqui-info-item">
 
-        <div class="destino-content">
+            <strong>WhatsApp</strong>
 
-          <span class="destino-numero">02 · MÚSICA E MEMÓRIA</span>
+            <a
+              href="https://wa.me/5524981064432"
+              target="_blank"
+              rel="noopener"
+            >
+              (24) 98106-4432
+            </a>
 
-          <h3>Conservatória</h3>
+          </div>
 
-          <p>
-            A famosa “Capital da Seresta”. O roteiro combina música,
-            arquitetura preservada e memória ferroviária, com atrações
-            como o Túnel que Chora, a Ponte dos Arcos, museus e as
-            tradicionais serenatas pelas ruas.
-          </p>
+          <div class="croqui-info-item">
 
-          <div class="destino-frase">
-            Onde a história do Vale ganha música.
+            <strong>Uma base para descobrir o Vale</strong>
+
+            Ipiabas · Conservatória · Vassouras
+
           </div>
 
           <a
-            href="https://www.turismo.rj.gov.br/noticias/serenatas-em-conservatoria/"
+            href="https://wa.me/5524981064432?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20a%20Pousada%20Vale%20do%20Caf%C3%A9."
             target="_blank"
             rel="noopener"
-            class="destino-link"
+            class="btn btn-primary"
           >
-            Conhecer Conservatória →
+            Falar pelo WhatsApp
           </a>
 
         </div>
-
-      </article>
-
-
-      <!-- =====================================================
-           VASSOURAS
-      ====================================================== -->
-
-      <article class="destino-card">
-
-        <div class="destino-image">
-
-          <img
-            src="https://commons.wikimedia.org/wiki/Special:FilePath/Pra%C3%A7a_Bar%C3%A3o_de_Campo_Belo_-_Vassouras-RJ.jpg?width=1400"
-            alt="Praça Barão de Campo Belo, Centro Histórico de Vassouras"
-            loading="lazy"
-          >
-
-          <span class="destino-tag">Vassouras</span>
-
-        </div>
-
-        <div class="destino-content">
-
-          <span class="destino-numero">03 · CAPITAL DO CAFÉ</span>
-
-          <h3>Vassouras</h3>
-
-          <p>
-            Um dos grandes símbolos históricos do Vale do Café. O centro
-            histórico reúne a Praça Barão de Campo Belo, casarões,
-            igrejas e o conjunto arquitetônico que preserva a memória
-            da riqueza cafeeira do século XIX.
-          </p>
-
-          <div class="destino-frase">
-            Uma viagem ao coração da aristocracia do café.
-          </div>
-
-          <a
-            href="https://www.turismo.rj.gov.br/cidades/vassouras/"
-            target="_blank"
-            rel="noopener"
-            class="destino-link"
-          >
-            Conhecer Vassouras →
-          </a>
-
-        </div>
-
-      </article>
-
-    </div>
-
-
-    <div class="roteiro-cta">
-
-      <div>
-
-        <div class="eyebrow">
-          Roteiro Vale do Café
-        </div>
-
-        <h3>
-          Hospede-se em Ipiabas.<br>
-          Descubra o Vale.
-        </h3>
-
-        <p>
-          A partir da Pousada Vale do Café, organize seu roteiro
-          por Ipiabas, Conservatória e Vassouras.
-        </p>
 
       </div>
 
-      <a
-        href="https://wa.me/5524981064432?text=Ol%C3%A1!%20Gostaria%20de%20montar%20um%20roteiro%20por%20Ipiabas%2C%20Conservat%C3%B3ria%20e%20Vassouras."
-        target="_blank"
-        rel="noopener"
-        class="btn btn-primary"
-      >
-        Montar meu roteiro
-      </a>
-
-    </div>
-
-    <div class="destinos-fonte">
-      Imagens reais de atrativos da região. Verifique as condições de uso
-      e atribuição de cada fotografia antes da publicação comercial.
     </div>
 
   </div>
 
 </section>
+
+
+<!-- =========================================================
+     CONTINUAÇÃO DO SITE
+     O restante do projeto começa aqui.
+========================================================= -->
 
 <!-- =========================================================
      9. QUARTOS
