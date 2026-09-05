@@ -786,6 +786,160 @@
         font-size: .78rem;
       }
     }
+
+    /* =========================
+       DESCUBRA OS ARREDORES
+    ========================= */
+
+    .destinos {
+      background: var(--bege);
+    }
+
+    .destinos-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+
+    .destino-card {
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 12px 35px rgba(45,27,18,.12);
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .destino-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 42px rgba(45,27,18,.18);
+    }
+
+    .destino-image {
+      height: 300px;
+      position: relative;
+      overflow: hidden;
+      background: #ddd;
+    }
+
+    .destino-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .6s ease;
+    }
+
+    .destino-card:hover .destino-image img {
+      transform: scale(1.06);
+    }
+
+    .destino-tag {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      background: rgba(45,27,18,.88);
+      color: #fff;
+      padding: 7px 13px;
+      border-radius: 50px;
+      font-family: Arial, sans-serif;
+      font-size: .72rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .destino-content {
+      padding: 27px;
+    }
+
+    .destino-numero {
+      display: block;
+      color: var(--dourado);
+      font-family: Arial, sans-serif;
+      font-size: .75rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 7px;
+    }
+
+    .destino-content h3 {
+      color: var(--marrom);
+      font-size: 1.7rem;
+      line-height: 1.15;
+      margin-bottom: 13px;
+    }
+
+    .destino-content p {
+      color: #66584e;
+      font-size: .96rem;
+      line-height: 1.7;
+    }
+
+    .destino-frase {
+      margin-top: 18px;
+      padding-top: 15px;
+      border-top: 1px solid #eadfce;
+      color: var(--cafe);
+      font-style: italic;
+      font-size: .92rem;
+    }
+
+    .roteiro-cta {
+      margin-top: 45px;
+      background: var(--marrom);
+      color: #fff;
+      border-radius: 20px;
+      padding: 38px 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      box-shadow: 0 15px 35px rgba(45,27,18,.18);
+    }
+
+    .roteiro-cta .eyebrow {
+      margin-bottom: 8px;
+    }
+
+    .roteiro-cta h3 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.05;
+      margin-bottom: 13px;
+    }
+
+    .roteiro-cta p {
+      max-width: 650px;
+      color: #e4d9ce;
+    }
+
+    @media (max-width: 900px) {
+      .destinos-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .roteiro-cta {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .destino-image {
+        height: 260px;
+      }
+
+      .destino-content {
+        padding: 23px;
+      }
+
+      .destino-content h3 {
+        font-size: 1.5rem;
+      }
+
+      .roteiro-cta {
+        padding: 30px 25px;
+      }
+    }
+
   </style>
 </head>
 
@@ -807,6 +961,7 @@
       <a href="#vale">O Vale</a>
       <a href="#historia">História</a>
       <a href="#ipiabas">Ipiabas</a>
+      <a href="#arredores">O que fazer</a>
       <a href="#pousada">Pousada</a>
       <a href="#quartos">Quartos</a>
       <a href="#machado">Café do Machado</a>
@@ -1505,8 +1660,356 @@
 </section>
 
 
+
 <!-- =========================================================
-     8. QUARTOS
+     8. DESCUBRA OS ARREDORES
+========================================================= -->
+
+<section class="destinos" id="arredores">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <div class="eyebrow">
+        Explore Ipiabas e o Vale do Café
+      </div>
+
+      <h2>
+        Descubra o que existe<br>
+        além da Pousada
+      </h2>
+
+      <p>
+        A Pousada Vale do Café é o ponto de partida para experiências
+        que combinam história, natureza, gastronomia e cultura no
+        coração do Vale do Café.
+      </p>
+
+    </div>
+
+    <div class="destinos-grid">
+
+      <article class="destino-card">
+
+        <div class="destino-image">
+
+          <img
+            src="https://revistaporaqui.com.br/Content/images/noticias/WhatsApp%20Image%202025-12-28%20at%2012.32.10.jpeg"
+            alt="Cachoeira de Ipiabas, Barra do Piraí"
+            loading="lazy"
+          >
+
+          <span class="destino-tag">Natureza</span>
+
+        </div>
+
+        <div class="destino-content">
+
+          <span class="destino-numero">01</span>
+
+          <h3>Cachoeira de Ipiabas</h3>
+
+          <p>
+            Um dos cenários naturais de Ipiabas, cercado pela vegetação
+            da Mata Atlântica. A cachoeira possui duas quedas e piscinas
+            naturais, criando um convite ao contato com a natureza.
+          </p>
+
+          <div class="destino-frase">
+            Para quem quer respirar fundo, ouvir a água e desacelerar.
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article class="destino-card">
+
+        <div class="destino-image">
+
+          <img
+            src="https://www.barradopi.com.br/wp-content/uploads/2024/05/Barra-do-pirai-Fazenda-Sao-Joao-da-Prosperidade.jpg"
+            alt="Fazenda São João da Prosperidade em Barra do Piraí"
+            loading="lazy"
+          >
+
+          <span class="destino-tag">História</span>
+
+        </div>
+
+        <div class="destino-content">
+
+          <span class="destino-numero">02</span>
+
+          <h3>Fazenda São João da Prosperidade</h3>
+
+          <p>
+            Uma viagem ao período do café. A fazenda tem origem no século
+            XIX e preserva sua casa histórica, terreiro de café e elementos
+            ligados à antiga vida rural.
+          </p>
+
+          <div class="destino-frase">
+            Onde a história do café deixa de ser livro e ganha cenário.
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article class="destino-card">
+
+        <div class="destino-image">
+
+          <img
+            src="https://www.portalvaledocafe.com.br/images/fazendas/barra_do_pirai/taquara/01.jpg"
+            alt="Fazenda da Taquara em Barra do Piraí"
+            loading="lazy"
+            onerror="this.onerror=null;this.src='https://i.pinimg.com/736x/07/bb/59/07bb598f5fbfa00c9d7f69857a881538.jpg';"
+          >
+
+          <span class="destino-tag">Fazenda histórica</span>
+
+        </div>
+
+        <div class="destino-content">
+
+          <span class="destino-numero">03</span>
+
+          <h3>Fazenda da Taquara</h3>
+
+          <p>
+            Uma das propriedades históricas associadas ao ciclo do café
+            em Barra do Piraí. O casarão preserva características
+            arquitetônicas do século XIX e integra o patrimônio rural
+            da região.
+          </p>
+
+          <div class="destino-frase">
+            Uma oportunidade de caminhar pelos caminhos dos antigos cafeicultores.
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article class="destino-card">
+
+        <div class="destino-image">
+
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Vale_do_Cafe%2C_RJ_08.jpg?width=1600"
+            alt="Paisagem serrana do Vale do Café"
+            loading="lazy"
+          >
+
+          <span class="destino-tag">Paisagem</span>
+
+        </div>
+
+        <div class="destino-content">
+
+          <span class="destino-numero">04</span>
+
+          <h3>Mirantes da Serra de Ipiabas</h3>
+
+          <p>
+            Para quem gosta de paisagens abertas, montanhas e fotografia,
+            os pontos elevados da região revelam a dimensão serrana do
+            Vale do Paraíba.
+          </p>
+
+          <div class="destino-frase">
+            O Vale fica ainda mais bonito quando visto do alto.
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article class="destino-card">
+
+        <div class="destino-image">
+
+          <img
+            src="https://revistaporaqui.com.br/Content/images/noticias/WhatsApp%20Image%202025-12-28%20at%2012.32.10.jpeg"
+            alt="Cascata e natureza em Ipiabas"
+            loading="lazy"
+          >
+
+          <span class="destino-tag">Ipiabas</span>
+
+        </div>
+
+        <div class="destino-content">
+
+          <span class="destino-numero">05</span>
+
+          <h3>Cascata de Ipiabas</h3>
+
+          <p>
+            Localizada na entrada do distrito, a Cascata de Ipiabas é
+            um dos elementos naturais que marcam a chegada ao destino
+            e rende boas oportunidades para fotografias.
+          </p>
+
+          <div class="destino-frase">
+            A primeira impressão de Ipiabas começa com água, verde e montanhas.
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article class="destino-card">
+
+        <div class="destino-image">
+
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/EstaçãoBarradoPira%C3%AD.JPG?width=1400"
+            alt="Estação ferroviária de Barra do Piraí"
+            loading="lazy"
+          >
+
+          <span class="destino-tag">Patrimônio</span>
+
+        </div>
+
+        <div class="destino-content">
+
+          <span class="destino-numero">06</span>
+
+          <h3>Barra do Piraí histórica</h3>
+
+          <p>
+            A cidade guarda referências ligadas às ferrovias, ao ciclo
+            do café, às antigas igrejas, casarões e fazendas que ajudaram
+            a formar a identidade do Vale do Café.
+          </p>
+
+          <div class="destino-frase">
+            Uma cidade onde os caminhos do café encontraram os trilhos.
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article class="destino-card">
+
+        <div class="destino-image">
+
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Catedral_de_Sant%27Ana_-_Barra_do_Pira%C3%AD.JPG?width=1400"
+            alt="Catedral de Sant'Ana em Barra do Piraí"
+            loading="lazy"
+          >
+
+          <span class="destino-tag">Cultura</span>
+
+        </div>
+
+        <div class="destino-content">
+
+          <span class="destino-numero">07</span>
+
+          <h3>Catedral de Sant'Ana</h3>
+
+          <p>
+            Um dos referenciais religiosos e arquitetônicos de Barra do
+            Piraí, indicado entre os pontos de interesse cultural da cidade.
+          </p>
+
+          <div class="destino-frase">
+            Arquitetura, fé e memória fazem parte da paisagem cultural.
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article class="destino-card">
+
+        <div class="destino-image">
+
+          <img
+            src="https://pousada-vale-do-cafe.vercel.app/img/salao-cafe.jpg"
+            alt="Café servido na Pousada Vale do Café"
+            loading="lazy"
+          >
+
+          <span class="destino-tag">Gastronomia</span>
+
+        </div>
+
+        <div class="destino-content">
+
+          <span class="destino-numero">08</span>
+
+          <h3>Sabores do Vale</h3>
+
+          <p>
+            Cafés, produtos artesanais, restaurantes e experiências
+            rurais ajudam a transformar uma viagem pelo Vale do Café
+            em uma experiência completa.
+          </p>
+
+          <div class="destino-frase">
+            Conhecer o Vale também é sentar à mesa e provar sua história.
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+
+    <div class="roteiro-cta">
+
+      <div>
+
+        <div class="eyebrow">
+          Planeje sua experiência
+        </div>
+
+        <h3>
+          Fique na Pousada.<br>
+          Explore o Vale.
+        </h3>
+
+        <p>
+          Use a Pousada Vale do Café como sua base para descobrir
+          Ipiabas, Barra do Piraí e as fazendas históricas da região.
+        </p>
+
+      </div>
+
+      <a
+        href="https://wa.me/5524981064432?text=Ol%C3%A1!%20Gostaria%20de%20montar%20um%20roteiro%20para%20conhecer%20Ipiabas%20e%20o%20Vale%20do%20Caf%C3%A9."
+        target="_blank"
+        rel="noopener"
+        class="btn btn-primary"
+      >
+        Montar meu roteiro
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+     9. QUARTOS
 ========================================================= -->
 
 <section class="rooms" id="quartos">
@@ -1675,7 +2178,7 @@
 
 
 <!-- =========================================================
-     9. CAFÉ DO MACHADO
+     10. CAFÉ DO MACHADO
 ========================================================= -->
 
 <section class="machado" id="machado">
@@ -1748,7 +2251,7 @@
 
 
 <!-- =========================================================
-     10. RESERVAS
+     11. RESERVAS
 ========================================================= -->
 
 <section class="booking" id="reservas">
@@ -1792,7 +2295,7 @@
 
 
 <!-- =========================================================
-     11. CONTATO
+     12. CONTATO
 ========================================================= -->
 
 <section class="contact">
