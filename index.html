@@ -9,17 +9,17 @@
   <meta name="description"
         content="Descubra o Vale do Café a partir de Ipiabas: patrimônio histórico, natureza, Conservatória, Vassouras e Aldeia das Águas.">
 
-  <meta name="theme-color" content="#174d70">
+  <meta name="theme-color" content="#0B3A5B">
 
   <style>
     :root {
-      --marrom: #174d70;
+      --marrom: #0B3A5B;
       --marrom-escuro: #0b2538;
-      --cafe: #2e6b8d;
+      --cafe: #1976A8;
       --bege: #e6f0f5;
-      --creme: #fbf7ef;
-      --azul: #174d70;
-      --azul-claro: #2e6b8d;
+      --creme: #FFFFFF;
+      --azul: #0B3A5B;
+      --azul-claro: #1976A8;
       --vermelho: #3f6f8f;
       --vermelho-claro: #5b8eae;
       --dourado: #4f87a8;
@@ -1106,7 +1106,7 @@
     }
 
     .sketch-note {
-      fill: #2e6b8d;
+      fill: #1976A8;
       font-family: Georgia, "Times New Roman", serif;
       letter-spacing: 2px;
       font-size: 18px;
@@ -1247,36 +1247,13 @@
       font-size: 1.35rem;
       font-style: italic;
     }
-
-    .croqui-architecture {
-      width: min(780px, 100%);
-      margin: 5px auto 25px;
-      display: block;
-    }
-
-    .croqui-architecture svg {
+.croqui-architecture svg {
       width: 100%;
       height: auto;
       display: block;
     }
 
-    .hand-line {
-      fill: none;
-      stroke: #574239;
-      stroke-width: 3;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .hand-line-thin {
-      fill: none;
-      stroke: #7b5b4c;
-      stroke-width: 1.8;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .hand-text {
+.hand-text {
       fill: #704536;
       font-family: Georgia, "Times New Roman", serif;
       font-size: 18px;
@@ -1572,7 +1549,7 @@
     }
 
     .memoria-content p {
-      color: #5f534a;
+      color: #365565;
       line-height: 1.75;
     }
 
@@ -1581,7 +1558,7 @@
       padding: 16px 18px;
       background: rgba(79,135,168,.08);
       border-left: 3px solid var(--dourado);
-      color: #6c594b;
+      color: #45697B;
       font-size: .9rem;
       line-height: 1.6;
     }
@@ -1616,10 +1593,10 @@
     ========================= */
     .croqui-intro { background: linear-gradient(180deg,#e9f2f7 0%,#f7fbfd 100%); }
     .croqui-paper { border-color: #b9d0df !important; }
-    .croqui-title h1 { color: #174d70 !important; }
-    .croqui-title .eyebrow, .croqui-subtitle, .numero, .destino-local { color:#2e6b8d !important; }
+    .croqui-title h1 { color: #0B3A5B !important; }
+    .croqui-title .eyebrow, .croqui-subtitle, .numero, .destino-local { color:#1976A8 !important; }
     .croqui-destino { border-color:#c7dbe7 !important; }
-    .croqui-destino h2 { color:#174d70 !important; }
+    .croqui-destino h2 { color:#0B3A5B !important; }
     .croqui-foto { background:#dcebf2; }
     .foto-fonte { display:block; margin-top:12px; color:#6a7f8c; font: .78rem/1.5 Arial,sans-serif; }
     .destinos-section { background:#f4f9fb; }
@@ -1628,18 +1605,25 @@
     .destino-card:hover { transform:translateY(-4px); box-shadow:0 18px 36px rgba(23,77,112,.16); }
     .destino-card > img { height:270px; object-fit:cover; }
     .destino-card-body { padding:28px; }
-    .destino-card-body h3 { color:#174d70; font-size:1.7rem; line-height:1.15; margin:8px 0 12px; }
+    .destino-card-body h3 { color:#0B3A5B; font-size:1.7rem; line-height:1.15; margin:8px 0 12px; }
     .destino-card-body p { color:#4f6470; margin-bottom:18px; }
-    .destino-card-body a { color:#2e6b8d; font-weight:bold; }
+    .destino-card-body a { color:#1976A8; font-weight:bold; }
     .destinos-nota { margin-top:28px; padding:16px 20px; background:#e6f0f5; border-left:4px solid #4f87a8; color:#49616e; border-radius:8px; }
-    .section-title .eyebrow { color:#2e6b8d !important; }
-    .section-title h2, .intro-text h2 { color:#174d70 !important; }
+    .section-title .eyebrow { color:#1976A8 !important; }
+    .section-title h2, .intro-text h2 { color:#0B3A5B !important; }
     .highlight { border-color:#4f87a8 !important; background:rgba(79,135,168,.08) !important; }
-    .btn-primary { background:#2e6b8d !important; color:#fff !important; }
-    .btn-primary:hover { background:#174d70 !important; }
-    .btn-outline:hover { color:#174d70 !important; }
+    .btn-primary { background:#1976A8 !important; color:#fff !important; }
+    .btn-primary:hover { background:#0B3A5B !important; }
+    .btn-outline:hover { color:#0B3A5B !important; }
     .memoria-imagens { display:none !important; }
     @media (max-width:800px) { .destinos-grid { grid-template-columns:1fr; } .destino-card > img { height:240px; } }
+
+  
+    .hand-text { font-size: 17px; font-weight: 600; fill: var(--azul); letter-spacing: .04em; }
+    .architecture-main { font-size: 28px; font-weight: 800; letter-spacing: .02em; }
+    .croqui-foto img, .ponto-card img { background:#eaf2f7; }
+    .foto-descricao { margin-top:10px; color:#35566a; line-height:1.65; font-size:.95rem; }
+    .ponto-card h3 { color:var(--azul); }
 
   </style>
 </head>
@@ -1696,81 +1680,13 @@
 
       <div class="croqui-title">
 
-        <div class="eyebrow">Ipiabas · Barra do Piraí · RJ</div>
-
         <h1>Descubra o Vale do Café</h1>
 
       </div>
 
 
       <!-- Arquitetura desenhada, seguindo o elemento central do papel -->
-      <div class="croqui-architecture" aria-label="Desenho arquitetônico da Pousada Vale do Café">
-
-        <svg viewBox="0 0 900 430" role="img">
-
-          <!-- céu / enquadramento do desenho -->
-          <path class="hand-line-thin"
-                d="M100 350 Q450 365 800 350" />
-
-          <!-- telhado -->
-          <path class="hand-line"
-                d="M145 190 Q245 125 450 145 Q655 125 755 190" />
-          <path class="hand-line"
-                d="M170 190 L170 355 L730 355 L730 190" />
-
-          <!-- frontão -->
-          <path class="hand-line"
-                d="M320 190 L450 105 L580 190" />
-          <path class="hand-line-thin"
-                d="M350 190 L450 130 L550 190" />
-
-          <!-- beiral -->
-          <path class="hand-line"
-                d="M155 205 Q450 220 745 205" />
-
-          <!-- janelas -->
-          <rect class="hand-line" x="220" y="235" width="85" height="105" rx="3"/>
-          <rect class="hand-line" x="595" y="235" width="85" height="105" rx="3"/>
-
-          <!-- porta -->
-          <rect class="hand-line" x="380" y="225" width="140" height="130" rx="3"/>
-          <path class="hand-line-thin" d="M450 225 L450 355"/>
-          <circle cx="475" cy="290" r="4" fill="#2e6b8d"/>
-
-          <!-- colunas / varanda -->
-          <path class="hand-line-thin" d="M190 210 L190 355"/>
-          <path class="hand-line-thin" d="M330 210 L330 355"/>
-          <path class="hand-line-thin" d="M570 210 L570 355"/>
-          <path class="hand-line-thin" d="M710 210 L710 355"/>
-
-          <!-- escada -->
-          <path class="hand-line" d="M350 355 L550 355"/>
-          <path class="hand-line-thin" d="M330 375 L570 375"/>
-          <path class="hand-line-thin" d="M310 395 L590 395"/>
-
-          <!-- pequenas árvores -->
-          <path class="hand-line-thin" d="M115 350 Q110 300 120 260"/>
-          <path class="hand-line-thin" d="M785 350 Q790 300 780 260"/>
-
-          <path class="hand-line-thin" d="M120 275 Q90 250 70 265"/>
-          <path class="hand-line-thin" d="M120 275 Q145 240 165 250"/>
-          <path class="hand-line-thin" d="M780 275 Q755 240 735 250"/>
-          <path class="hand-line-thin" d="M780 275 Q810 250 830 265"/>
-
-          <text class="hand-text" x="450" y="55" text-anchor="middle">
-            arquitetura histórica · 1874
-          </text>
-
-          <text class="hand-text" x="450" y="418" text-anchor="middle">
-            Ipiabas · Barra do Piraí · RJ
-          </text>
-
-        </svg>
-
-      </div>
-
-
-      <!-- =====================================================
+<!-- =====================================================
            TRÊS BLOCOS EXATAMENTE COMO NO CROQUI
       ====================================================== -->
 
@@ -1811,91 +1727,10 @@
 
       </div>
 
-          </div>
-
-          <span class="numero">01 · VALE DO CAFÉ</span>
-
-          <h2>
-            Vale do Café
-          </h2>
-
-          <p>
-            Destino turístico que revela os caminhos e as raízes
-            da cultura brasileira por meio de suas paisagens,
-            fazendas e patrimônio histórico.
-          </p>
-
-        </article>
-
-
-        <!-- 02 — HISTÓRIA / IPIABAS -->
-
-        <article class="croqui-destino">
-
-          <div class="croqui-foto">
-
-            <img
-              src="https://www.ipiabasrj.com.br/wp-content/uploads/2023/09/casarao-ipiabas.jpg"
-              alt="Casarão histórico de Ipiabas"
-              loading="lazy"
-            >
-
-            <div class="croqui-foto-label">
-              Outro História<br>Ipiabas
-            </div>
-
-          </div>
-
-          <span class="numero">02 · HISTÓRIA</span>
-
-          <h2>
-            Volte ao passado
-          </h2>
-
-          <p>
-            Pelos casarões e caminhos de Ipiabas, entre a arquitetura
-            histórica, a memória ferroviária e o cenário que preserva
-            referências do século XIX.
-          </p>
-
-        </article>
-
-
-        <!-- 03 — FAZENDA VALE DO CAFÉ -->
-
-        <article class="croqui-destino">
-
-          <div class="croqui-foto">
-
-            <img
-              src="https://www.portalvaledocafe.com.br/images/fazendas/barra_do_pirai/taquara/01.jpg"
-              alt="Fazenda histórica do Vale do Café"
-              loading="lazy"
-            >
-
-            <div class="croqui-foto-label">
-              Fazenda<br>Vale do Café
-            </div>
-
-          </div>
-
-          <span class="numero">03 · FAZENDAS</span>
-
-          <h2>
-            Onde o tempo parou
-          </h2>
-
-          <p>
-            Faça uma viagem ao passado pelas antigas fazendas,
-            onde história, cultura, arquitetura e o cenário do
-            café do século XIX permanecem vivos.
-          </p>
-
-        </article>
-
       </div>
-
-
+    </div>
+  </div>
+</section>
 
 <!-- =========================================================
      CONTINUAÇÃO DO SITE
