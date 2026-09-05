@@ -4,39 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pousada Vale do Café | Ipiabas - Casarão 1874</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <meta name="robots" content="index, follow" />
     <meta name="description" content="Pousada histórica em Ipiabas, Barra do Piraí. Quartos temáticos, café da manhã colonial, 15.000 m² de jardim e experiência cultural Café do Machado." />
     <link rel="canonical" href="https://www.pousadavaledocafe.rio.br/" />
-
-    <!-- ===== FONTE ESTILO COLONIAL ===== -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
     <meta property="og:title" content="Pousada Vale do Café | Ipiabas - Casarão 1874" />
     <meta property="og:description" content="Hospedagem com história, conforto e natureza no coração do Vale do Café." />
     <meta property="og:image" content="https://pousada-vale-do-cafe.vercel.app/img/hero-patio.jpg" />
     <meta property="og:url" content="https://www.pousadavaledocafe.rio.br/" />
     <meta property="og:type" content="website" />
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Hotel",
-        "name": "Pousada Vale do Café",
-        "description": "Pousada histórica em Ipiabas com quartos temáticos, café da manhã colonial e experiência cultural.",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Rua Vereador José Alves Pegas, 212",
-            "addressLocality": "Ipiabas",
-            "addressRegion": "Barra do Piraí",
-            "postalCode": "27170-000",
-            "addressCountry": "BR"
-        },
-        "telephone": "+5524981064432",
-        "url": "https://www.pousadavaledocafe.rio.br/",
-        "priceRange": "R$245 - R$400",
-        "image": "https://pousada-vale-do-cafe.vercel.app/img/hero-patio.jpg"
-    }
-    </script>
 
     <style>
         /* ===== RESET E BASE ===== */
@@ -51,37 +27,15 @@
         a { text-decoration: none; color: inherit; }
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 
-        /* ===== TONS DA LOGO ===== */
         :root {
             --cor-escura: #1e2a36;
             --cor-dourada: #e3c299;
             --cor-dourada-escura: #c9a87a;
-            --cor-fundo: #faf8f5;
-            --cor-texto: #2c2c2c;
             --cor-texto-claro: #5a5a5a;
         }
 
-        /* ===== FONTE COLONIAL ===== */
         .fonte-colonial, h1, h2, h3, h4, .logo, .section-title, .nav-cta {
             font-family: 'Playfair Display', 'Times New Roman', serif;
-        }
-
-        /* ===== ANIMAÇÕES GLOBAIS ===== */
-        @keyframes fadeInDown {
-            0% { opacity: 0; transform: translateY(-30px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeInUp {
-            0% { opacity: 0; transform: translateY(40px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
         }
 
         .animate-on-scroll {
@@ -93,34 +47,34 @@
             opacity: 1;
             transform: translateY(0);
         }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
 
         /* ===== HEADER ===== */
-        header { background: var(--cor-escura); color: #f5f0e9; padding: 12px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.2); animation: fadeInDown 0.6s ease; }
+        header { background: var(--cor-escura); color: #f5f0e9; padding: 12px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
         header .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-        .logo { display: flex; align-items: center; gap: 12px; font-size: 1.5rem; font-weight: 700; letter-spacing: 0.5px; font-family: 'Playfair Display', serif; }
+        .logo { display: flex; align-items: center; gap: 12px; font-size: 1.5rem; font-weight: 700; font-family: 'Playfair Display', serif; }
         .logo img { height: 44px; width: auto; transition: transform 0.3s ease; }
         .logo img:hover { transform: rotate(-3deg) scale(1.05); }
         .logo span { color: var(--cor-dourada); }
-        nav ul { list-style: none; display: flex; gap: 1.6rem; font-size: 0.9rem; flex-wrap: wrap; font-family: 'Inter', sans-serif; }
+        nav ul { list-style: none; display: flex; gap: 1.6rem; font-size: 0.9rem; flex-wrap: wrap; }
         nav ul li a { color: #f5f0e9; transition: 0.3s; border-bottom: 2px solid transparent; padding-bottom: 4px; position: relative; }
         nav ul li a::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: var(--cor-dourada); transition: width 0.3s ease; }
         nav ul li a:hover::after { width: 100%; }
-        nav ul li a:hover { border-bottom-color: transparent; }
         .nav-cta { background: var(--cor-dourada); color: var(--cor-escura) !important; padding: 6px 16px; border-radius: 30px; font-weight: 600; border-bottom: none !important; transition: 0.3s; font-family: 'Playfair Display', serif; }
         .nav-cta:hover { background: var(--cor-dourada-escura); transform: scale(1.05); }
-        .nav-cta::after { display: none; }
 
         /* ===== HERO ===== */
-        .hero { background: linear-gradient(135deg, var(--cor-escura) 0%, #3a4a5a 100%); color: #f5f0e9; padding: 60px 0 50px; text-align: center; animation: fadeIn 0.8s ease; }
-        .hero h1 { font-size: 2.8rem; margin-bottom: 15px; font-weight: 400; letter-spacing: 1px; font-family: 'Playfair Display', serif; animation: fadeInDown 0.8s ease 0.2s both; }
+        .hero { background: linear-gradient(135deg, var(--cor-escura) 0%, #3a4a5a 100%); color: #f5f0e9; padding: 60px 0 50px; text-align: center; }
+        .hero h1 { font-size: 2.8rem; margin-bottom: 15px; font-weight: 400; font-family: 'Playfair Display', serif; }
         .hero h1 strong { color: var(--cor-dourada); }
-        .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px; opacity: 0.9; font-family: 'Inter', sans-serif; animation: fadeInUp 0.8s ease 0.4s both; }
-        .btn-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; animation: fadeInUp 0.8s ease 0.6s both; }
-        .btn { display: inline-block; padding: 12px 32px; border-radius: 50px; font-weight: 600; transition: 0.3s; border: 2px solid transparent; cursor: pointer; position: relative; overflow: hidden; font-family: 'Inter', sans-serif; }
-        .btn::after { content: ''; position: absolute; top: 50%; left: 50%; width: 0; height: 0; background: rgba(255,255,255,0.2); border-radius: 50%; transition: width 0.6s, height 0.6s; transform: translate(-50%, -50%); }
-        .btn:hover::after { width: 300px; height: 300px; }
+        .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px; opacity: 0.9; }
+        .btn-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        .btn { display: inline-block; padding: 12px 32px; border-radius: 50px; font-weight: 600; transition: 0.3s; border: 2px solid transparent; cursor: pointer; position: relative; overflow: hidden; }
         .btn-primary { background: var(--cor-dourada); color: var(--cor-escura); border-color: var(--cor-dourada); }
-        .btn-primary:hover { background: transparent; color: var(--cor-dourada); transform: translateY(-3px); box-shadow: 0 6px 20px rgba(227,194,153,0.3); }
+        .btn-primary:hover { background: transparent; color: var(--cor-dourada); transform: translateY(-3px); }
         .btn-secondary { background: transparent; color: #f5f0e9; border-color: #f5f0e9; }
         .btn-secondary:hover { background: #f5f0e9; color: var(--cor-escura); transform: translateY(-3px); }
         .btn-reserva { background: var(--cor-dourada); color: var(--cor-escura); border-color: var(--cor-dourada); padding: 14px 40px; font-size: 1.1rem; animation: pulse 2s infinite; font-family: 'Playfair Display', serif; }
@@ -135,13 +89,13 @@
         .section-title span { color: var(--cor-dourada-escura); position: relative; display: inline-block; }
         .section-title span::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 3px; background: var(--cor-dourada-escura); transition: width 0.6s ease; }
         .section-title.visible span::after { width: 100%; }
-        .section-subtitle { text-align: center; max-width: 700px; margin: -10px auto 40px; color: var(--cor-texto-claro); font-family: 'Inter', sans-serif; }
+        .section-subtitle { text-align: center; max-width: 700px; margin: -10px auto 40px; color: var(--cor-texto-claro); }
 
-        /* ===== INTRODUÇÃO VALE DO CAFÉ ===== */
+        /* ===== INTRO VALE DO CAFÉ ===== */
         .intro-vale-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; }
         .intro-vale-grid img { width: 100%; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.5s ease, box-shadow 0.5s ease; }
         .intro-vale-grid img:hover { transform: scale(1.02); box-shadow: 0 8px 30px rgba(0,0,0,0.15); }
-        .intro-vale-text p { margin-bottom: 15px; font-family: 'Inter', sans-serif; }
+        .intro-vale-text p { margin-bottom: 15px; }
         .intro-vale-highlight { color: var(--cor-dourada-escura); font-weight: 600; display: inline-block; transition: transform 0.3s; }
         .intro-vale-highlight:hover { transform: scale(1.05); }
 
@@ -151,10 +105,10 @@
         .intro-gallery > div:hover { transform: translateY(-6px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
         .intro-gallery img { width: 100%; height: 220px; object-fit: cover; border-radius: 12px 12px 0 0; transition: transform 0.5s ease; }
         .intro-gallery > div:hover img { transform: scale(1.04); }
-        .intro-gallery p { text-align: center; font-size: 0.9rem; color: var(--cor-texto-claro); padding: 12px 16px 16px; margin: 0; font-weight: 500; line-height: 1.5; font-family: 'Inter', sans-serif; }
+        .intro-gallery p { text-align: center; font-size: 0.9rem; color: var(--cor-texto-claro); padding: 12px 16px 16px; margin: 0; font-weight: 500; line-height: 1.5; }
         .intro-gallery .legenda-destaque { color: var(--cor-dourada-escura); font-weight: 600; font-family: 'Playfair Display', serif; }
 
-        /* ===== PONTOS TURÍSTICOS DE IPIABAS ===== */
+        /* ===== PONTOS TURÍSTICOS ===== */
         .turismo-ipiabas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; margin-top: 30px; }
         .turismo-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.07); transition: 0.4s; border: 1px solid #ede7df; }
         .turismo-card:hover { transform: translateY(-8px); box-shadow: 0 12px 35px rgba(0,0,0,0.1); }
@@ -162,14 +116,14 @@
         .turismo-card:hover img { transform: scale(1.04); }
         .turismo-card .info { padding: 18px 20px 22px; }
         .turismo-card .info h4 { font-size: 1.1rem; color: var(--cor-escura); margin-bottom: 4px; font-family: 'Playfair Display', serif; }
-        .turismo-card .info .distancia { color: var(--cor-dourada-escura); font-weight: 600; font-size: 0.9rem; margin-bottom: 6px; display: inline-block; background: #f2ebe2; padding: 2px 12px; border-radius: 20px; font-family: 'Inter', sans-serif; }
-        .turismo-card .info p { color: var(--cor-texto-claro); font-size: 0.95rem; margin-top: 6px; font-family: 'Inter', sans-serif; }
+        .turismo-card .info .distancia { color: var(--cor-dourada-escura); font-weight: 600; font-size: 0.9rem; margin-bottom: 6px; display: inline-block; background: #f2ebe2; padding: 2px 12px; border-radius: 20px; }
+        .turismo-card .info p { color: var(--cor-texto-claro); font-size: 0.95rem; margin-top: 6px; }
 
         /* ===== SOBRE ===== */
         .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; }
         .about-grid img { width: 100%; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.5s ease, box-shadow 0.5s ease; }
         .about-grid img:hover { transform: scale(1.02) rotate(-1deg); box-shadow: 0 8px 30px rgba(0,0,0,0.15); }
-        .about-text p { margin-bottom: 15px; font-family: 'Inter', sans-serif; }
+        .about-text p { margin-bottom: 15px; }
 
         /* ===== QUARTOS ===== */
         .rooms-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 30px; }
@@ -179,11 +133,11 @@
         .room-card:hover img { transform: scale(1.05); }
         .room-card .room-info { padding: 18px 20px 22px; }
         .room-card .room-info h3 { font-size: 1.2rem; color: var(--cor-escura); margin-bottom: 6px; font-family: 'Playfair Display', serif; }
-        .room-card .room-info .sub { color: #7a6a5a; font-size: 0.9rem; margin-bottom: 8px; font-family: 'Inter', sans-serif; }
+        .room-card .room-info .sub { color: #7a6a5a; font-size: 0.9rem; margin-bottom: 8px; }
         .room-card .room-info .price { font-weight: 700; color: var(--cor-dourada-escura); font-size: 1.3rem; font-family: 'Playfair Display', serif; }
-        .room-card .room-info .price small { font-weight: 400; font-size: 0.9rem; color: var(--cor-texto-claro); font-family: 'Inter', sans-serif; }
-        .room-card .room-info .features { margin: 10px 0 8px; font-size: 0.9rem; color: #3a3a3a; font-family: 'Inter', sans-serif; }
-        .room-card .room-info .com-ventilador { color: #1e6f5c; font-weight: 600; font-size: 0.9rem; margin-top: 4px; font-family: 'Inter', sans-serif; }
+        .room-card .room-info .price small { font-weight: 400; font-size: 0.9rem; color: var(--cor-texto-claro); }
+        .room-card .room-info .features { margin: 10px 0 8px; font-size: 0.9rem; color: #3a3a3a; }
+        .room-card .room-info .com-ventilador { color: #1e6f5c; font-weight: 600; font-size: 0.9rem; margin-top: 4px; }
 
         /* ===== GALERIA ===== */
         .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
@@ -195,8 +149,7 @@
         .cafe-box:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.06); }
         .cafe-box h3 { font-size: 1.6rem; color: var(--cor-escura); margin-bottom: 10px; font-family: 'Playfair Display', serif; }
         .cafe-box .highlight { color: var(--cor-dourada-escura); font-weight: 600; }
-        .cafe-box p { font-family: 'Inter', sans-serif; }
-        .cafe-info { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; text-align: left; margin: 15px 0; max-width: 500px; margin-left: auto; margin-right: auto; font-family: 'Inter', sans-serif; }
+        .cafe-info { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; text-align: left; margin: 15px 0; max-width: 500px; margin-left: auto; margin-right: auto; }
         .cafe-info span { font-weight: 600; color: var(--cor-escura); }
         .cafe-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
         .cafe-gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 12px; transition: 0.4s; }
@@ -204,12 +157,12 @@
 
         /* ===== COMO CHEGAR ===== */
         .como-chegar-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; }
-        .como-chegar-grid .info p { margin-bottom: 12px; font-family: 'Inter', sans-serif; }
+        .como-chegar-grid .info p { margin-bottom: 12px; }
         .como-chegar-grid .mapa { background: #e8e0d6; border-radius: 12px; overflow: hidden; min-height: 250px; display: flex; align-items: center; justify-content: center; transition: 0.4s; }
         .como-chegar-grid .mapa:hover { transform: scale(1.01); box-shadow: 0 8px 25px rgba(0,0,0,0.08); }
         .como-chegar-grid .mapa img { width: 100%; height: 100%; object-fit: cover; }
 
-        /* ===== TURISMO REGIONAL (CIDADES PRÓXIMAS) ===== */
+        /* ===== CIDADES PRÓXIMAS ===== */
         .cidades-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; margin-top: 30px; }
         .cidade-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.07); transition: 0.4s; border: 1px solid #ede7df; }
         .cidade-card:hover { transform: translateY(-8px); box-shadow: 0 12px 35px rgba(0,0,0,0.1); }
@@ -217,12 +170,12 @@
         .cidade-card:hover img { transform: scale(1.04); }
         .cidade-card .info { padding: 18px 20px 22px; }
         .cidade-card .info h4 { font-size: 1.1rem; color: var(--cor-escura); margin-bottom: 4px; font-family: 'Playfair Display', serif; }
-        .cidade-card .info .distancia { color: var(--cor-dourada-escura); font-weight: 600; font-size: 0.9rem; margin-bottom: 6px; display: inline-block; background: #f2ebe2; padding: 2px 12px; border-radius: 20px; font-family: 'Inter', sans-serif; }
-        .cidade-card .info p { color: var(--cor-texto-claro); font-size: 0.95rem; margin-top: 6px; font-family: 'Inter', sans-serif; }
+        .cidade-card .info .distancia { color: var(--cor-dourada-escura); font-weight: 600; font-size: 0.9rem; margin-bottom: 6px; display: inline-block; background: #f2ebe2; padding: 2px 12px; border-radius: 20px; }
+        .cidade-card .info p { color: var(--cor-texto-claro); font-size: 0.95rem; margin-top: 6px; }
 
         /* ===== SELOS ===== */
         .selos { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px; }
-        .selo { background: #f8f4ef; padding: 12px 20px; border-radius: 30px; font-weight: 600; color: var(--cor-escura); border: 1px solid #e0d6c8; transition: 0.3s; cursor: default; font-family: 'Inter', sans-serif; }
+        .selo { background: #f8f4ef; padding: 12px 20px; border-radius: 30px; font-weight: 600; color: var(--cor-escura); border: 1px solid #e0d6c8; transition: 0.3s; cursor: default; }
         .selo:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 6px 20px rgba(0,0,0,0.06); background: #f0e8dd; }
 
         /* ===== DEPOIMENTOS ===== */
@@ -230,50 +183,48 @@
         .depoimento { background: white; padding: 22px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 4px solid var(--cor-dourada); transition: 0.4s; }
         .depoimento:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,0,0,0.08); }
         .depoimento p { font-style: italic; color: #2a2a2a; font-family: 'Playfair Display', serif; }
-        .depoimento .autor { margin-top: 10px; font-weight: 600; color: var(--cor-escura); font-family: 'Inter', sans-serif; }
-        .depoimento .fonte { font-size: 0.8rem; color: #888; font-family: 'Inter', sans-serif; }
+        .depoimento .autor { margin-top: 10px; font-weight: 600; color: var(--cor-escura); }
+        .depoimento .fonte { font-size: 0.8rem; color: #888; }
 
         /* ===== FAQ ===== */
-        .faq-item { background: white; padding: 16px 22px; border-radius: 10px; margin-bottom: 12px; box-shadow: 0 1px 6px rgba(0,0,0,0.04); transition: 0.3s; cursor: default; border-left: 3px solid transparent; }
+        .faq-item { background: white; padding: 16px 22px; border-radius: 10px; margin-bottom: 12px; box-shadow: 0 1px 6px rgba(0,0,0,0.04); transition: 0.3s; border-left: 3px solid transparent; }
         .faq-item:hover { transform: translateX(4px); border-left-color: var(--cor-dourada); box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
         .faq-item .pergunta { font-weight: 600; color: var(--cor-escura); font-family: 'Playfair Display', serif; }
-        .faq-item .resposta { margin-top: 5px; color: var(--cor-texto-claro); font-family: 'Inter', sans-serif; }
+        .faq-item .resposta { margin-top: 5px; color: var(--cor-texto-claro); }
 
         /* ===== TABELA CANCELAMENTO ===== */
         .tabela-cancelamento { width: 100%; border-collapse: collapse; margin: 15px 0; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
         .tabela-cancelamento th { background: var(--cor-escura); color: #f5f0e9; padding: 12px; text-align: left; font-family: 'Playfair Display', serif; }
-        .tabela-cancelamento td { padding: 12px; border-bottom: 1px solid #ede7df; font-family: 'Inter', sans-serif; }
+        .tabela-cancelamento td { padding: 12px; border-bottom: 1px solid #ede7df; }
         .tabela-cancelamento tr:last-child td { border-bottom: none; }
         .tabela-cancelamento tr { transition: 0.3s; }
         .tabela-cancelamento tr:hover { background: #f8f4ef; }
 
         /* ===== CONTATO ===== */
         .contato-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 20px; }
-        .contato-grid form input, .contato-grid form textarea { width: 100%; padding: 12px 16px; border: 1px solid #d6cdc0; border-radius: 8px; font-size: 1rem; margin-bottom: 14px; background: white; transition: 0.3s; font-family: 'Inter', sans-serif; }
+        .contato-grid form input, .contato-grid form textarea { width: 100%; padding: 12px 16px; border: 1px solid #d6cdc0; border-radius: 8px; font-size: 1rem; margin-bottom: 14px; background: white; transition: 0.3s; }
         .contato-grid form input:focus, .contato-grid form textarea:focus { border-color: var(--cor-dourada-escura); outline: none; box-shadow: 0 0 0 3px rgba(166,124,82,0.15); transform: scale(1.01); }
         .contato-grid form textarea { height: 110px; resize: vertical; }
         .contato-grid form button { background: var(--cor-escura); color: white; padding: 12px 30px; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; transition: 0.3s; font-family: 'Playfair Display', serif; }
         .contato-grid form button:hover { background: #3a4a5a; transform: translateY(-3px); box-shadow: 0 6px 20px rgba(30,42,54,0.3); }
-        .contato-info p { margin-bottom: 10px; font-family: 'Inter', sans-serif; }
+        .contato-info p { margin-bottom: 10px; }
         .social-links a { display: inline-block; margin-right: 15px; font-size: 1.1rem; color: var(--cor-escura); transition: 0.3s; }
         .social-links a:hover { transform: translateY(-3px) scale(1.1); color: var(--cor-dourada-escura); }
 
         .whatsapp-buttons { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 15px; }
-        .whatsapp-buttons .btn-wpp { background: #25D366; color: white; padding: 10px 22px; border-radius: 50px; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #25D366; transition: 0.3s; font-family: 'Inter', sans-serif; }
+        .whatsapp-buttons .btn-wpp { background: #25D366; color: white; padding: 10px 22px; border-radius: 50px; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #25D366; transition: 0.3s; }
         .whatsapp-buttons .btn-wpp:hover { background: transparent; color: #25D366; transform: translateY(-3px) scale(1.04); }
 
         footer { background: var(--cor-escura); color: #cbc3b8; padding: 30px 0; text-align: center; font-size: 0.9rem; border-top: 2px solid #2c3a48; }
         footer a { color: var(--cor-dourada); transition: 0.3s; }
         footer a:hover { color: var(--cor-dourada-escura); }
         .footer-links { margin: 10px 0; }
-        .footer-links a { margin: 0 12px; display: inline-block; transition: 0.3s; font-family: 'Inter', sans-serif; }
+        .footer-links a { margin: 0 12px; display: inline-block; transition: 0.3s; }
         .footer-links a:hover { transform: translateY(-2px); }
         .footer-logo { height: 36px; width: auto; margin-bottom: 10px; transition: 0.3s; }
         .footer-logo:hover { transform: rotate(-3deg) scale(1.05); }
-        .enderecos-footer { display: flex; flex-direction: column; gap: 4px; margin: 6px 0 12px; font-size: 0.9rem; color: #cbc3b8; font-family: 'Inter', sans-serif; }
-        footer p { font-family: 'Inter', sans-serif; }
+        .enderecos-footer { display: flex; flex-direction: column; gap: 4px; margin: 6px 0 12px; font-size: 0.9rem; color: #cbc3b8; }
 
-        /* ===== RESPONSIVO ===== */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2rem; }
             .about-grid, .contato-grid, .como-chegar-grid, .intro-vale-grid { grid-template-columns: 1fr; }
@@ -284,7 +235,6 @@
             .logo { font-size: 1.2rem; }
             .logo img { height: 34px; }
             .section-title { font-size: 1.6rem; }
-            .intro-gallery p { font-size: 0.8rem; }
         }
         @media (max-width: 480px) {
             .hero h1 { font-size: 1.6rem; }
@@ -295,526 +245,523 @@
 </head>
 <body>
 
-    <!-- ===== HEADER ===== -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/logo-branco.png" alt="Pousada Vale do Café - Logo branco" />
-                <span>Pousada</span> Vale do Café
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#vale-cafe">Vale do Café</a></li>
-                    <li><a href="#pontos-turisticos">Pontos Turísticos</a></li>
-                    <li><a href="#cidades-proximas">Cidades Próximas</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#quartos">Quartos</a></li>
-                    <li><a href="#cafe">Café do Machado</a></li>
-                    <li><a href="#como-chegar">Como Chegar</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                    <li><a href="#reserva" class="nav-cta">Reservar</a></li>
-                </ul>
-            </nav>
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/logo-branco.png" alt="Pousada Vale do Café - Logo" />
+            <span>Pousada</span> Vale do Café
         </div>
-    </header>
+        <nav>
+            <ul>
+                <li><a href="#vale-cafe">Vale do Café</a></li>
+                <li><a href="#pontos-turisticos">Pontos Turísticos</a></li>
+                <li><a href="#cidades-proximas">Cidades Próximas</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#quartos">Quartos</a></li>
+                <li><a href="#cafe">Café do Machado</a></li>
+                <li><a href="#como-chegar">Como Chegar</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#reserva" class="nav-cta">Reservar</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-    <!-- ===== HERO ===== -->
-    <section class="hero" id="reserva">
-        <div class="container">
-            <h1>Viva a <strong>história do Vale do Café</strong> em um casarão de 1874</h1>
-            <p>11 quartos, café da manhã incluso, 15.000 m² de jardim e experiências históricas em Ipiabas.</p>
-            <div class="btn-group">
-                <a href="https://hotels.cloudbeds.com/pt-br/reservas/Et7myl?currency=brl" target="_blank" class="btn btn-reserva">📅 Consultar datas e valores</a>
-                <a href="https://wa.me/5524981064432?text=Olá! Gostaria de falar com a recepção sobre hospedagem." target="_blank" class="btn btn-secondary">💬 Falar com a recepção</a>
-            </div>
+<!-- ===== HERO ===== -->
+<section class="hero" id="reserva">
+    <div class="container">
+        <h1>Viva a <strong>história do Vale do Café</strong> em um casarão de 1874</h1>
+        <p>11 quartos, café da manhã incluso, 15.000 m² de jardim e experiências históricas em Ipiabas.</p>
+        <div class="btn-group">
+            <a href="https://hotels.cloudbeds.com/pt-br/reservas/Et7myl?currency=brl" target="_blank" class="btn btn-reserva">📅 Consultar datas e valores</a>
+            <a href="https://wa.me/5524981064432?text=Olá! Gostaria de falar com a recepção sobre hospedagem." target="_blank" class="btn btn-secondary">💬 Falar com a recepção</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ===== INTRODUÇÃO AO VALE DO CAFÉ ===== -->
-    <section class="section" id="vale-cafe" style="background: #f8f4ef;">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">O <span>Vale do Café</span></h2>
-            <p class="section-subtitle animate-on-scroll">Um dos mais importantes ciclos econômicos do Brasil, o Vale do Café fluminense guarda um patrimônio histórico, cultural e paisagístico ímpar.</p>
+<!-- ===== INTRODUÇÃO AO VALE DO CAFÉ ===== -->
+<section class="section" id="vale-cafe" style="background: #f8f4ef;">
+    <div class="container">
+        <h2 class="section-title animate-on-scroll">O <span>Vale do Café</span></h2>
+        <p class="section-subtitle animate-on-scroll">Um dos mais importantes ciclos econômicos do Brasil, o Vale do Café fluminense guarda um patrimônio histórico, cultural e paisagístico ímpar.</p>
 
-            <div class="intro-vale-grid animate-on-scroll">
-                <div class="intro-vale-text">
-                    <p>O Vale do Café, também conhecido como <strong>Vale do Paraíba</strong>, foi a região que sustentou o apogeu do café no Brasil no século XIX. Casarões, fazendas, igrejas e vilarejos preservam a memória de um período que marcou profundamente a história e a cultura do país.</p>
-                    <p><span class="intro-vale-highlight">Ipiabas</span> é um dos distritos mais charmosos desse roteiro. Com seu centro histórico tombado, a vila mantém viva a atmosfera do ciclo do café, com ruas de paralelepípedos, casarões coloniais e uma paisagem cercada por montanhas.</p>
-                    <p>A <strong>Vila Histórica da Piedade</strong>, onde está a Pousada Vale do Café, é um convite para viajar no tempo e respirar a história do café com o rei.</p>
-                    <a href="#pontos-turisticos" class="btn btn-primary" style="margin-top:10px; display:inline-block;">Descubra os pontos turísticos →</a>
-                </div>
-                <div>
-                    <img src="https://pousada-vale-do-cafe.vercel.app/img/vista-serra.jpg" alt="Vale do Café - vista das montanhas" loading="lazy" />
-                    <p style="text-align:center; font-size:0.85rem; color:#888; margin-top:8px; font-family:'Inter',sans-serif;">🌄 Vista da região do Vale do Café</p>
-                </div>
+        <div class="intro-vale-grid animate-on-scroll">
+            <div class="intro-vale-text">
+                <p>O Vale do Café, também conhecido como <strong>Vale do Paraíba</strong>, foi a região que sustentou o apogeu do café no Brasil no século XIX. Casarões, fazendas, igrejas e vilarejos preservam a memória de um período que marcou profundamente a história e a cultura do país.</p>
+                <p><span class="intro-vale-highlight">Ipiabas</span> é um dos distritos mais charmosos desse roteiro. Com seu centro histórico tombado, a vila mantém viva a atmosfera do ciclo do café, com ruas de paralelepípedos, casarões coloniais e uma paisagem cercada por montanhas.</p>
+                <p>A <strong>Vila Histórica da Piedade</strong>, onde está a Pousada Vale do Café, é um convite para viajar no tempo e respirar a história do café com o rei.</p>
+                <a href="#pontos-turisticos" class="btn btn-primary" style="margin-top:10px; display:inline-block;">Descubra os pontos turísticos →</a>
             </div>
-
-            <!-- ===== GALERIA INTRO (imagens da Vercel) ===== -->
-            <div class="intro-gallery">
-                <div class="animate-on-scroll">
-                    <img src="https://pousada-vale-do-cafe.vercel.app/img/pe-de-cafe.jpg" alt="Mapa regional do Vale do Café" loading="lazy" />
-                    <p class="legenda-destaque">"Destino turístico encantador, revelando as raízes da cultura brasileira"</p>
-                </div>
-                <div class="animate-on-scroll">
-                    <img src="https://pousada-vale-do-cafe.vercel.app/img/vista-serra.jpg" alt="Vila Histórica da Piedade vista do alto" loading="lazy" />
-                    <p>"Volta ao passado pela Igreja Nossa Senhora da Piedade, O Casarão da Remonta e Casarios Neoclássicos – Tesouro vivo da arquitetura do século XIX"</p>
-                </div>
-                <div class="animate-on-scroll">
-                    <img src="https://pousada-vale-do-cafe.vercel.app/img/hero-patio.jpg" alt="Fachada da Pousada Vale do Café" loading="lazy" />
-                    <p class="legenda-destaque">"Onde o tempo anda sem pressa, com história e cultura neste Casario de 1874"</p>
-                </div>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Vale_do_Caf%C3%A9.jpg/640px-Vale_do_Caf%C3%A9.jpg" alt="Vale do Café - vista das montanhas" loading="lazy" />
+                <p style="text-align:center; font-size:0.85rem; color:#888; margin-top:8px;">🌄 Vale do Café – Região de Ipiabas</p>
             </div>
         </div>
-    </section>
 
-    <!-- ===== PONTOS TURÍSTICOS DE IPIABAS (IMAGENS DA INTERNET) ===== -->
-    <section class="section" id="pontos-turisticos">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">Pontos Turísticos de <span>Ipiabas</span></h2>
-            <p class="section-subtitle animate-on-scroll">Conheça os principais atrativos da vila histórica, todos a uma curta distância da pousada.</p>
-
-            <div class="turismo-ipiabas-grid">
-                <div class="turismo-card animate-on-scroll">
-                    <img src="https://images.unsplash.com/photo-1583039657168-62c6985dc027?w=400" alt="Igreja Nossa Senhora da Piedade" loading="lazy" />
-                    <div class="info">
-                        <h4>⛪ Igreja Nossa Senhora da Piedade</h4>
-                        <span class="distancia">📍 300 m</span>
-                        <p>Construída em 1850 pelo Capitão Mata-Gente, é a igreja matriz da vila, com estilo neoclássico e altares laterais únicos. Um dos cartões-postais de Ipiabas.</p>
-                    </div>
-                </div>
-
-                <div class="turismo-card animate-on-scroll">
-                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400" alt="Casarão da Antiga Remonta" loading="lazy" />
-                    <div class="info">
-                        <h4>🏛️ Casarão da Antiga Remonta</h4>
-                        <span class="distancia">📍 200 m</span>
-                        <p>Edificação de 1874 que serviu como ponto de troca de cavalos para a Guarda Imperial. Hoje é um centro cultural e um dos mais belos casarões da região.</p>
-                    </div>
-                </div>
-
-                <div class="turismo-card animate-on-scroll">
-                    <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=400" alt="Túnel da Rede Mineira" loading="lazy" />
-                    <div class="info">
-                        <h4>🚇 Túnel da Rede Mineira</h4>
-                        <span class="distancia">📍 500 m</span>
-                        <p>Escavado manualmente por escravizados em 1883, é um túnel de 250 metros que corta a rocha e guarda histórias do período ferroviário do café.</p>
-                    </div>
-                </div>
-
-                <div class="turismo-card animate-on-scroll">
-                    <img src="https://images.unsplash.com/photo-1587559424036-5d3db4a99bb9?w=400" alt="Estação Ferroviária" loading="lazy" />
-                    <div class="info">
-                        <h4>🚂 Estação Ferroviária</h4>
-                        <span class="distancia">📍 400 m</span>
-                        <p>Inaugurada em 1881, a estação foi o coração do escoamento do café na região. Hoje revitalizada, abriga exposições e eventos culturais.</p>
-                    </div>
-                </div>
-
-                <div class="turismo-card animate-on-scroll">
-                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400" alt="Pedra do Gavião" loading="lazy" />
-                    <div class="info">
-                        <h4>⛰️ Pedra do Gavião</h4>
-                        <span class="distancia">📍 7 km</span>
-                        <p>Mirante com vista de 360° sobre o Vale do Café. Paredão de 100 metros para rapel e trilhas de contemplação. Imperdível para amantes da natureza.</p>
-                    </div>
-                </div>
-
-                <div class="turismo-card animate-on-scroll">
-                    <img src="https://images.unsplash.com/photo-1439853949127-fa647821eba0?w=400" alt="Cachoeira da Floresta" loading="lazy" />
-                    <div class="info">
-                        <h4>💧 Cachoeira da Floresta</h4>
-                        <span class="distancia">📍 6 km</span>
-                        <p>Duas quedas d'água com piscinas naturais. Perfeito para um mergulho refrescante em meio à mata atlântica preservada.</p>
-                    </div>
-                </div>
-
-                <div class="turismo-card animate-on-scroll">
-                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400" alt="Fazendas históricas" loading="lazy" />
-                    <div class="info">
-                        <h4>🏡 Fazendas Históricas</h4>
-                        <span class="distancia">📍 5 a 15 km</span>
-                        <p>Visite as fazendas Cachoeira Grande, Santa Eufrásia, do Secretário, entre outras. Todas com visitação guiada e arquitetura do ciclo do café.</p>
-                    </div>
-                </div>
+        <!-- ===== GALERIA INTRO (IMAGENS REAIS) ===== -->
+        <div class="intro-gallery">
+            <div class="animate-on-scroll">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Ipiabas_RJ.jpg/640px-Ipiabas_RJ.jpg" alt="Vila Histórica de Ipiabas" loading="lazy" />
+                <p class="legenda-destaque">"Destino turístico encantador, revelando as raízes da cultura brasileira"</p>
+            </div>
+            <div class="animate-on-scroll">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Igreja_Nossa_Senhora_da_Piedade_Ipiabas.jpg/640px-Igreja_Nossa_Senhora_da_Piedade_Ipiabas.jpg" alt="Igreja Nossa Senhora da Piedade" loading="lazy" />
+                <p>"Volta ao passado pela Igreja Nossa Senhora da Piedade, O Casarão da Remonta e Casarios Neoclássicos – Tesouro vivo da arquitetura do século XIX"</p>
+            </div>
+            <div class="animate-on-scroll">
+                <img src="https://pousada-vale-do-cafe.vercel.app/img/hero-patio.jpg" alt="Fachada da Pousada Vale do Café" loading="lazy" />
+                <p class="legenda-destaque">"Onde o tempo anda sem pressa, com história e cultura neste Casario de 1874"</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ===== CIDADES PRÓXIMAS (IMAGENS DA INTERNET) ===== -->
-    <section class="section" id="cidades-proximas" style="background: #f8f4ef;">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">Cidades <span>Próximas</span></h2>
-            <p class="section-subtitle animate-on-scroll">Explore o Vale do Café além de Ipiabas. Destinos ricos em história, seresta, natureza e lazer.</p>
+<!-- ===== PONTOS TURÍSTICOS DE IPIABAS (IMAGENS REAIS) ===== -->
+<section class="section" id="pontos-turisticos">
+    <div class="container">
+        <h2 class="section-title animate-on-scroll">Pontos Turísticos de <span>Ipiabas</span></h2>
+        <p class="section-subtitle animate-on-scroll">Conheça os principais atrativos da vila histórica, todos a uma curta distância da pousada.</p>
 
-            <div class="cidades-grid">
-                <div class="cidade-card animate-on-scroll">
-                    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400" alt="Conservatória" loading="lazy" />
-                    <div class="info">
-                        <h4>🎵 Conservatória</h4>
-                        <span class="distancia">📍 22 km (25 min)</span>
-                        <p>A "Capital da Seresta", famosa por seus saraus, bares históricos e o Festival da Seresta. Roteiro musical imperdível.</p>
-                    </div>
-                </div>
-
-                <div class="cidade-card animate-on-scroll">
-                    <img src="https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=400" alt="Vassouras" loading="lazy" />
-                    <div class="info">
-                        <h4>🏛️ Vassouras</h4>
-                        <span class="distancia">📍 26 km (30 min)</span>
-                        <p>Cidade histórica com casarões imperiais, museus e o famoso Jardim Ecológico Uaná Etê. Um verdadeiro museu a céu aberto.</p>
-                    </div>
-                </div>
-
-                <div class="cidade-card animate-on-scroll">
-                    <img src="https://images.unsplash.com/photo-1532342372786-3f4eaef9d5a1?w=400" alt="Aldeia das Águas" loading="lazy" />
-                    <div class="info">
-                        <h4>💦 Aldeia das Águas</h4>
-                        <span class="distancia">📍 30 km (35 min)</span>
-                        <p>Parque aquático com piscinas, toboáguas e área de camping. Perfeito para famílias e quem busca diversão em meio à natureza.</p>
-                    </div>
-                </div>
-
-                <div class="cidade-card animate-on-scroll">
-                    <img src="https://images.unsplash.com/photo-1578662996446-52f9c2b4f33a?w=400" alt="Barra do Piraí" loading="lazy" />
-                    <div class="info">
-                        <h4>🏙️ Barra do Piraí</h4>
-                        <span class="distancia">📍 17 km (20 min)</span>
-                        <p>Sede do município, com o Casarão da Cultura, Museu do Café e o Parque do Cinquentenário. Centro comercial e de serviços.</p>
-                    </div>
-                </div>
-
-                <div class="cidade-card animate-on-scroll">
-                    <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=400" alt="Valença" loading="lazy" />
-                    <div class="info">
-                        <h4>🎭 Valença</h4>
-                        <span class="distancia">📍 38 km (45 min)</span>
-                        <p>Conhecida pelo artesanato em pedra-sabão e pelo Carnaval tradicional. Vale a visita à Igreja Matriz e ao Museu da Imagem e do Som.</p>
-                    </div>
-                </div>
-
-                <div class="cidade-card animate-on-scroll">
-                    <img src="https://images.unsplash.com/photo-1544979590-37e9b47eb705?w=400" alt="Rio das Flores" loading="lazy" />
-                    <div class="info">
-                        <h4>🌸 Rio das Flores</h4>
-                        <span class="distancia">📍 53 km (55 min)</span>
-                        <p>Pequena cidade com charme rural, cachoeiras e o Santuário de Nossa Senhora do Carmo. Roteiro tranquilo para quem busca sossego.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div style="text-align:center; margin-top:25px;">
-                <a href="https://www.portalvaledocafe.com.br/ipiabas.asp" target="_blank" class="btn btn-primary" style="background:var(--cor-escura); color:white; border-color:var(--cor-escura);">🌐 Portal Vale do Café – Mais roteiros</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== SOBRE ===== -->
-    <section class="section" id="sobre">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">Sobre a <span>Pousada</span></h2>
-            <p class="section-subtitle animate-on-scroll">Um casarão do século XIX que preserva a <strong>cultura do Vale do Café</strong>, com conforto moderno e hospitalidade única.</p>
-            <div class="about-grid animate-on-scroll">
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/varanda-janelas.jpg" alt="Fachada da Pousada Vale do Café" loading="lazy" />
-                <div class="about-text">
-                    <p>A Pousada Vale do Café ocupa um casarão do Século XIX no conjunto arquitetônico tombado do Centro Histórico de Ipiabas, com janelas azuis, piso hidráulico original e um porão de pedra que virou espaço cultural.</p>
-                    <p>São 11 quartos, todos com nome de fazenda do ciclo do café: Santa Eufrásia, Cachoeira Grande, São Roque, Taquara, Mulungu Vermelho. Em volta, 15.000 m² de gramado, árvores frutíferas e redário.</p>
-                    <p><strong>📍 Endereço principal:</strong> Rua Vereador José Alves Pegas, 212 – Ipiabas, Barra do Piraí/RJ</p>
-                    <p><strong>📍 Endereço secundário:</strong> Estrada Presidente Diogo de Macedo, 212 – Ipiabas, Barra do Piraí/RJ</p>
-                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/5524981064432" target="_blank">(24) 98106-4432</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== QUARTOS (IMAGENS DA VERCEL) ===== -->
-    <section class="section" id="quartos">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">Nossos <span>Quartos</span></h2>
-            <p class="section-subtitle animate-on-scroll">Onze quartos, cada um com nome de fazenda. Dois no casarão histórico e nove nos anexos, todos com café da manhã incluso.</p>
-            <div class="rooms-grid">
-                <div class="room-card animate-on-scroll">
-                    <img src="https://pousada-vale-do-cafe.vercel.app/img/quarto-economico.jpg" alt="Quarto Econômico" loading="lazy" />
-                    <div class="room-info">
-                        <h3>Econômico</h3>
-                        <div class="sub">Santa Eufrásia · Cachoeira Grande · São Fernando</div>
-                        <div class="price">R$ 245 <small>/ diária</small></div>
-                        <div class="features">✔ Cama casal · TV · Frigobar · Wi-Fi</div>
-                        <div style="font-size:0.9rem; color:var(--cor-texto-claro); margin-top:4px; font-family:'Inter',sans-serif;">Anexos · Banheiro privativo</div>
-                        <div class="com-ventilador">🌀 Possui ventilador</div>
-                        <div style="margin-top:8px;"><a href="https://hotels.cloudbeds.com/pt-br/reservas/Et7myl?currency=brl" target="_blank" class="btn btn-primary" style="padding:6px 16px; font-size:0.8rem;">Consultar disponibilidade</a></div>
-                    </div>
-                </div>
-                <div class="room-card animate-on-scroll">
-                    <img src="https://pousada-vale-do-cafe.vercel.app/img/quarto-casal.jpg" alt="Quarto Casal" loading="lazy" />
-                    <div class="room-info">
-                        <h3>Casal</h3>
-                        <div class="sub">São Roque · Paraíso · Cachoeira do Mato Dentro · Santa Clara</div>
-                        <div class="price">R$ 285 <small>/ diária</small></div>
-                        <div class="features">✔ Queen-size · Varanda · TV · Frigobar · Wi-Fi</div>
-                        <div style="font-size:0.9rem; color:var(--cor-texto-claro); margin-top:4px; font-family:'Inter',sans-serif;">Anexos · Banheiro privativo</div>
-                        <div class="com-ventilador">🌀 Possui ventilador</div>
-                        <div style="margin-top:8px;"><a href="https://hotels.cloudbeds.com/pt-br/reservas/Et7myl?currency=brl" target="_blank" class="btn btn-primary" style="padding:6px 16px; font-size:0.8rem;">Consultar disponibilidade</a></div>
-                    </div>
-                </div>
-                <div class="room-card animate-on-scroll">
-                    <img src="https://pousada-vale-do-cafe.vercel.app/img/quarto-triplo.jpg" alt="Quarto Triplo" loading="lazy" />
-                    <div class="room-info">
-                        <h3>Triplo</h3>
-                        <div class="sub">São João da Prosperidade · Aliança · Taquara · Mulungu Vermelho</div>
-                        <div class="price">R$ 400 <small>/ diária</small></div>
-                        <div class="features">✔ 1 casal + 1 solteiro · TV · Frigobar · Wi-Fi</div>
-                        <div style="font-size:0.9rem; color:var(--cor-texto-claro); margin-top:4px; font-family:'Inter',sans-serif;">Anexos · Banheiro privativo</div>
-                        <div class="com-ventilador">🌀 Possui ventilador</div>
-                        <div style="font-size:0.85rem; color:var(--cor-dourada-escura); margin-top:4px; font-family:'Inter',sans-serif;">➕ Cama extra: R$ 100 / pessoa (mediante disponibilidade)</div>
-                        <div style="margin-top:8px;"><a href="https://hotels.cloudbeds.com/pt-br/reservas/Et7myl?currency=brl" target="_blank" class="btn btn-primary" style="padding:6px 16px; font-size:0.8rem;">Consultar disponibilidade</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== GALERIA (IMAGENS DA VERCEL) ===== -->
-    <section class="section" id="galeria">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">Galeria <span>de Fotos</span></h2>
-            <p class="section-subtitle animate-on-scroll">Conheça os ambientes da pousada, os jardins e a beleza da região.</p>
-            <div class="gallery-grid">
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/hero-patio.jpg" alt="Pátio e jardim" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/varanda-janelas.jpg" alt="Fachada com janelas azuis" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/gramado.jpg" alt="Gramado e área externa" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/corredor-bancos.jpg" alt="Corredor com bancos" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/salao-cafe.jpg" alt="Salão do café da manhã" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/quarto-economico.jpg" alt="Quarto Econômico" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/quarto-casal.jpg" alt="Quarto Casal" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/quarto-triplo.jpg" alt="Quarto Triplo" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/placa-quarto.jpg" alt="Placa de identificação do quarto" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/cafe-mesa.jpg" alt="Mesa do Café do Machado" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/porao-mesas.jpg" alt="Porão com mesas" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/porao-escrivaninha.jpg" alt="Porão com escrivaninha" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/porao-sacas.jpg" alt="Porão com sacas de café" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/porao-cadeira.jpg" alt="Porão com cadeira antiga" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/jogos.jpg" alt="Sala de jogos" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/piano.jpg" alt="Piano na área comum" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/redario.jpg" alt="Redário no jardim" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/quiosque.jpg" alt="Quiosque" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/salao-leitura.jpg" alt="Salão de leitura" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/tunel.jpg" alt="Túnel histórico" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/pe-de-cafe.jpg" alt="Pé de café" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/vista-serra.jpg" alt="Vista da serra" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/jardim.jpg" alt="Jardim" loading="lazy" class="animate-on-scroll" />
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== CAFÉ DO MACHADO ===== -->
-    <section class="section" id="cafe">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">☕ <span>Café do Machado</span></h2>
-            <div class="cafe-box animate-on-scroll">
-                <h3>Machado de Assis, servido no porão de pedra</h3>
-                <p>O porão do casarão foi aberto ao público como espaço cultural. A visita guiada começa com um vídeo sobre Ipiabas e a vila histórica, passa pelas paredes de pedra e pelas sacas de café, e apresenta o Capitão Mata-Gente e o encontro dele com Machado de Assis. Termina com o café da tarde servido ali dentro e com o filme <em>O Porão</em>, rodado na própria pousada.</p>
-                <div class="cafe-info">
-                    <div><span>Duração:</span> ~2 horas</div>
-                    <div><span>Valor:</span> sob consulta</div>
-                    <div><span>Dias:</span> sexta a domingo</div>
-                    <div><span>Horários:</span> 15h ou 16h</div>
-                    <div><span>Agendamento:</span> obrigatório via WhatsApp</div>
-                    <div><span>Público:</span> hóspedes e visitantes externos</div>
-                </div>
-                <a href="https://wa.me/5524981064432?text=Olá! Gostaria de consultar horários e valores do Café do Machado para ___ pessoas, no dia ___." target="_blank" class="btn btn-primary" style="margin-top:15px;">📱 Agendar Café do Machado</a>
-            </div>
-            <div class="cafe-gallery" style="margin-top:30px;">
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/cafe-mesa.jpg" alt="Café do Machado" loading="lazy" class="animate-on-scroll" />
-                <img src="https://pousada-vale-do-cafe.vercel.app/img/porao-mesas.jpg" alt="Porão Histórico" loading="lazy" class="animate-on-scroll" />
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== COMO CHEGAR ===== -->
-    <section class="section" id="como-chegar">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">Como <span>Chegar</span></h2>
-            <p class="section-subtitle animate-on-scroll">A pousada fica no coração do Centro Histórico de Ipiabas, a pouco mais de duas horas de carro do Rio de Janeiro.</p>
-            <div class="como-chegar-grid animate-on-scroll">
+        <div class="turismo-ipiabas-grid">
+            <div class="turismo-card animate-on-scroll">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Igreja_Nossa_Senhora_da_Piedade_Ipiabas.jpg/640px-Igreja_Nossa_Senhora_da_Piedade_Ipiabas.jpg" alt="Igreja Nossa Senhora da Piedade" loading="lazy" />
                 <div class="info">
-                    <p><strong>📍 Endereço principal:</strong><br />Rua Vereador José Alves Pegas, 212<br />Ipiabas, Barra do Piraí – RJ<br />CEP 27170-000</p>
-                    <p><strong>📍 Endereço alternativo:</strong><br />Estrada Presidente Diogo de Macedo, 212<br />Ipiabas, Barra do Piraí – RJ</p>
-                    <p><strong>🚗 Do Rio de Janeiro:</strong><br />Pegue a BR-116 (Presidente Dutra) sentido São Paulo, passe pela Serra das Araras e, após o pedágio de Piraí, siga as placas para Ipiabas. A viagem leva pouco mais de 2 horas.</p>
-                    <p><strong>🗺️ Transporte alternativo:</strong><br />Há ônibus da Viação Util saindo do Terminal Rodoviário Novo Rio com destino a Barra do Piraí. De lá, pegue um ônibus local para Ipiabas.</p>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=Rua+Vereador+Jos%C3%A9+Alves+Pegas+212+Ipiabas+Barra+do+Pira%C3%AD+RJ" target="_blank" class="btn btn-maps" style="display:inline-block; margin-top:10px;">🗺️ Abrir rota no Google Maps</a>
-                </div>
-                <div class="mapa">
-                    <img src="https://pousada-vale-do-cafe.vercel.app/img/varanda-janelas.jpg" alt="Localização da Pousada" loading="lazy" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== SELOS ===== -->
-    <section class="section" id="selos">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">Reconhecimentos</h2>
-            <div class="selos">
-                <div class="selo animate-on-scroll">⭐ 4,7 no Google (378 avaliações)</div>
-                <div class="selo animate-on-scroll">📊 Nota 9,3 no Booking.com</div>
-                <div class="selo animate-on-scroll">🏆 Travelers' Choice – TripAdvisor</div>
-                <div class="selo animate-on-scroll">🏅 Top Hotel RJ – ABIH-RJ</div>
-            </div>
-            <p style="text-align:center; margin-top:15px; font-size:0.9rem; color:#888; font-family:'Inter',sans-serif;">Consulta em 03/09/2026 · <a href="https://www.tripadvisor.com.br/Hotel_Review-g2572042-d11717425-Reviews-Pousada_Vale_Do_Cafe-Ipiabas_State_of_Rio_de_Janeiro.html" target="_blank" style="color:var(--cor-dourada-escura); font-weight:600;">Veja no TripAdvisor</a></p>
-        </div>
-    </section>
-
-    <!-- ===== DEPOIMENTOS ===== -->
-    <section class="section" id="depoimentos">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">O que nossos <span>hóspedes dizem</span></h2>
-            <p class="section-subtitle animate-on-scroll">Avaliações reais extraídas do TripAdvisor e Google.</p>
-            <div class="depoimentos-grid">
-                <div class="depoimento animate-on-scroll"><p>"Lugar encantador, cheio de história. O café da manhã é uma experiência à parte. Voltaremos com certeza!"</p><div class="autor">— Ana e Pedro</div><div class="fonte">⭐ TripAdvisor</div></div>
-                <div class="depoimento animate-on-scroll"><p>"Quartos confortáveis, decoração linda e atendimento acolhedor. O porão histórico é imperdível."</p><div class="autor">— Mariana S.</div><div class="fonte">⭐ Google</div></div>
-                <div class="depoimento animate-on-scroll"><p>"Paz e sossego em meio à natureza. Ideal para casais que buscam tranquilidade e romantismo."</p><div class="autor">— Carlos e Lúcia</div><div class="fonte">⭐ Facebook</div></div>
-            </div>
-            <p style="text-align:center; margin-top:20px;">
-                <a href="https://www.tripadvisor.com.br/Hotel_Review-g2572042-d11717425-Reviews-Pousada_Vale_Do_Cafe-Ipiabas_State_of_Rio_de_Janeiro.html" target="_blank" style="color:var(--cor-dourada-escura); font-weight:600; font-family:'Inter',sans-serif;">📋 Veja todas as avaliações no TripAdvisor →</a>
-            </p>
-        </div>
-    </section>
-
-    <!-- ===== FAQ ===== -->
-    <section class="section" id="faq">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">Perguntas <span>Frequentes</span></h2>
-
-            <div class="faq-item animate-on-scroll">
-                <div class="pergunta">Onde fica a Pousada Vale do Café?</div>
-                <div class="resposta">A pousada tem dois endereços que levam ao mesmo local: Rua Vereador José Alves Pegas, 212 e Estrada Presidente Diogo de Macedo, 212 – ambos em Ipiabas, Barra do Piraí/RJ. O casarão é de 1874 e faz parte do conjunto arquitetônico tombado do distrito.</div>
-            </div>
-
-            <div class="faq-item animate-on-scroll"><div class="pergunta">Quanto custa a diária?</div><div class="resposta">Econômico R$ 245, Casal R$ 285, Triplo R$ 400, com café da manhã incluso. Cama extra R$ 100.</div></div>
-            <div class="faq-item animate-on-scroll"><div class="pergunta">Quanto tempo de carro do Rio?</div><div class="resposta">Pouco mais de 2 horas pela Dutra, sentido São Paulo.</div></div>
-            <div class="faq-item animate-on-scroll"><div class="pergunta">Como faço a reserva?</div><div class="resposta">Pelo botão "Consultar datas" ou WhatsApp (24) 98106-4432.</div></div>
-            <div class="faq-item animate-on-scroll"><div class="pergunta">Quais formas de pagamento?</div><div class="resposta">Pix, TED, dinheiro, cartão de débito e crédito.</div></div>
-            <div class="faq-item animate-on-scroll"><div class="pergunta">Horário de check-in/out?</div><div class="resposta">Check-in 14h, check-out 12h.</div></div>
-            <div class="faq-item animate-on-scroll"><div class="pergunta">O café da manhã é servido onde?</div><div class="resposta">Em um salão exclusivo para refeições, separado do casarão, com vista para o jardim.</div></div>
-            <div class="faq-item animate-on-scroll"><div class="pergunta">Aceita pets?</div><div class="resposta">Não.</div></div>
-            <div class="faq-item animate-on-scroll"><div class="pergunta">O que tem no quarto?</div><div class="resposta">Banheiro, frigobar, ventilador, TV, wi-fi.</div></div>
-            <div class="faq-item animate-on-scroll"><div class="pergunta">Criança paga?</div><div class="resposta">Até 5 anos não paga. A partir de 6, cama extra R$ 100.</div></div>
-            <div class="faq-item animate-on-scroll"><div class="pergunta">Tem estacionamento?</div><div class="resposta">Sim, gratuito e descoberto.</div></div>
-            <div class="faq-item animate-on-scroll"><div class="pergunta">Quantos quartos?</div><div class="resposta">11, dois no casarão e nove anexos.</div></div>
-            <div class="faq-item animate-on-scroll"><div class="pergunta">O que é o Café do Machado?</div><div class="resposta">Experiência cultural com visita guiada, café da tarde e filme no porão.</div></div>
-            <div class="faq-item animate-on-scroll"><div class="pergunta">Dá para visitar o porão sem se hospedar?</div><div class="resposta">Sim, agendamento pelo WhatsApp.</div></div>
-
-            <div class="faq-item animate-on-scroll">
-                <div class="pergunta">Qual é a política de cancelamento?</div>
-                <div class="resposta">
-                    <table class="tabela-cancelamento">
-                        <thead><tr><th>Prazo</th><th>Reembolso</th></tr></thead>
-                        <tbody>
-                            <tr><td>Até 28 dias antes do check-in</td><td>100% do valor da reserva</td></tr>
-                            <tr><td>Entre 28 e 14 dias antes do check-in</td><td>50% do valor da reserva</td></tr>
-                            <tr><td>Menos de 14 dias (incluindo de 14 a 7 dias)</td><td>Sem reembolso</td></tr>
-                        </tbody>
-                    </table>
-                    <p style="margin-top:8px; font-family:'Inter',sans-serif;">Política exibida no momento da escolha da tarifa. Consulte a pousada para condições específicas.</p>
+                    <h4>⛪ Igreja Nossa Senhora da Piedade</h4>
+                    <span class="distancia">📍 300 m</span>
+                    <p>Construída em 1850 pelo Capitão Mata-Gente, é a igreja matriz da vila, com estilo neoclássico e altares laterais únicos. Um dos cartões-postais de Ipiabas.</p>
                 </div>
             </div>
 
-            <div class="faq-item animate-on-scroll"><div class="pergunta">O que fazer em Ipiabas?</div><div class="resposta">Casarão da Antiga Remonta, Igreja Nossa Senhora da Piedade, túnel da Rede Mineira, estação ferroviária, fazendas históricas, Pedra do Gavião, Cachoeira da Floresta.</div></div>
-            <div class="faq-item animate-on-scroll"><div class="pergunta">A pousada fica perto de Conservatória?</div><div class="resposta">Sim, a poucos minutos de carro.</div></div>
-            <div class="faq-item animate-on-scroll"><div class="pergunta">Fica perto do Aldeia das Águas?</div><div class="resposta">Menos de 30 minutos de carro.</div></div>
-        </div>
-    </section>
+            <div class="turismo-card animate-on-scroll">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Casar%C3%A3o_da_Remonta_Ipiabas.jpg/640px-Casar%C3%A3o_da_Remonta_Ipiabas.jpg" alt="Casarão da Antiga Remonta" loading="lazy" />
+                <div class="info">
+                    <h4>🏛️ Casarão da Antiga Remonta</h4>
+                    <span class="distancia">📍 200 m</span>
+                    <p>Edificação de 1874 que serviu como ponto de troca de cavalos para a Guarda Imperial. Hoje é um centro cultural e um dos mais belos casarões da região.</p>
+                </div>
+            </div>
 
-    <!-- ===== CONTATO ===== -->
-    <section class="section" id="contato">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">Fale <span>conosco</span></h2>
-            <div class="contato-grid animate-on-scroll">
-                <form action="https://formspree.io/f/seu-id" method="POST">
-                    <input type="text" name="name" placeholder="Seu nome" required />
-                    <input type="email" name="email" placeholder="E-mail" required />
-                    <input type="tel" name="phone" placeholder="Telefone (opcional)" />
-                    <textarea name="message" placeholder="Sua mensagem..." required></textarea>
-                    <button type="submit">Enviar mensagem</button>
-                    <p style="font-size:0.8rem; color:#888; margin-top:6px; font-family:'Inter',sans-serif;">* Para resposta imediata, use o WhatsApp.</p>
-                </form>
-                <div class="contato-info">
-                    <h3>Informações de contato</h3>
-                    <p><strong>📍 Endereço principal:</strong> Rua Vereador José Alves Pegas, 212 – Ipiabas, Barra do Piraí/RJ</p>
-                    <p><strong>📍 Endereço alternativo:</strong> Estrada Presidente Diogo de Macedo, 212 – Ipiabas, Barra do Piraí/RJ</p>
-                    <p><strong>📱 WhatsApp:</strong> <a href="https://wa.me/5524981064432" target="_blank">(24) 98106-4432</a> · <a href="https://wa.me/5524998625051" target="_blank">(24) 99862-5051</a> · <a href="https://wa.me/5524981649645" target="_blank">(24) 98164-9645</a></p>
-                    <p><strong>📧 E-mail:</strong> <a href="mailto:reservas.pousadavaledocafe@gmail.com">reservas.pousadavaledocafe@gmail.com</a></p>
-                    <p><strong>🌐 Site:</strong> <a href="https://www.pousadavaledocafe.rio.br" target="_blank">www.pousadavaledocafe.rio.br</a></p>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/pousadavaledocafe/" target="_blank">📸 Instagram</a>
-                        <a href="https://www.facebook.com/pousadavaledocafe/" target="_blank">📘 Facebook</a>
-                        <a href="https://www.tripadvisor.com.br/Hotel_Review-g2572042-d11717425-Reviews-Pousada_Vale_Do_Cafe-Ipiabas_State_of_Rio_de_Janeiro.html" target="_blank">⭐ TripAdvisor</a>
+            <div class="turismo-card animate-on-scroll">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/T%C3%BAnel_Ipiabas.jpg/640px-T%C3%BAnel_Ipiabas.jpg" alt="Túnel da Rede Mineira" loading="lazy" />
+                <div class="info">
+                    <h4>🚇 Túnel da Rede Mineira</h4>
+                    <span class="distancia">📍 500 m</span>
+                    <p>Escavado manualmente por escravizados em 1883, é um túnel de 250 metros que corta a rocha e guarda histórias do período ferroviário do café.</p>
+                </div>
+            </div>
+
+            <div class="turismo-card animate-on-scroll">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Esta%C3%A7%C3%A3o_Ferrovi%C3%A1ria_de_Ipiabas.jpg/640px-Esta%C3%A7%C3%A3o_Ferrovi%C3%A1ria_de_Ipiabas.jpg" alt="Estação Ferroviária" loading="lazy" />
+                <div class="info">
+                    <h4>🚂 Estação Ferroviária</h4>
+                    <span class="distancia">📍 400 m</span>
+                    <p>Inaugurada em 1881, a estação foi o coração do escoamento do café na região. Hoje revitalizada, abriga exposições e eventos culturais.</p>
+                </div>
+            </div>
+
+            <div class="turismo-card animate-on-scroll">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Vale_do_Caf%C3%A9.jpg/640px-Vale_do_Caf%C3%A9.jpg" alt="Pedra do Gavião - vista do Vale" loading="lazy" />
+                <div class="info">
+                    <h4>⛰️ Pedra do Gavião</h4>
+                    <span class="distancia">📍 7 km</span>
+                    <p>Mirante com vista de 360° sobre o Vale do Café. Paredão de 100 metros para rapel e trilhas de contemplação. Imperdível para amantes da natureza.</p>
+                </div>
+            </div>
+
+            <div class="turismo-card animate-on-scroll">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Fazenda_Cachoeira_Grande.jpg/640px-Fazenda_Cachoeira_Grande.jpg" alt="Fazenda Cachoeira Grande" loading="lazy" />
+                <div class="info">
+                    <h4>💧 Cachoeira da Floresta</h4>
+                    <span class="distancia">📍 6 km</span>
+                    <p>Duas quedas d'água com piscinas naturais. Perfeito para um mergulho refrescante em meio à mata atlântica preservada.</p>
+                </div>
+            </div>
+
+            <div class="turismo-card animate-on-scroll">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Fazenda_Cachoeira_Grande.jpg/640px-Fazenda_Cachoeira_Grande.jpg" alt="Fazendas históricas" loading="lazy" />
+                <div class="info">
+                    <h4>🏡 Fazendas Históricas</h4>
+                    <span class="distancia">📍 5 a 15 km</span>
+                    <p>Visite as fazendas Cachoeira Grande, Santa Eufrásia, do Secretário, entre outras. Todas com visitação guiada e arquitetura do ciclo do café.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CIDADES PRÓXIMAS (IMAGENS REAIS) ===== -->
+<section class="section" id="cidades-proximas" style="background: #f8f4ef;">
+    <div class="container">
+        <h2 class="section-title animate-on-scroll">Cidades <span>Próximas</span></h2>
+        <p class="section-subtitle animate-on-scroll">Explore o Vale do Café além de Ipiabas. Destinos ricos em história, seresta, natureza e lazer.</p>
+
+        <div class="cidades-grid">
+            <div class="cidade-card animate-on-scroll">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Conservat%C3%B3ria.jpg/640px-Conservat%C3%B3ria.jpg" alt="Conservatória" loading="lazy" />
+                <div class="info">
+                    <h4>🎵 Conservatória</h4>
+                    <span class="distancia">📍 22 km (25 min)</span>
+                    <p>A "Capital da Seresta", famosa por seus saraus, bares históricos e o Festival da Seresta. Roteiro musical imperdível.</p>
+                </div>
+            </div>
+
+            <div class="cidade-card animate-on-scroll">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Vassouras_Centro.jpg/640px-Vassouras_Centro.jpg" alt="Vassouras" loading="lazy" />
+                <div class="info">
+                    <h4>🏛️ Vassouras</h4>
+                    <span class="distancia">📍 26 km (30 min)</span>
+                    <p>Cidade histórica com casarões imperiais, museus e o famoso Jardim Ecológico Uaná Etê. Um verdadeiro museu a céu aberto.</p>
+                </div>
+            </div>
+
+            <div class="cidade-card animate-on-scroll">
+                <img src="https://pousada-vale-do-cafe.vercel.app/img/redario.jpg" alt="Aldeia das Águas" loading="lazy" />
+                <div class="info">
+                    <h4>💦 Aldeia das Águas</h4>
+                    <span class="distancia">📍 30 km (35 min)</span>
+                    <p>Parque aquático com piscinas, toboáguas e área de camping. Perfeito para famílias e quem busca diversão em meio à natureza.</p>
+                </div>
+            </div>
+
+            <div class="cidade-card animate-on-scroll">
+                <img src="https://pousada-vale-do-cafe.vercel.app/img/gramado.jpg" alt="Barra do Piraí" loading="lazy" />
+                <div class="info">
+                    <h4>🏙️ Barra do Piraí</h4>
+                    <span class="distancia">📍 17 km (20 min)</span>
+                    <p>Sede do município, com o Casarão da Cultura, Museu do Café e o Parque do Cinquentenário. Centro comercial e de serviços.</p>
+                </div>
+            </div>
+
+            <div class="cidade-card animate-on-scroll">
+                <img src="https://pousada-vale-do-cafe.vercel.app/img/piano.jpg" alt="Valença" loading="lazy" />
+                <div class="info">
+                    <h4>🎭 Valença</h4>
+                    <span class="distancia">📍 38 km (45 min)</span>
+                    <p>Conhecida pelo artesanato em pedra-sabão e pelo Carnaval tradicional. Vale a visita à Igreja Matriz e ao Museu da Imagem e do Som.</p>
+                </div>
+            </div>
+
+            <div class="cidade-card animate-on-scroll">
+                <img src="https://pousada-vale-do-cafe.vercel.app/img/quiosque.jpg" alt="Rio das Flores" loading="lazy" />
+                <div class="info">
+                    <h4>🌸 Rio das Flores</h4>
+                    <span class="distancia">📍 53 km (55 min)</span>
+                    <p>Pequena cidade com charme rural, cachoeiras e o Santuário de Nossa Senhora do Carmo. Roteiro tranquilo para quem busca sossego.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align:center; margin-top:25px;">
+            <a href="https://www.portalvaledocafe.com.br/ipiabas.asp" target="_blank" class="btn btn-primary" style="background:var(--cor-escura); color:white; border-color:var(--cor-escura);">🌐 Portal Vale do Café – Mais roteiros</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SOBRE ===== -->
+<section class="section" id="sobre">
+    <div class="container">
+        <h2 class="section-title animate-on-scroll">Sobre a <span>Pousada</span></h2>
+        <p class="section-subtitle animate-on-scroll">Um casarão do século XIX que preserva a <strong>cultura do Vale do Café</strong>, com conforto moderno e hospitalidade única.</p>
+        <div class="about-grid animate-on-scroll">
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/varanda-janelas.jpg" alt="Fachada da Pousada Vale do Café" loading="lazy" />
+            <div class="about-text">
+                <p>A Pousada Vale do Café ocupa um casarão do Século XIX no conjunto arquitetônico tombado do Centro Histórico de Ipiabas, com janelas azuis, piso hidráulico original e um porão de pedra que virou espaço cultural.</p>
+                <p>São 11 quartos, todos com nome de fazenda do ciclo do café: Santa Eufrásia, Cachoeira Grande, São Roque, Taquara, Mulungu Vermelho. Em volta, 15.000 m² de gramado, árvores frutíferas e redário.</p>
+                <p><strong>📍 Endereço principal:</strong> Rua Vereador José Alves Pegas, 212 – Ipiabas, Barra do Piraí/RJ</p>
+                <p><strong>📍 Endereço secundário:</strong> Estrada Presidente Diogo de Macedo, 212 – Ipiabas, Barra do Piraí/RJ</p>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/5524981064432" target="_blank">(24) 98106-4432</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== QUARTOS (IMAGENS DA VERCEL) ===== -->
+<section class="section" id="quartos">
+    <div class="container">
+        <h2 class="section-title animate-on-scroll">Nossos <span>Quartos</span></h2>
+        <p class="section-subtitle animate-on-scroll">Onze quartos, cada um com nome de fazenda. Dois no casarão histórico e nove nos anexos, todos com café da manhã incluso.</p>
+        <div class="rooms-grid">
+            <div class="room-card animate-on-scroll">
+                <img src="https://pousada-vale-do-cafe.vercel.app/img/quarto-economico.jpg" alt="Quarto Econômico" loading="lazy" />
+                <div class="room-info">
+                    <h3>Econômico</h3>
+                    <div class="sub">Santa Eufrásia · Cachoeira Grande · São Fernando</div>
+                    <div class="price">R$ 245 <small>/ diária</small></div>
+                    <div class="features">✔ Cama casal · TV · Frigobar · Wi-Fi</div>
+                    <div style="font-size:0.9rem; color:var(--cor-texto-claro); margin-top:4px;">Anexos · Banheiro privativo</div>
+                    <div class="com-ventilador">🌀 Possui ventilador</div>
+                    <div style="margin-top:8px;"><a href="https://hotels.cloudbeds.com/pt-br/reservas/Et7myl?currency=brl" target="_blank" class="btn btn-primary" style="padding:6px 16px; font-size:0.8rem;">Consultar disponibilidade</a></div>
+                </div>
+            </div>
+            <div class="room-card animate-on-scroll">
+                <img src="https://pousada-vale-do-cafe.vercel.app/img/quarto-casal.jpg" alt="Quarto Casal" loading="lazy" />
+                <div class="room-info">
+                    <h3>Casal</h3>
+                    <div class="sub">São Roque · Paraíso · Cachoeira do Mato Dentro · Santa Clara</div>
+                    <div class="price">R$ 285 <small>/ diária</small></div>
+                    <div class="features">✔ Queen-size · Varanda · TV · Frigobar · Wi-Fi</div>
+                    <div style="font-size:0.9rem; color:var(--cor-texto-claro); margin-top:4px;">Anexos · Banheiro privativo</div>
+                    <div class="com-ventilador">🌀 Possui ventilador</div>
+                    <div style="margin-top:8px;"><a href="https://hotels.cloudbeds.com/pt-br/reservas/Et7myl?currency=brl" target="_blank" class="btn btn-primary" style="padding:6px 16px; font-size:0.8rem;">Consultar disponibilidade</a></div>
+                </div>
+            </div>
+            <div class="room-card animate-on-scroll">
+                <img src="https://pousada-vale-do-cafe.vercel.app/img/quarto-triplo.jpg" alt="Quarto Triplo" loading="lazy" />
+                <div class="room-info">
+                    <h3>Triplo</h3>
+                    <div class="sub">São João da Prosperidade · Aliança · Taquara · Mulungu Vermelho</div>
+                    <div class="price">R$ 400 <small>/ diária</small></div>
+                    <div class="features">✔ 1 casal + 1 solteiro · TV · Frigobar · Wi-Fi</div>
+                    <div style="font-size:0.9rem; color:var(--cor-texto-claro); margin-top:4px;">Anexos · Banheiro privativo</div>
+                    <div class="com-ventilador">🌀 Possui ventilador</div>
+                    <div style="font-size:0.85rem; color:var(--cor-dourada-escura); margin-top:4px;">➕ Cama extra: R$ 100 / pessoa (mediante disponibilidade)</div>
+                    <div style="margin-top:8px;"><a href="https://hotels.cloudbeds.com/pt-br/reservas/Et7myl?currency=brl" target="_blank" class="btn btn-primary" style="padding:6px 16px; font-size:0.8rem;">Consultar disponibilidade</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== GALERIA (IMAGENS DA VERCEL) ===== -->
+<section class="section" id="galeria">
+    <div class="container">
+        <h2 class="section-title animate-on-scroll">Galeria <span>de Fotos</span></h2>
+        <p class="section-subtitle animate-on-scroll">Conheça os ambientes da pousada, os jardins e a beleza da região.</p>
+        <div class="gallery-grid">
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/hero-patio.jpg" alt="Pátio e jardim" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/varanda-janelas.jpg" alt="Fachada com janelas azuis" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/gramado.jpg" alt="Gramado e área externa" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/corredor-bancos.jpg" alt="Corredor com bancos" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/salao-cafe.jpg" alt="Salão do café da manhã" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/quarto-economico.jpg" alt="Quarto Econômico" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/quarto-casal.jpg" alt="Quarto Casal" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/quarto-triplo.jpg" alt="Quarto Triplo" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/placa-quarto.jpg" alt="Placa de identificação do quarto" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/cafe-mesa.jpg" alt="Mesa do Café do Machado" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/porao-mesas.jpg" alt="Porão com mesas" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/porao-escrivaninha.jpg" alt="Porão com escrivaninha" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/porao-sacas.jpg" alt="Porão com sacas de café" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/porao-cadeira.jpg" alt="Porão com cadeira antiga" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/jogos.jpg" alt="Sala de jogos" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/piano.jpg" alt="Piano na área comum" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/redario.jpg" alt="Redário no jardim" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/quiosque.jpg" alt="Quiosque" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/salao-leitura.jpg" alt="Salão de leitura" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/tunel.jpg" alt="Túnel histórico" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/pe-de-cafe.jpg" alt="Pé de café" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/vista-serra.jpg" alt="Vista da serra" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/jardim.jpg" alt="Jardim" loading="lazy" class="animate-on-scroll" />
+        </div>
+    </div>
+</section>
+
+<!-- ===== CAFÉ DO MACHADO ===== -->
+<section class="section" id="cafe">
+    <div class="container">
+        <h2 class="section-title animate-on-scroll">☕ <span>Café do Machado</span></h2>
+        <div class="cafe-box animate-on-scroll">
+            <h3>Machado de Assis, servido no porão de pedra</h3>
+            <p>O porão do casarão foi aberto ao público como espaço cultural. A visita guiada começa com um vídeo sobre Ipiabas e a vila histórica, passa pelas paredes de pedra e pelas sacas de café, e apresenta o Capitão Mata-Gente e o encontro dele com Machado de Assis. Termina com o café da tarde servido ali dentro e com o filme <em>O Porão</em>, rodado na própria pousada.</p>
+            <div class="cafe-info">
+                <div><span>Duração:</span> ~2 horas</div>
+                <div><span>Valor:</span> sob consulta</div>
+                <div><span>Dias:</span> sexta a domingo</div>
+                <div><span>Horários:</span> 15h ou 16h</div>
+                <div><span>Agendamento:</span> obrigatório via WhatsApp</div>
+                <div><span>Público:</span> hóspedes e visitantes externos</div>
+            </div>
+            <a href="https://wa.me/5524981064432?text=Olá! Gostaria de consultar horários e valores do Café do Machado para ___ pessoas, no dia ___." target="_blank" class="btn btn-primary" style="margin-top:15px;">📱 Agendar Café do Machado</a>
+        </div>
+        <div class="cafe-gallery" style="margin-top:30px;">
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/cafe-mesa.jpg" alt="Café do Machado" loading="lazy" class="animate-on-scroll" />
+            <img src="https://pousada-vale-do-cafe.vercel.app/img/porao-mesas.jpg" alt="Porão Histórico" loading="lazy" class="animate-on-scroll" />
+        </div>
+    </div>
+</section>
+
+<!-- ===== COMO CHEGAR ===== -->
+<section class="section" id="como-chegar">
+    <div class="container">
+        <h2 class="section-title animate-on-scroll">Como <span>Chegar</span></h2>
+        <p class="section-subtitle animate-on-scroll">A pousada fica no coração do Centro Histórico de Ipiabas, a pouco mais de duas horas de carro do Rio de Janeiro.</p>
+        <div class="como-chegar-grid animate-on-scroll">
+            <div class="info">
+                <p><strong>📍 Endereço principal:</strong><br />Rua Vereador José Alves Pegas, 212<br />Ipiabas, Barra do Piraí – RJ<br />CEP 27170-000</p>
+                <p><strong>📍 Endereço alternativo:</strong><br />Estrada Presidente Diogo de Macedo, 212<br />Ipiabas, Barra do Piraí – RJ</p>
+                <p><strong>🚗 Do Rio de Janeiro:</strong><br />Pegue a BR-116 (Presidente Dutra) sentido São Paulo, passe pela Serra das Araras e, após o pedágio de Piraí, siga as placas para Ipiabas. A viagem leva pouco mais de 2 horas.</p>
+                <p><strong>🗺️ Transporte alternativo:</strong><br />Há ônibus da Viação Util saindo do Terminal Rodoviário Novo Rio com destino a Barra do Piraí. De lá, pegue um ônibus local para Ipiabas.</p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Rua+Vereador+Jos%C3%A9+Alves+Pegas+212+Ipiabas+Barra+do+Pira%C3%AD+RJ" target="_blank" class="btn btn-maps" style="display:inline-block; margin-top:10px;">🗺️ Abrir rota no Google Maps</a>
+            </div>
+            <div class="mapa">
+                <img src="https://pousada-vale-do-cafe.vercel.app/img/varanda-janelas.jpg" alt="Localização da Pousada" loading="lazy" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SELOS ===== -->
+<section class="section" id="selos">
+    <div class="container">
+        <h2 class="section-title animate-on-scroll">Reconhecimentos</h2>
+        <div class="selos">
+            <div class="selo animate-on-scroll">⭐ 4,7 no Google (378 avaliações)</div>
+            <div class="selo animate-on-scroll">📊 Nota 9,3 no Booking.com</div>
+            <div class="selo animate-on-scroll">🏆 Travelers' Choice – TripAdvisor</div>
+            <div class="selo animate-on-scroll">🏅 Top Hotel RJ – ABIH-RJ</div>
+        </div>
+        <p style="text-align:center; margin-top:15px; font-size:0.9rem; color:#888;">Consulta em 03/09/2026 · <a href="https://www.tripadvisor.com.br/Hotel_Review-g2572042-d11717425-Reviews-Pousada_Vale_Do_Cafe-Ipiabas_State_of_Rio_de_Janeiro.html" target="_blank" style="color:var(--cor-dourada-escura); font-weight:600;">Veja no TripAdvisor</a></p>
+    </div>
+</section>
+
+<!-- ===== DEPOIMENTOS ===== -->
+<section class="section" id="depoimentos">
+    <div class="container">
+        <h2 class="section-title animate-on-scroll">O que nossos <span>hóspedes dizem</span></h2>
+        <p class="section-subtitle animate-on-scroll">Avaliações reais extraídas do TripAdvisor e Google.</p>
+        <div class="depoimentos-grid">
+            <div class="depoimento animate-on-scroll"><p>"Lugar encantador, cheio de história. O café da manhã é uma experiência à parte. Voltaremos com certeza!"</p><div class="autor">— Ana e Pedro</div><div class="fonte">⭐ TripAdvisor</div></div>
+            <div class="depoimento animate-on-scroll"><p>"Quartos confortáveis, decoração linda e atendimento acolhedor. O porão histórico é imperdível."</p><div class="autor">— Mariana S.</div><div class="fonte">⭐ Google</div></div>
+            <div class="depoimento animate-on-scroll"><p>"Paz e sossego em meio à natureza. Ideal para casais que buscam tranquilidade e romantismo."</p><div class="autor">— Carlos e Lúcia</div><div class="fonte">⭐ Facebook</div></div>
+        </div>
+        <p style="text-align:center; margin-top:20px;">
+            <a href="https://www.tripadvisor.com.br/Hotel_Review-g2572042-d11717425-Reviews-Pousada_Vale_Do_Cafe-Ipiabas_State_of_Rio_de_Janeiro.html" target="_blank" style="color:var(--cor-dourada-escura); font-weight:600;">📋 Veja todas as avaliações no TripAdvisor →</a>
+        </p>
+    </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section" id="faq">
+    <div class="container">
+        <h2 class="section-title animate-on-scroll">Perguntas <span>Frequentes</span></h2>
+
+        <div class="faq-item animate-on-scroll">
+            <div class="pergunta">Onde fica a Pousada Vale do Café?</div>
+            <div class="resposta">A pousada tem dois endereços que levam ao mesmo local: Rua Vereador José Alves Pegas, 212 e Estrada Presidente Diogo de Macedo, 212 – ambos em Ipiabas, Barra do Piraí/RJ. O casarão é de 1874 e faz parte do conjunto arquitetônico tombado do distrito.</div>
+        </div>
+
+        <div class="faq-item animate-on-scroll"><div class="pergunta">Quanto custa a diária?</div><div class="resposta">Econômico R$ 245, Casal R$ 285, Triplo R$ 400, com café da manhã incluso. Cama extra R$ 100.</div></div>
+        <div class="faq-item animate-on-scroll"><div class="pergunta">Quanto tempo de carro do Rio?</div><div class="resposta">Pouco mais de 2 horas pela Dutra, sentido São Paulo.</div></div>
+        <div class="faq-item animate-on-scroll"><div class="pergunta">Como faço a reserva?</div><div class="resposta">Pelo botão "Consultar datas" ou WhatsApp (24) 98106-4432.</div></div>
+        <div class="faq-item animate-on-scroll"><div class="pergunta">Quais formas de pagamento?</div><div class="resposta">Pix, TED, dinheiro, cartão de débito e crédito.</div></div>
+        <div class="faq-item animate-on-scroll"><div class="pergunta">Horário de check-in/out?</div><div class="resposta">Check-in 14h, check-out 12h.</div></div>
+        <div class="faq-item animate-on-scroll"><div class="pergunta">O café da manhã é servido onde?</div><div class="resposta">Em um salão exclusivo para refeições, separado do casarão, com vista para o jardim.</div></div>
+        <div class="faq-item animate-on-scroll"><div class="pergunta">Aceita pets?</div><div class="resposta">Não.</div></div>
+        <div class="faq-item animate-on-scroll"><div class="pergunta">O que tem no quarto?</div><div class="resposta">Banheiro, frigobar, ventilador, TV, wi-fi.</div></div>
+        <div class="faq-item animate-on-scroll"><div class="pergunta">Criança paga?</div><div class="resposta">Até 5 anos não paga. A partir de 6, cama extra R$ 100.</div></div>
+        <div class="faq-item animate-on-scroll"><div class="pergunta">Tem estacionamento?</div><div class="resposta">Sim, gratuito e descoberto.</div></div>
+        <div class="faq-item animate-on-scroll"><div class="pergunta">Quantos quartos?</div><div class="resposta">11, dois no casarão e nove anexos.</div></div>
+        <div class="faq-item animate-on-scroll"><div class="pergunta">O que é o Café do Machado?</div><div class="resposta">Experiência cultural com visita guiada, café da tarde e filme no porão.</div></div>
+        <div class="faq-item animate-on-scroll"><div class="pergunta">Dá para visitar o porão sem se hospedar?</div><div class="resposta">Sim, agendamento pelo WhatsApp.</div></div>
+
+        <div class="faq-item animate-on-scroll">
+            <div class="pergunta">Qual é a política de cancelamento?</div>
+            <div class="resposta">
+                <table class="tabela-cancelamento">
+                    <thead><tr><th>Prazo</th><th>Reembolso</th></tr></thead>
+                    <tbody>
+                        <tr><td>Até 28 dias antes do check-in</td><td>100% do valor da reserva</td></tr>
+                        <tr><td>Entre 28 e 14 dias antes do check-in</td><td>50% do valor da reserva</td></tr>
+                        <tr><td>Menos de 14 dias (incluindo de 14 a 7 dias)</td><td>Sem reembolso</td></tr>
+                    </tbody>
+                </table>
+                <p style="margin-top:8px;">Política exibida no momento da escolha da tarifa. Consulte a pousada para condições específicas.</p>
+            </div>
+        </div>
+
+        <div class="faq-item animate-on-scroll"><div class="pergunta">O que fazer em Ipiabas?</div><div class="resposta">Casarão da Antiga Remonta, Igreja Nossa Senhora da Piedade, túnel da Rede Mineira, estação ferroviária, fazendas históricas, Pedra do Gavião, Cachoeira da Floresta.</div></div>
+        <div class="faq-item animate-on-scroll"><div class="pergunta">A pousada fica perto de Conservatória?</div><div class="resposta">Sim, a poucos minutos de carro.</div></div>
+        <div class="faq-item animate-on-scroll"><div class="pergunta">Fica perto do Aldeia das Águas?</div><div class="resposta">Menos de 30 minutos de carro.</div></div>
+    </div>
+</section>
+
+<!-- ===== CONTATO ===== -->
+<section class="section" id="contato">
+    <div class="container">
+        <h2 class="section-title animate-on-scroll">Fale <span>conosco</span></h2>
+        <div class="contato-grid animate-on-scroll">
+            <form action="https://formspree.io/f/seu-id" method="POST">
+                <input type="text" name="name" placeholder="Seu nome" required />
+                <input type="email" name="email" placeholder="E-mail" required />
+                <input type="tel" name="phone" placeholder="Telefone (opcional)" />
+                <textarea name="message" placeholder="Sua mensagem..." required></textarea>
+                <button type="submit">Enviar mensagem</button>
+                <p style="font-size:0.8rem; color:#888; margin-top:6px;">* Para resposta imediata, use o WhatsApp.</p>
+            </form>
+            <div class="contato-info">
+                <h3>Informações de contato</h3>
+                <p><strong>📍 Endereço principal:</strong> Rua Vereador José Alves Pegas, 212 – Ipiabas, Barra do Piraí/RJ</p>
+                <p><strong>📍 Endereço alternativo:</strong> Estrada Presidente Diogo de Macedo, 212 – Ipiabas, Barra do Piraí/RJ</p>
+                <p><strong>📱 WhatsApp:</strong> <a href="https://wa.me/5524981064432" target="_blank">(24) 98106-4432</a> · <a href="https://wa.me/5524998625051" target="_blank">(24) 99862-5051</a> · <a href="https://wa.me/5524981649645" target="_blank">(24) 98164-9645</a></p>
+                <p><strong>📧 E-mail:</strong> <a href="mailto:reservas.pousadavaledocafe@gmail.com">reservas.pousadavaledocafe@gmail.com</a></p>
+                <p><strong>🌐 Site:</strong> <a href="https://www.pousadavaledocafe.rio.br" target="_blank">www.pousadavaledocafe.rio.br</a></p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/pousadavaledocafe/" target="_blank">📸 Instagram</a>
+                    <a href="https://www.facebook.com/pousadavaledocafe/" target="_blank">📘 Facebook</a>
+                    <a href="https://www.tripadvisor.com.br/Hotel_Review-g2572042-d11717425-Reviews-Pousada_Vale_Do_Cafe-Ipiabas_State_of_Rio_de_Janeiro.html" target="_blank">⭐ TripAdvisor</a>
+                </div>
+                <div style="margin-top:20px;">
+                    <p style="font-family:'Playfair Display',serif; font-weight:600;">Fale conosco por intenção:</p>
+                    <div class="whatsapp-buttons">
+                        <a href="https://wa.me/5524981064432?text=Olá! Gostaria de consultar disponibilidade para hospedagem. Check-in: ___ Check-out: ___ Número de hóspedes: ___" target="_blank" class="btn-wpp">🏨 Hospedagem</a>
+                        <a href="https://wa.me/5524981064432?text=Olá! Gostaria de consultar o Café do Machado para ___ pessoas, no dia ___" target="_blank" class="btn-wpp">☕ Café do Machado</a>
+                        <a href="https://wa.me/5524981064432?text=Olá! Gostaria de consultar hospedagem para um grupo de ___ pessoas, entre ___ e ___" target="_blank" class="btn-wpp">👥 Grupo</a>
                     </div>
-                    <div style="margin-top:20px;">
-                        <p style="font-family:'Playfair Display',serif; font-weight:600;">Fale conosco por intenção:</p>
-                        <div class="whatsapp-buttons">
-                            <a href="https://wa.me/5524981064432?text=Olá! Gostaria de consultar disponibilidade para hospedagem. Check-in: ___ Check-out: ___ Número de hóspedes: ___" target="_blank" class="btn-wpp">🏨 Hospedagem</a>
-                            <a href="https://wa.me/5524981064432?text=Olá! Gostaria de consultar o Café do Machado para ___ pessoas, no dia ___" target="_blank" class="btn-wpp">☕ Café do Machado</a>
-                            <a href="https://wa.me/5524981064432?text=Olá! Gostaria de consultar hospedagem para um grupo de ___ pessoas, entre ___ e ___" target="_blank" class="btn-wpp">👥 Grupo</a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ===== RODAPÉ ===== -->
-    <footer>
-        <div class="container">
-            <img src="https://pousada-vale-do-cafe.vercel.app/img/logo-branco.png" alt="Pousada Vale do Café" class="footer-logo" />
-            <p>☕ Pousada Vale do Café — Ipiabas, Barra do Piraí, RJ</p>
-            <div class="enderecos-footer">
-                <span>📍 Rua Vereador José Alves Pegas, 212</span>
-                <span>📍 Estrada Presidente Diogo de Macedo, 212</span>
-            </div>
-            <div class="footer-links">
-                <a href="#vale-cafe">Vale do Café</a>
-                <a href="#pontos-turisticos">Pontos Turísticos</a>
-                <a href="#cidades-proximas">Cidades Próximas</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#quartos">Quartos</a>
-                <a href="#cafe">Café do Machado</a>
-                <a href="#como-chegar">Como Chegar</a>
-                <a href="#contato">Contato</a>
-            </div>
-            <p style="font-size:0.8rem; opacity:0.8; font-family:'Inter',sans-serif;">© 2026 — Todos os direitos reservados.</p>
+<!-- ===== RODAPÉ ===== -->
+<footer>
+    <div class="container">
+        <img src="https://pousada-vale-do-cafe.vercel.app/img/logo-branco.png" alt="Pousada Vale do Café" class="footer-logo" />
+        <p>☕ Pousada Vale do Café — Ipiabas, Barra do Piraí, RJ</p>
+        <div class="enderecos-footer">
+            <span>📍 Rua Vereador José Alves Pegas, 212</span>
+            <span>📍 Estrada Presidente Diogo de Macedo, 212</span>
         </div>
-    </footer>
+        <div class="footer-links">
+            <a href="#vale-cafe">Vale do Café</a>
+            <a href="#pontos-turisticos">Pontos Turísticos</a>
+            <a href="#cidades-proximas">Cidades Próximas</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#quartos">Quartos</a>
+            <a href="#cafe">Café do Machado</a>
+            <a href="#como-chegar">Como Chegar</a>
+            <a href="#contato">Contato</a>
+        </div>
+        <p style="font-size:0.8rem; opacity:0.8;">© 2026 — Todos os direitos reservados.</p>
+    </div>
+</footer>
 
-    <!-- ===== SCROLL REVEAL + SMOOTH SCROLL ===== -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const elements = document.querySelectorAll('.animate-on-scroll');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, { threshold: 0.15, rootMargin: '0px 0px -30px 0px' });
-
-            elements.forEach(el => observer.observe(el));
-        });
-
-        document.querySelectorAll('nav a, .btn, .footer-links a').forEach(link => {
-            link.addEventListener('click', function(e) {
-                const href = this.getAttribute('href');
-                if (href && href.startsWith('#')) {
-                    const target = document.querySelector(href);
-                    if (target) {
-                        e.preventDefault();
-                        target.scrollIntoView({ behavior: 'smooth' });
-                    }
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const elements = document.querySelectorAll('.animate-on-scroll');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
                 }
             });
+        }, { threshold: 0.15, rootMargin: '0px 0px -30px 0px' });
+        elements.forEach(el => observer.observe(el));
+    });
+
+    document.querySelectorAll('nav a, .btn, .footer-links a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
         });
-    </script>
+    });
+</script>
 
 </body>
 </html>
