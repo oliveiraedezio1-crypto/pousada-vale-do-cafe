@@ -130,7 +130,7 @@
           rgba(11,37,56,.78),
           rgba(11,37,56,.55)
         ),
-        url("https://pousada-vale-do-cafe.vercel.app/img/hero-patio.jpg")
+        url("Faixada(20260905-193716).jpeg")
         center / cover no-repeat;
       color: #fff;
       display: flex;
@@ -1247,11 +1247,7 @@
       font-size: 1.35rem;
       font-style: italic;
     }
-.croqui-architecture svg {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+
 
 .hand-text {
       fill: #704536;
@@ -1459,133 +1455,10 @@
        MEMÓRIA EM IMAGENS
     ========================================================= */
 
-    .memoria-imagens {
-      margin-top: 70px;
-      padding-top: 48px;
-      border-top: 1px solid rgba(86,54,43,.18);
-    }
-
-    .memoria-heading {
-      text-align: center;
-      max-width: 760px;
-      margin: 0 auto 35px;
-    }
-
-    .memoria-heading h2 {
-      color: var(--marrom);
-      font-size: clamp(2rem, 4vw, 3rem);
-      line-height: 1.05;
-      margin-bottom: 12px;
-    }
-
-    .memoria-heading p {
-      color: #66584e;
-    }
-
-    .memoria-card {
-      display: grid;
-      grid-template-columns: .95fr 1.05fr;
-      gap: 0;
-      margin-bottom: 30px;
-      background: #fff;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: var(--sombra);
-      border: 1px solid rgba(86,54,43,.08);
-    }
-
-    .memoria-card:nth-child(even) {
-      grid-template-columns: 1.05fr .95fr;
-    }
-
-    .memoria-card:nth-child(even) .memoria-image {
-      order: 2;
-    }
-
-    .memoria-image {
-      position: relative;
-      min-height: 330px;
-      background: #ded5c8;
-      overflow: hidden;
-    }
-
-    .memoria-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform .5s ease;
-    }
-
-    .memoria-card:hover .memoria-image img {
-      transform: scale(1.025);
-    }
-
-    .memoria-tag {
-      position: absolute;
-      left: 18px;
-      bottom: 18px;
-      background: rgba(36,25,20,.90);
-      color: #fff;
-      padding: 8px 13px;
-      border-radius: 30px;
-      font-family: Arial, sans-serif;
-      font-size: .72rem;
-      font-weight: bold;
-      letter-spacing: .7px;
-    }
-
-    .memoria-content {
-      padding: 38px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .memoria-content h3 {
-      color: var(--marrom);
-      font-size: 1.85rem;
-      line-height: 1.1;
-      margin-bottom: 15px;
-    }
-
-    .memoria-content p {
-      color: #365565;
-      line-height: 1.75;
-    }
-
-    .memoria-legenda {
-      margin-top: 20px;
-      padding: 16px 18px;
-      background: rgba(79,135,168,.08);
-      border-left: 3px solid var(--dourado);
-      color: #45697B;
-      font-size: .9rem;
-      line-height: 1.6;
-    }
-
-    .memoria-legenda strong {
-      color: var(--marrom);
-    }
 
     @media (max-width: 800px) {
-      .memoria-card,
-      .memoria-card:nth-child(even) {
-        grid-template-columns: 1fr;
-      }
 
-      .memoria-card:nth-child(even) .memoria-image {
-        order: 0;
-      }
-
-      .memoria-image {
-        min-height: 270px;
-      }
-
-      .memoria-content {
-        padding: 28px 24px;
-      }
     }
-
 
 
     /* =========================
@@ -1615,7 +1488,7 @@
     .btn-primary { background:#1976A8 !important; color:#fff !important; }
     .btn-primary:hover { background:#0B3A5B !important; }
     .btn-outline:hover { color:#0B3A5B !important; }
-    .memoria-imagens { display:none !important; }
+
     @media (max-width:800px) { .destinos-grid { grid-template-columns:1fr; } .destino-card > img { height:240px; } }
 
   
@@ -1626,6 +1499,17 @@
     .ponto-card h3 { color:var(--azul); }
 
   </style>
+<style>
+/* Atendimento WhatsApp */
+.whatsapp-atendimento{padding:72px 0;background:#f5faff}
+.whatsapp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.whatsapp-card{display:flex;flex-direction:column;gap:8px;padding:24px;border:1px solid #d5e5ee;border-radius:16px;background:#fff;text-decoration:none;color:#0B3A5B;box-shadow:0 8px 24px rgba(11,58,91,.07);transition:transform .2s ease,box-shadow .2s ease}
+.whatsapp-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(11,58,91,.12)}
+.whatsapp-icon{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:#0B3A5B;color:#fff;font-size:.7rem;font-weight:800;letter-spacing:.03em}
+.whatsapp-card strong{font-size:1.15rem}
+.whatsapp-card small{color:#45697B;line-height:1.5}
+@media(max-width:800px){.whatsapp-grid{grid-template-columns:1fr}.whatsapp-atendimento{padding:54px 0}}
+</style>
 </head>
 
 <body>
@@ -1645,7 +1529,7 @@
         src="https://pousada-vale-do-cafe.vercel.app/img/logo-branco.png"
         alt="Pousada Vale do Café"
         class="brand-logo"
-      >
+       loading="eager" decoding="async">
       <span>Ipiabas · Barra do Piraí · RJ</span>
     </a>
 
@@ -1678,11 +1562,7 @@
 
     <div class="croqui-paper">
 
-      <div class="croqui-title">
-
-        <h1>Descubra o Vale do Café</h1>
-
-      </div>
+      <div class="croqui-title"><h1>Descubra o Vale do Café</h1></div>
 
 
       <!-- Arquitetura desenhada, seguindo o elemento central do papel -->
@@ -1694,20 +1574,18 @@
 
         <article class="croqui-destino">
           <div class="croqui-foto">
-            <img src="https://www.portalvaledocafe.com.br/images/mapaacesso.jpg" alt="Mapa do Vale do Café no Sul Fluminense do Rio de Janeiro, com Ipiabas e Barra do Piraí" loading="eager">
-            <div class="croqui-foto-label">Mapa do Vale do Café</div>
-          </div>
+            <img src="https://fumtran.org.br/wp-content/uploads/2023/08/RPF-memoria-estrada-mapa-2023-08.jpg" alt="Mapa histórico de 1861 da Estrada União e Indústria, importante caminho do Vale do Paraíba" loading="lazy" decoding="async">
+</div>
           <span class="numero">01 · VALE DO CAFÉ</span>
-          <h2>O Vale do Café</h2>
+          <h2>Os antigos caminhos do Vale do Café</h2>
           <p>Um território histórico do Sul Fluminense marcado pelo ciclo do café, pelas antigas ferrovias, fazendas, casarões e caminhos que conectam cidades e distritos da região.</p>
-          <small class="foto-fonte">Fonte da imagem: Portal Vale do Café.</small>
+          <small class="foto-fonte">Mapa histórico de 1861 · Estrada União e Indústria.</small>
         </article>
 
         <article class="croqui-destino">
           <div class="croqui-foto">
-            <img src="https://www.portalvaledocafe.com.br/images/galeriadefotos/galeria4/foto02.jpg" alt="Vila Histórica da Piedade em Ipiabas, Barra do Piraí" loading="lazy">
-            <div class="croqui-foto-label">Vila Histórica da Piedade · Ipiabas</div>
-          </div>
+            <img src="https://www.portalvaledocafe.com.br/images/galeriadefotos/galeria4/foto02.jpg" alt="Vila Histórica da Piedade em Ipiabas, Barra do Piraí" loading="lazy" decoding="async">
+</div>
           <span class="numero">02 · PATRIMÔNIO</span>
           <h2>Vila Histórica da Piedade</h2>
           <p>O conjunto histórico de Ipiabas reúne casario, igreja e edificações do século XIX, formando uma paisagem cultural ligada à expansão cafeeira e à memória do distrito.</p>
@@ -1716,9 +1594,8 @@
 
         <article class="croqui-destino">
           <div class="croqui-foto">
-            <img src="https://tribunacarioca.com.br/wp-content/uploads/2024/09/20240928_174100-scaled.jpg" alt="Fachada da Pousada Vale do Café em Ipiabas, Barra do Piraí" loading="lazy">
-            <div class="croqui-foto-label">Pousada Vale do Café · Ipiabas</div>
-          </div>
+            <img src="Faixada(20260905-193716).jpeg" alt="Fachada da Pousada Vale do Café em Ipiabas, Barra do Piraí" loading="lazy" decoding="async">
+</div>
           <span class="numero">03 · HOSPITALIDADE</span>
           <h2>O casarão da Pousada</h2>
           <p>É neste cenário histórico de Ipiabas que a Pousada Vale do Café recebe seus hóspedes, unindo patrimônio, natureza, descanso e hospitalidade.</p>
@@ -1750,7 +1627,7 @@
 
     <div class="destinos-grid">
       <article class="destino-card">
-        <img src="https://catracalivre.com.br/wp-content/uploads/2018/02/Ipiabas_31_of_31.jpg" alt="Túnel ferroviário histórico de Ipiabas" loading="lazy">
+        <img src="https://catracalivre.com.br/wp-content/uploads/2018/02/Ipiabas_31_of_31.jpg" alt="Túnel ferroviário histórico de Ipiabas" loading="lazy" decoding="async">
         <div class="destino-card-body">
           <span class="destino-local">IPIABAS · BARRA DO PIRAÍ</span>
           <h3>História, natureza e ferrovia</h3>
@@ -1760,7 +1637,7 @@
       </article>
 
       <article class="destino-card">
-        <img src="https://viajeibonito.com.br/wp-content/uploads/2019/05/conservatoria-tunel-que-chora-1024x683.jpg" alt="Túnel que Chora em Conservatória" loading="lazy">
+        <img src="https://viajeibonito.com.br/wp-content/uploads/2019/05/conservatoria-tunel-que-chora-1024x683.jpg" alt="Túnel que Chora em Conservatória" loading="lazy" decoding="async">
         <div class="destino-card-body">
           <span class="destino-local">CONSERVATÓRIA · VALENÇA</span>
           <h3>A cidade das serenatas</h3>
@@ -1770,7 +1647,7 @@
       </article>
 
       <article class="destino-card">
-        <img src="https://photos.wikimapia.org/p/00/05/97/09/51_full.jpg" alt="Praça Barão de Campo Belo e Igreja Matriz de Vassouras" loading="lazy">
+        <img src="https://photos.wikimapia.org/p/00/05/97/09/51_full.jpg" alt="Praça Barão de Campo Belo e Igreja Matriz de Vassouras" loading="lazy" decoding="async">
         <div class="destino-card-body">
           <span class="destino-local">VASSOURAS · VALE DO CAFÉ</span>
           <h3>Palacetes e memória do café</h3>
@@ -1780,7 +1657,7 @@
       </article>
 
       <article class="destino-card">
-        <img src="https://cdn.cnn.com/cnnnext/dam/assets/180523102053-worlds-craziest-water-slides---kilimanjaro---aldeia-das-aguas-park-resort2-full-169.jpg" alt="Aldeia das Águas Park Resort em Barra do Piraí" loading="lazy">
+        <img src="https://cdn.cnn.com/cnnnext/dam/assets/180523102053-worlds-craziest-water-slides---kilimanjaro---aldeia-das-aguas-park-resort2-full-169.jpg" alt="Aldeia das Águas Park Resort em Barra do Piraí" loading="lazy" decoding="async">
         <div class="destino-card-body">
           <span class="destino-local">BARRA DO PIRAÍ</span>
           <h3>Aldeia das Águas</h3>
@@ -1835,8 +1712,8 @@
           <img
             src="https://pousada-vale-do-cafe.vercel.app/img/quarto-economico.jpg"
             alt="Quarto econômico da Pousada Vale do Café"
-            loading="lazy"
-          >
+           
+           loading="lazy" decoding="async">
 
         </div>
 
@@ -1879,8 +1756,8 @@
           <img
             src="https://pousada-vale-do-cafe.vercel.app/img/quarto-casal.jpg"
             alt="Quarto casal da Pousada Vale do Café"
-            loading="lazy"
-          >
+           
+           loading="lazy" decoding="async">
 
         </div>
 
@@ -1924,8 +1801,8 @@
           <img
             src="https://pousada-vale-do-cafe.vercel.app/img/quarto-triplo.jpg"
             alt="Quarto triplo da Pousada Vale do Café"
-            loading="lazy"
-          >
+           
+           loading="lazy" decoding="async">
 
         </div>
 
@@ -1979,8 +1856,8 @@
       <img
         src="https://pousada-vale-do-cafe.vercel.app/img/porao-mesas.jpg"
         alt="Café do Machado no espaço histórico da Pousada Vale do Café"
-        loading="lazy"
-      >
+       
+       loading="lazy" decoding="async">
 
       <div>
 
@@ -2042,6 +1919,34 @@
 <!-- =========================================================
      11. RESERVAS
 ========================================================= -->
+
+
+<section class="whatsapp-atendimento" id="whatsapp-atendimento">
+  <div class="container">
+    <div class="section-title">
+      <div class="eyebrow">Atendimento direto</div>
+      <h2>Fale com a Pousada</h2>
+      <p>Escolha o atendimento e envie sua mensagem diretamente pelo WhatsApp.</p>
+    </div>
+    <div class="whatsapp-grid">
+      <a class="whatsapp-card" href="https://wa.me/5524981064432?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20hospedagem%20na%20Pousada%20Vale%20do%20Caf%C3%A9." target="_blank" rel="noopener">
+        <span class="whatsapp-icon">WA</span>
+        <strong>Hospedagem</strong>
+        <small>Consultar quartos, diárias e disponibilidade</small>
+      </a>
+      <a class="whatsapp-card" href="https://wa.me/5524981064432?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20Caf%C3%A9%20do%20Machado." target="_blank" rel="noopener">
+        <span class="whatsapp-icon">WA</span>
+        <strong>Café do Machado</strong>
+        <small>Informações sobre a experiência e visitação</small>
+      </a>
+      <a class="whatsapp-card" href="https://wa.me/5524981064432?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20grupos%20e%20eventos%20na%20Pousada%20Vale%20do%20Caf%C3%A9." target="_blank" rel="noopener">
+        <span class="whatsapp-icon">WA</span>
+        <strong>Grupos e eventos</strong>
+        <small>Consultar programação, grupos e eventos</small>
+      </a>
+    </div>
+  </div>
+</section>
 
 <section class="booking" id="reservas">
 
