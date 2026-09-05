@@ -13,11 +13,15 @@
 
   <style>
     :root {
-      --marrom: #4a2e1f;
-      --marrom-escuro: #2d1b12;
-      --cafe: #6f472c;
-      --bege: #f4ead8;
+      --marrom: #56362b;
+      --marrom-escuro: #241914;
+      --cafe: #7b4433;
+      --bege: #eee3d2;
       --creme: #fbf7ef;
+      --azul: #174d70;
+      --azul-claro: #2e6b8d;
+      --vermelho: #9e3f32;
+      --vermelho-claro: #bd5a45;
       --dourado: #b58a4a;
       --verde: #43543b;
       --verde-claro: #718066;
@@ -126,7 +130,7 @@
           rgba(45,27,18,.78),
           rgba(45,27,18,.55)
         ),
-        url("https://commons.wikimedia.org/wiki/Special:FilePath/Vale_do_Cafe%2C_RJ_08.jpg?width=2200")
+        url("https://pousada-vale-do-cafe.vercel.app/img/hero-patio.jpg")
         center / cover no-repeat;
       color: #fff;
       display: flex;
@@ -940,6 +944,85 @@
       }
     }
 
+
+    /* =========================
+       IDENTIDADE VISUAL — SITE VERCEL
+    ========================= */
+
+    .brand-logo {
+      width: 185px;
+      height: auto;
+      max-height: 52px;
+      object-fit: contain;
+      object-position: left center;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 3px;
+    }
+
+    .logo span {
+      color: #d9c7ad;
+    }
+
+    header {
+      background: rgba(36,25,20,.97);
+    }
+
+    nav a:hover {
+      color: #8fc0d7;
+    }
+
+    .btn-primary {
+      background: var(--vermelho);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: var(--vermelho-claro);
+    }
+
+    .section-title .eyebrow,
+    .eyebrow {
+      color: var(--dourado);
+    }
+
+    .destino-tag {
+      background: rgba(36,25,20,.90);
+    }
+
+    .destino-numero {
+      color: var(--vermelho);
+    }
+
+    .destino-frase {
+      color: var(--azul);
+    }
+
+    .roteiro-cta {
+      background:
+        linear-gradient(135deg, var(--marrom-escuro), var(--marrom));
+    }
+
+    @media (max-width: 600px) {
+      .brand-logo {
+        width: 165px;
+        max-height: 48px;
+      }
+    }
+
+
+    .destinos-fonte {
+      margin-top: 18px;
+      text-align: center;
+      color: #78695d;
+      font-family: Arial, sans-serif;
+      font-size: .75rem;
+    }
+
   </style>
 </head>
 
@@ -952,8 +1035,12 @@
 <header>
   <div class="container nav">
 
-    <a href="#inicio" class="logo">
-      Vale do Café
+    <a href="#inicio" class="logo" aria-label="Pousada Vale do Café">
+      <img
+        src="https://pousada-vale-do-cafe.vercel.app/img/logo-branco.png"
+        alt="Pousada Vale do Café"
+        class="brand-logo"
+      >
       <span>Ipiabas · Barra do Piraí · RJ</span>
     </a>
 
@@ -989,13 +1076,13 @@
       </div>
 
       <h1>
-        Vale do
-        <span>Café</span>
+        Pousada Vale
+        <span>do Café</span>
       </h1>
 
       <p>
-        Uma região onde história, cultura, antigas fazendas,
-        caminhos, natureza e hospitalidade se encontram.
+        Um casarão de 1874 no Centro Histórico de Ipiabas,
+        entre fazendas históricas, natureza e a memória do Vale do Café.
       </p>
 
       <div class="hero-buttons">
@@ -1556,7 +1643,7 @@
       <article class="gallery-item">
 
         <img
-          src="https://pousada-vale-do-cafe.vercel.app/img/salao-cafe.jpg"
+          src="https://pousada-vale-do-cafe.vercel.app/img/varanda-janelas.jpg"
           alt="Salão e café da manhã da Pousada Vale do Café"
           loading="lazy"
         >
@@ -1695,7 +1782,7 @@
         <div class="destino-image">
 
           <img
-            src="https://revistaporaqui.com.br/Content/images/noticias/WhatsApp%20Image%202025-12-28%20at%2012.32.10.jpeg"
+            src="https://www.barradopi.com.br/wp-content/uploads/2024/05/Cachoeira-da-Floresta-Barra-do-Pirai-R.jpg"
             alt="Cachoeira de Ipiabas, Barra do Piraí"
             loading="lazy"
           >
@@ -1730,7 +1817,7 @@
         <div class="destino-image">
 
           <img
-            src="https://www.barradopi.com.br/wp-content/uploads/2024/05/Barra-do-pirai-Fazenda-Sao-Joao-da-Prosperidade.jpg"
+            src="https://www.portalvaledocafe.com.br/fazendasjdaprosperidade/images/foto13.jpg"
             alt="Fazenda São João da Prosperidade em Barra do Piraí"
             loading="lazy"
           >
@@ -1802,7 +1889,7 @@
         <div class="destino-image">
 
           <img
-            src="https://commons.wikimedia.org/wiki/Special:FilePath/Vale_do_Cafe%2C_RJ_08.jpg?width=1600"
+            src="https://pousada-vale-do-cafe.vercel.app/img/vista-serra.jpg"
             alt="Paisagem serrana do Vale do Café"
             loading="lazy"
           >
@@ -1815,7 +1902,7 @@
 
           <span class="destino-numero">04</span>
 
-          <h3>Mirantes da Serra de Ipiabas</h3>
+          <h3>Mirante e Serra de Ipiabas</h3>
 
           <p>
             Para quem gosta de paisagens abertas, montanhas e fotografia,
@@ -1837,8 +1924,8 @@
         <div class="destino-image">
 
           <img
-            src="https://revistaporaqui.com.br/Content/images/noticias/WhatsApp%20Image%202025-12-28%20at%2012.32.10.jpeg"
-            alt="Cascata e natureza em Ipiabas"
+            src="https://www.barradopi.com.br/wp-content/uploads/2024/05/Cachoeira-da-Floresta-Barra-do-Pirai-R.jpg"
+            alt="Cachoeira da Floresta em Ipiabas, Barra do Piraí"
             loading="lazy"
           >
 
@@ -1850,12 +1937,12 @@
 
           <span class="destino-numero">05</span>
 
-          <h3>Cascata de Ipiabas</h3>
+          <h3>Cachoeira da Floresta</h3>
 
           <p>
-            Localizada na entrada do distrito, a Cascata de Ipiabas é
-            um dos elementos naturais que marcam a chegada ao destino
-            e rende boas oportunidades para fotografias.
+            Uma das atrações naturais de Ipiabas, formada por duas quedas
+            d’água e piscinas naturais em meio à vegetação da Mata Atlântica.
+            É um dos destaques do circuito turístico local.
           </p>
 
           <div class="destino-frase">
@@ -1872,7 +1959,7 @@
         <div class="destino-image">
 
           <img
-            src="https://commons.wikimedia.org/wiki/Special:FilePath/EstaçãoBarradoPira%C3%AD.JPG?width=1400"
+            src="https://pousada-vale-do-cafe.vercel.app/img/tunel.jpg"
             alt="Estação ferroviária de Barra do Piraí"
             loading="lazy"
           >
@@ -1885,16 +1972,16 @@
 
           <span class="destino-numero">06</span>
 
-          <h3>Barra do Piraí histórica</h3>
+          <h3>Túnel histórico de Ipiabas</h3>
 
           <p>
-            A cidade guarda referências ligadas às ferrovias, ao ciclo
-            do café, às antigas igrejas, casarões e fazendas que ajudaram
-            a formar a identidade do Vale do Café.
+            Um dos testemunhos da antiga infraestrutura ferroviária ligada
+            ao escoamento do café. O túnel integra a memória ferroviária
+            de Ipiabas e o circuito histórico do distrito.
           </p>
 
           <div class="destino-frase">
-            Uma cidade onde os caminhos do café encontraram os trilhos.
+            Onde a história do café encontrou os caminhos da ferrovia.
           </div>
 
         </div>
@@ -1907,7 +1994,7 @@
         <div class="destino-image">
 
           <img
-            src="https://commons.wikimedia.org/wiki/Special:FilePath/Catedral_de_Sant%27Ana_-_Barra_do_Pira%C3%AD.JPG?width=1400"
+            src="https://2.bp.blogspot.com/-axPCvX8vPzo/Vqag7ETeUzI/AAAAAAAABtU/C2X2klM8kP4/s1600/Foto-de-Barra-do-Pirai_Vicente-Siqueira_25-01-2016-Santana__002.JPG"
             alt="Catedral de Sant'Ana em Barra do Piraí"
             loading="lazy"
           >
@@ -1941,8 +2028,8 @@
         <div class="destino-image">
 
           <img
-            src="https://pousada-vale-do-cafe.vercel.app/img/salao-cafe.jpg"
-            alt="Café servido na Pousada Vale do Café"
+            src="https://pousada-vale-do-cafe.vercel.app/img/varanda-janelas.jpg"
+            alt="Arquitetura histórica da Pousada Vale do Café em Ipiabas"
             loading="lazy"
           >
 
@@ -1954,16 +2041,16 @@
 
           <span class="destino-numero">08</span>
 
-          <h3>Sabores do Vale</h3>
+          <h3>Arquitetura e memória de Ipiabas</h3>
 
           <p>
-            Cafés, produtos artesanais, restaurantes e experiências
-            rurais ajudam a transformar uma viagem pelo Vale do Café
-            em uma experiência completa.
+            O conjunto histórico de Ipiabas reúne casarões, igreja, estação
+            ferroviária e paisagens que preservam a identidade do distrito
+            e ajudam a contar a história do Vale do Café.
           </p>
 
           <div class="destino-frase">
-            Conhecer o Vale também é sentar à mesa e provar sua história.
+            Caminhar por Ipiabas é encontrar história em cada detalhe.
           </div>
 
         </div>
@@ -1972,6 +2059,12 @@
 
     </div>
 
+
+
+    <div class="destinos-fonte">
+      Fotos da Pousada e de atrativos locais. Para publicação comercial,
+      confirme as permissões/licenças de uso das imagens de terceiros.
+    </div>
 
     <div class="roteiro-cta">
 
