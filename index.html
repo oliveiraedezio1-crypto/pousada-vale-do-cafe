@@ -8,6 +8,9 @@
     <meta name="description" content="Pousada histórica em Ipiabas, Barra do Piraí. Quartos temáticos, café da manhã colonial, 15.000 m² de jardim e experiência cultural Café do Machado." />
     <link rel="canonical" href="https://www.pousadavaledocafe.rio.br/" />
 
+    <!-- ===== FONTE ESTILO COLONIAL ===== -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
     <meta property="og:title" content="Pousada Vale do Café | Ipiabas - Casarão 1874" />
     <meta property="og:description" content="Hospedagem com história, conforto e natureza no coração do Vale do Café." />
     <meta property="og:image" content="https://pousada-vale-do-cafe.vercel.app/img/hero-patio.jpg" />
@@ -38,9 +41,30 @@
     <style>
         /* ===== RESET E BASE ===== */
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #2c2c2c; line-height: 1.6; background: #faf8f5; overflow-x: hidden; }
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            color: #2c2c2c;
+            line-height: 1.7;
+            background: #faf8f5;
+            overflow-x: hidden;
+        }
         a { text-decoration: none; color: inherit; }
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+        /* ===== TONS DA LOGO ===== */
+        :root {
+            --cor-escura: #1e2a36;
+            --cor-dourada: #e3c299;
+            --cor-dourada-escura: #c9a87a;
+            --cor-fundo: #faf8f5;
+            --cor-texto: #2c2c2c;
+            --cor-texto-claro: #5a5a5a;
+        }
+
+        /* ===== FONTE COLONIAL ===== */
+        .fonte-colonial, h1, h2, h3, h4, .logo, .section-title, .nav-cta {
+            font-family: 'Playfair Display', 'Times New Roman', serif;
+        }
 
         /* ===== ANIMAÇÕES GLOBAIS ===== */
         @keyframes fadeInDown {
@@ -71,64 +95,64 @@
         }
 
         /* ===== HEADER ===== */
-        header { background: #1e2a36; color: #f5f0e9; padding: 12px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.2); animation: fadeInDown 0.6s ease; }
+        header { background: var(--cor-escura); color: #f5f0e9; padding: 12px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.2); animation: fadeInDown 0.6s ease; }
         header .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-        .logo { display: flex; align-items: center; gap: 12px; font-size: 1.5rem; font-weight: 700; letter-spacing: 0.5px; }
+        .logo { display: flex; align-items: center; gap: 12px; font-size: 1.5rem; font-weight: 700; letter-spacing: 0.5px; font-family: 'Playfair Display', serif; }
         .logo img { height: 44px; width: auto; transition: transform 0.3s ease; }
         .logo img:hover { transform: rotate(-3deg) scale(1.05); }
-        .logo span { color: #e3c299; }
-        nav ul { list-style: none; display: flex; gap: 1.6rem; font-size: 0.9rem; flex-wrap: wrap; }
+        .logo span { color: var(--cor-dourada); }
+        nav ul { list-style: none; display: flex; gap: 1.6rem; font-size: 0.9rem; flex-wrap: wrap; font-family: 'Inter', sans-serif; }
         nav ul li a { color: #f5f0e9; transition: 0.3s; border-bottom: 2px solid transparent; padding-bottom: 4px; position: relative; }
-        nav ul li a::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: #e3c299; transition: width 0.3s ease; }
+        nav ul li a::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: var(--cor-dourada); transition: width 0.3s ease; }
         nav ul li a:hover::after { width: 100%; }
         nav ul li a:hover { border-bottom-color: transparent; }
-        .nav-cta { background: #e3c299; color: #1e2a36 !important; padding: 6px 16px; border-radius: 30px; font-weight: 600; border-bottom: none !important; transition: 0.3s; }
-        .nav-cta:hover { background: #d4b084; transform: scale(1.05); }
+        .nav-cta { background: var(--cor-dourada); color: var(--cor-escura) !important; padding: 6px 16px; border-radius: 30px; font-weight: 600; border-bottom: none !important; transition: 0.3s; font-family: 'Playfair Display', serif; }
+        .nav-cta:hover { background: var(--cor-dourada-escura); transform: scale(1.05); }
         .nav-cta::after { display: none; }
 
         /* ===== HERO ===== */
-        .hero { background: linear-gradient(135deg, #1e2a36 0%, #3a4a5a 100%); color: #f5f0e9; padding: 60px 0 50px; text-align: center; animation: fadeIn 0.8s ease; }
-        .hero h1 { font-size: 2.8rem; margin-bottom: 15px; font-weight: 300; letter-spacing: 1px; animation: fadeInDown 0.8s ease 0.2s both; }
-        .hero h1 strong { color: #e3c299; }
-        .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px; opacity: 0.9; animation: fadeInUp 0.8s ease 0.4s both; }
+        .hero { background: linear-gradient(135deg, var(--cor-escura) 0%, #3a4a5a 100%); color: #f5f0e9; padding: 60px 0 50px; text-align: center; animation: fadeIn 0.8s ease; }
+        .hero h1 { font-size: 2.8rem; margin-bottom: 15px; font-weight: 400; letter-spacing: 1px; font-family: 'Playfair Display', serif; animation: fadeInDown 0.8s ease 0.2s both; }
+        .hero h1 strong { color: var(--cor-dourada); }
+        .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px; opacity: 0.9; font-family: 'Inter', sans-serif; animation: fadeInUp 0.8s ease 0.4s both; }
         .btn-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; animation: fadeInUp 0.8s ease 0.6s both; }
-        .btn { display: inline-block; padding: 12px 32px; border-radius: 50px; font-weight: 600; transition: 0.3s; border: 2px solid transparent; cursor: pointer; position: relative; overflow: hidden; }
+        .btn { display: inline-block; padding: 12px 32px; border-radius: 50px; font-weight: 600; transition: 0.3s; border: 2px solid transparent; cursor: pointer; position: relative; overflow: hidden; font-family: 'Inter', sans-serif; }
         .btn::after { content: ''; position: absolute; top: 50%; left: 50%; width: 0; height: 0; background: rgba(255,255,255,0.2); border-radius: 50%; transition: width 0.6s, height 0.6s; transform: translate(-50%, -50%); }
         .btn:hover::after { width: 300px; height: 300px; }
-        .btn-primary { background: #e3c299; color: #1e2a36; border-color: #e3c299; }
-        .btn-primary:hover { background: transparent; color: #e3c299; transform: translateY(-3px); box-shadow: 0 6px 20px rgba(227,194,153,0.3); }
+        .btn-primary { background: var(--cor-dourada); color: var(--cor-escura); border-color: var(--cor-dourada); }
+        .btn-primary:hover { background: transparent; color: var(--cor-dourada); transform: translateY(-3px); box-shadow: 0 6px 20px rgba(227,194,153,0.3); }
         .btn-secondary { background: transparent; color: #f5f0e9; border-color: #f5f0e9; }
-        .btn-secondary:hover { background: #f5f0e9; color: #1e2a36; transform: translateY(-3px); }
-        .btn-reserva { background: #e3c299; color: #1e2a36; border-color: #e3c299; padding: 14px 40px; font-size: 1.1rem; animation: pulse 2s infinite; }
-        .btn-reserva:hover { animation: none; background: transparent; color: #e3c299; transform: translateY(-3px); }
+        .btn-secondary:hover { background: #f5f0e9; color: var(--cor-escura); transform: translateY(-3px); }
+        .btn-reserva { background: var(--cor-dourada); color: var(--cor-escura); border-color: var(--cor-dourada); padding: 14px 40px; font-size: 1.1rem; animation: pulse 2s infinite; font-family: 'Playfair Display', serif; }
+        .btn-reserva:hover { animation: none; background: transparent; color: var(--cor-dourada); transform: translateY(-3px); }
         .btn-maps { background: #4285F4; color: white; border-color: #4285F4; }
         .btn-maps:hover { background: transparent; color: #4285F4; transform: translateY(-3px); }
 
         /* ===== SEÇÕES ===== */
         .section { padding: 60px 0; border-bottom: 1px solid #e8e0d6; }
         .section:last-of-type { border-bottom: none; }
-        .section-title { font-size: 2rem; margin-bottom: 20px; color: #1e2a36; text-align: center; }
-        .section-title span { color: #a67c52; position: relative; display: inline-block; }
-        .section-title span::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 3px; background: #a67c52; transition: width 0.6s ease; }
+        .section-title { font-size: 2.2rem; margin-bottom: 20px; color: var(--cor-escura); text-align: center; font-family: 'Playfair Display', serif; font-weight: 600; }
+        .section-title span { color: var(--cor-dourada-escura); position: relative; display: inline-block; }
+        .section-title span::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 3px; background: var(--cor-dourada-escura); transition: width 0.6s ease; }
         .section-title.visible span::after { width: 100%; }
-        .section-subtitle { text-align: center; max-width: 700px; margin: -10px auto 40px; color: #5a5a5a; }
+        .section-subtitle { text-align: center; max-width: 700px; margin: -10px auto 40px; color: var(--cor-texto-claro); font-family: 'Inter', sans-serif; }
 
         /* ===== INTRODUÇÃO VALE DO CAFÉ ===== */
         .intro-vale-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; }
         .intro-vale-grid img { width: 100%; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.5s ease, box-shadow 0.5s ease; }
         .intro-vale-grid img:hover { transform: scale(1.02); box-shadow: 0 8px 30px rgba(0,0,0,0.15); }
-        .intro-vale-text p { margin-bottom: 15px; }
-        .intro-vale-highlight { color: #a67c52; font-weight: 600; display: inline-block; transition: transform 0.3s; }
+        .intro-vale-text p { margin-bottom: 15px; font-family: 'Inter', sans-serif; }
+        .intro-vale-highlight { color: var(--cor-dourada-escura); font-weight: 600; display: inline-block; transition: transform 0.3s; }
         .intro-vale-highlight:hover { transform: scale(1.05); }
 
         /* ===== GALERIA INTRO ===== */
         .intro-gallery { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-top: 30px; }
-        .intro-gallery > div { overflow: hidden; border-radius: 12px; transition: transform 0.4s ease, box-shadow 0.4s ease; }
+        .intro-gallery > div { overflow: hidden; border-radius: 12px; transition: transform 0.4s ease, box-shadow 0.4s ease; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
         .intro-gallery > div:hover { transform: translateY(-6px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
-        .intro-gallery img { width: 100%; height: 220px; object-fit: cover; border-radius: 12px; transition: transform 0.5s ease; }
+        .intro-gallery img { width: 100%; height: 220px; object-fit: cover; border-radius: 12px 12px 0 0; transition: transform 0.5s ease; }
         .intro-gallery > div:hover img { transform: scale(1.04); }
-        .intro-gallery p { text-align: center; font-size: 0.9rem; color: #4a4a4a; margin-top: 8px; font-weight: 500; line-height: 1.4; max-width: 95%; margin-left: auto; margin-right: auto; }
-        .intro-gallery .legenda-destaque { color: #a67c52; font-weight: 600; }
+        .intro-gallery p { text-align: center; font-size: 0.9rem; color: var(--cor-texto-claro); padding: 12px 16px 16px; margin: 0; font-weight: 500; line-height: 1.5; font-family: 'Inter', sans-serif; }
+        .intro-gallery .legenda-destaque { color: var(--cor-dourada-escura); font-weight: 600; font-family: 'Playfair Display', serif; }
 
         /* ===== PONTOS TURÍSTICOS DE IPIABAS ===== */
         .turismo-ipiabas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; margin-top: 30px; }
@@ -137,15 +161,15 @@
         .turismo-card img { width: 100%; height: 180px; object-fit: cover; transition: transform 0.5s ease; }
         .turismo-card:hover img { transform: scale(1.04); }
         .turismo-card .info { padding: 18px 20px 22px; }
-        .turismo-card .info h4 { font-size: 1.1rem; color: #1e2a36; margin-bottom: 4px; }
-        .turismo-card .info .distancia { color: #a67c52; font-weight: 600; font-size: 0.9rem; margin-bottom: 6px; display: inline-block; background: #f2ebe2; padding: 2px 12px; border-radius: 20px; }
-        .turismo-card .info p { color: #4a4a4a; font-size: 0.95rem; margin-top: 6px; }
+        .turismo-card .info h4 { font-size: 1.1rem; color: var(--cor-escura); margin-bottom: 4px; font-family: 'Playfair Display', serif; }
+        .turismo-card .info .distancia { color: var(--cor-dourada-escura); font-weight: 600; font-size: 0.9rem; margin-bottom: 6px; display: inline-block; background: #f2ebe2; padding: 2px 12px; border-radius: 20px; font-family: 'Inter', sans-serif; }
+        .turismo-card .info p { color: var(--cor-texto-claro); font-size: 0.95rem; margin-top: 6px; font-family: 'Inter', sans-serif; }
 
         /* ===== SOBRE ===== */
         .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; }
         .about-grid img { width: 100%; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.5s ease, box-shadow 0.5s ease; }
         .about-grid img:hover { transform: scale(1.02) rotate(-1deg); box-shadow: 0 8px 30px rgba(0,0,0,0.15); }
-        .about-text p { margin-bottom: 15px; }
+        .about-text p { margin-bottom: 15px; font-family: 'Inter', sans-serif; }
 
         /* ===== QUARTOS ===== */
         .rooms-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 30px; }
@@ -154,12 +178,12 @@
         .room-card img { width: 100%; height: 190px; object-fit: cover; transition: transform 0.6s ease; }
         .room-card:hover img { transform: scale(1.05); }
         .room-card .room-info { padding: 18px 20px 22px; }
-        .room-card .room-info h3 { font-size: 1.2rem; color: #1e2a36; margin-bottom: 6px; }
-        .room-card .room-info .sub { color: #7a6a5a; font-size: 0.9rem; margin-bottom: 8px; }
-        .room-card .room-info .price { font-weight: 700; color: #a67c52; font-size: 1.3rem; }
-        .room-card .room-info .price small { font-weight: 400; font-size: 0.9rem; color: #5a5a5a; }
-        .room-card .room-info .features { margin: 10px 0 8px; font-size: 0.9rem; color: #3a3a3a; }
-        .room-card .room-info .com-ventilador { color: #1e6f5c; font-weight: 600; font-size: 0.9rem; margin-top: 4px; }
+        .room-card .room-info h3 { font-size: 1.2rem; color: var(--cor-escura); margin-bottom: 6px; font-family: 'Playfair Display', serif; }
+        .room-card .room-info .sub { color: #7a6a5a; font-size: 0.9rem; margin-bottom: 8px; font-family: 'Inter', sans-serif; }
+        .room-card .room-info .price { font-weight: 700; color: var(--cor-dourada-escura); font-size: 1.3rem; font-family: 'Playfair Display', serif; }
+        .room-card .room-info .price small { font-weight: 400; font-size: 0.9rem; color: var(--cor-texto-claro); font-family: 'Inter', sans-serif; }
+        .room-card .room-info .features { margin: 10px 0 8px; font-size: 0.9rem; color: #3a3a3a; font-family: 'Inter', sans-serif; }
+        .room-card .room-info .com-ventilador { color: #1e6f5c; font-weight: 600; font-size: 0.9rem; margin-top: 4px; font-family: 'Inter', sans-serif; }
 
         /* ===== GALERIA ===== */
         .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
@@ -167,19 +191,20 @@
         .gallery-grid img:hover { transform: scale(1.06) rotate(-1deg); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
 
         /* ===== CAFÉ DO MACHADO ===== */
-        .cafe-box { background: #f2ebe2; padding: 35px; border-radius: 16px; text-align: center; max-width: 750px; margin: 0 auto; transition: 0.4s; }
+        .cafe-box { background: #f2ebe2; padding: 35px; border-radius: 16px; text-align: center; max-width: 750px; margin: 0 auto; transition: 0.4s; border: 1px solid #e0d6c8; }
         .cafe-box:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.06); }
-        .cafe-box h3 { font-size: 1.6rem; color: #1e2a36; margin-bottom: 10px; }
-        .cafe-box .highlight { color: #a67c52; font-weight: 600; }
-        .cafe-info { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; text-align: left; margin: 15px 0; max-width: 500px; margin-left: auto; margin-right: auto; }
-        .cafe-info span { font-weight: 600; color: #1e2a36; }
+        .cafe-box h3 { font-size: 1.6rem; color: var(--cor-escura); margin-bottom: 10px; font-family: 'Playfair Display', serif; }
+        .cafe-box .highlight { color: var(--cor-dourada-escura); font-weight: 600; }
+        .cafe-box p { font-family: 'Inter', sans-serif; }
+        .cafe-info { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; text-align: left; margin: 15px 0; max-width: 500px; margin-left: auto; margin-right: auto; font-family: 'Inter', sans-serif; }
+        .cafe-info span { font-weight: 600; color: var(--cor-escura); }
         .cafe-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
         .cafe-gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 12px; transition: 0.4s; }
         .cafe-gallery img:hover { transform: scale(1.04); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
 
         /* ===== COMO CHEGAR ===== */
         .como-chegar-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; }
-        .como-chegar-grid .info p { margin-bottom: 12px; }
+        .como-chegar-grid .info p { margin-bottom: 12px; font-family: 'Inter', sans-serif; }
         .como-chegar-grid .mapa { background: #e8e0d6; border-radius: 12px; overflow: hidden; min-height: 250px; display: flex; align-items: center; justify-content: center; transition: 0.4s; }
         .como-chegar-grid .mapa:hover { transform: scale(1.01); box-shadow: 0 8px 25px rgba(0,0,0,0.08); }
         .como-chegar-grid .mapa img { width: 100%; height: 100%; object-fit: cover; }
@@ -191,61 +216,62 @@
         .cidade-card img { width: 100%; height: 180px; object-fit: cover; transition: transform 0.5s ease; }
         .cidade-card:hover img { transform: scale(1.04); }
         .cidade-card .info { padding: 18px 20px 22px; }
-        .cidade-card .info h4 { font-size: 1.1rem; color: #1e2a36; margin-bottom: 4px; }
-        .cidade-card .info .distancia { color: #a67c52; font-weight: 600; font-size: 0.9rem; margin-bottom: 6px; display: inline-block; background: #f2ebe2; padding: 2px 12px; border-radius: 20px; }
-        .cidade-card .info p { color: #4a4a4a; font-size: 0.95rem; margin-top: 6px; }
+        .cidade-card .info h4 { font-size: 1.1rem; color: var(--cor-escura); margin-bottom: 4px; font-family: 'Playfair Display', serif; }
+        .cidade-card .info .distancia { color: var(--cor-dourada-escura); font-weight: 600; font-size: 0.9rem; margin-bottom: 6px; display: inline-block; background: #f2ebe2; padding: 2px 12px; border-radius: 20px; font-family: 'Inter', sans-serif; }
+        .cidade-card .info p { color: var(--cor-texto-claro); font-size: 0.95rem; margin-top: 6px; font-family: 'Inter', sans-serif; }
 
         /* ===== SELOS ===== */
         .selos { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px; }
-        .selo { background: #f8f4ef; padding: 12px 20px; border-radius: 30px; font-weight: 600; color: #1e2a36; border: 1px solid #e0d6c8; transition: 0.3s; cursor: default; }
+        .selo { background: #f8f4ef; padding: 12px 20px; border-radius: 30px; font-weight: 600; color: var(--cor-escura); border: 1px solid #e0d6c8; transition: 0.3s; cursor: default; font-family: 'Inter', sans-serif; }
         .selo:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 6px 20px rgba(0,0,0,0.06); background: #f0e8dd; }
 
         /* ===== DEPOIMENTOS ===== */
         .depoimentos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px; }
-        .depoimento { background: white; padding: 22px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 4px solid #e3c299; transition: 0.4s; }
+        .depoimento { background: white; padding: 22px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 4px solid var(--cor-dourada); transition: 0.4s; }
         .depoimento:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,0,0,0.08); }
-        .depoimento p { font-style: italic; color: #2a2a2a; }
-        .depoimento .autor { margin-top: 10px; font-weight: 600; color: #1e2a36; }
-        .depoimento .fonte { font-size: 0.8rem; color: #888; }
+        .depoimento p { font-style: italic; color: #2a2a2a; font-family: 'Playfair Display', serif; }
+        .depoimento .autor { margin-top: 10px; font-weight: 600; color: var(--cor-escura); font-family: 'Inter', sans-serif; }
+        .depoimento .fonte { font-size: 0.8rem; color: #888; font-family: 'Inter', sans-serif; }
 
         /* ===== FAQ ===== */
-        .faq-item { background: white; padding: 16px 22px; border-radius: 10px; margin-bottom: 12px; box-shadow: 0 1px 6px rgba(0,0,0,0.04); transition: 0.3s; cursor: default; }
-        .faq-item:hover { transform: translateX(4px); box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
-        .faq-item .pergunta { font-weight: 600; color: #1e2a36; }
-        .faq-item .resposta { margin-top: 5px; color: #3a3a3a; }
+        .faq-item { background: white; padding: 16px 22px; border-radius: 10px; margin-bottom: 12px; box-shadow: 0 1px 6px rgba(0,0,0,0.04); transition: 0.3s; cursor: default; border-left: 3px solid transparent; }
+        .faq-item:hover { transform: translateX(4px); border-left-color: var(--cor-dourada); box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
+        .faq-item .pergunta { font-weight: 600; color: var(--cor-escura); font-family: 'Playfair Display', serif; }
+        .faq-item .resposta { margin-top: 5px; color: var(--cor-texto-claro); font-family: 'Inter', sans-serif; }
 
         /* ===== TABELA CANCELAMENTO ===== */
         .tabela-cancelamento { width: 100%; border-collapse: collapse; margin: 15px 0; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-        .tabela-cancelamento th { background: #1e2a36; color: #f5f0e9; padding: 12px; text-align: left; }
-        .tabela-cancelamento td { padding: 12px; border-bottom: 1px solid #ede7df; }
+        .tabela-cancelamento th { background: var(--cor-escura); color: #f5f0e9; padding: 12px; text-align: left; font-family: 'Playfair Display', serif; }
+        .tabela-cancelamento td { padding: 12px; border-bottom: 1px solid #ede7df; font-family: 'Inter', sans-serif; }
         .tabela-cancelamento tr:last-child td { border-bottom: none; }
         .tabela-cancelamento tr { transition: 0.3s; }
         .tabela-cancelamento tr:hover { background: #f8f4ef; }
 
         /* ===== CONTATO ===== */
         .contato-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 20px; }
-        .contato-grid form input, .contato-grid form textarea { width: 100%; padding: 12px 16px; border: 1px solid #d6cdc0; border-radius: 8px; font-size: 1rem; margin-bottom: 14px; background: white; transition: 0.3s; }
-        .contato-grid form input:focus, .contato-grid form textarea:focus { border-color: #a67c52; outline: none; box-shadow: 0 0 0 3px rgba(166,124,82,0.15); transform: scale(1.01); }
+        .contato-grid form input, .contato-grid form textarea { width: 100%; padding: 12px 16px; border: 1px solid #d6cdc0; border-radius: 8px; font-size: 1rem; margin-bottom: 14px; background: white; transition: 0.3s; font-family: 'Inter', sans-serif; }
+        .contato-grid form input:focus, .contato-grid form textarea:focus { border-color: var(--cor-dourada-escura); outline: none; box-shadow: 0 0 0 3px rgba(166,124,82,0.15); transform: scale(1.01); }
         .contato-grid form textarea { height: 110px; resize: vertical; }
-        .contato-grid form button { background: #1e2a36; color: white; padding: 12px 30px; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; transition: 0.3s; }
+        .contato-grid form button { background: var(--cor-escura); color: white; padding: 12px 30px; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; transition: 0.3s; font-family: 'Playfair Display', serif; }
         .contato-grid form button:hover { background: #3a4a5a; transform: translateY(-3px); box-shadow: 0 6px 20px rgba(30,42,54,0.3); }
-        .contato-info p { margin-bottom: 10px; }
-        .social-links a { display: inline-block; margin-right: 15px; font-size: 1.1rem; color: #1e2a36; transition: 0.3s; }
-        .social-links a:hover { transform: translateY(-3px) scale(1.1); color: #a67c52; }
+        .contato-info p { margin-bottom: 10px; font-family: 'Inter', sans-serif; }
+        .social-links a { display: inline-block; margin-right: 15px; font-size: 1.1rem; color: var(--cor-escura); transition: 0.3s; }
+        .social-links a:hover { transform: translateY(-3px) scale(1.1); color: var(--cor-dourada-escura); }
 
         .whatsapp-buttons { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 15px; }
-        .whatsapp-buttons .btn-wpp { background: #25D366; color: white; padding: 10px 22px; border-radius: 50px; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #25D366; transition: 0.3s; }
+        .whatsapp-buttons .btn-wpp { background: #25D366; color: white; padding: 10px 22px; border-radius: 50px; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #25D366; transition: 0.3s; font-family: 'Inter', sans-serif; }
         .whatsapp-buttons .btn-wpp:hover { background: transparent; color: #25D366; transform: translateY(-3px) scale(1.04); }
 
-        footer { background: #1e2a36; color: #cbc3b8; padding: 30px 0; text-align: center; font-size: 0.9rem; border-top: 2px solid #2c3a48; }
-        footer a { color: #e3c299; transition: 0.3s; }
-        footer a:hover { color: #d4b084; }
+        footer { background: var(--cor-escura); color: #cbc3b8; padding: 30px 0; text-align: center; font-size: 0.9rem; border-top: 2px solid #2c3a48; }
+        footer a { color: var(--cor-dourada); transition: 0.3s; }
+        footer a:hover { color: var(--cor-dourada-escura); }
         .footer-links { margin: 10px 0; }
-        .footer-links a { margin: 0 12px; display: inline-block; transition: 0.3s; }
+        .footer-links a { margin: 0 12px; display: inline-block; transition: 0.3s; font-family: 'Inter', sans-serif; }
         .footer-links a:hover { transform: translateY(-2px); }
         .footer-logo { height: 36px; width: auto; margin-bottom: 10px; transition: 0.3s; }
         .footer-logo:hover { transform: rotate(-3deg) scale(1.05); }
-        .enderecos-footer { display: flex; flex-direction: column; gap: 4px; margin: 6px 0 12px; font-size: 0.9rem; color: #cbc3b8; }
+        .enderecos-footer { display: flex; flex-direction: column; gap: 4px; margin: 6px 0 12px; font-size: 0.9rem; color: #cbc3b8; font-family: 'Inter', sans-serif; }
+        footer p { font-family: 'Inter', sans-serif; }
 
         /* ===== RESPONSIVO ===== */
         @media (max-width: 768px) {
@@ -280,11 +306,11 @@
                 <ul>
                     <li><a href="#vale-cafe">Vale do Café</a></li>
                     <li><a href="#pontos-turisticos">Pontos Turísticos</a></li>
+                    <li><a href="#cidades-proximas">Cidades Próximas</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#quartos">Quartos</a></li>
                     <li><a href="#cafe">Café do Machado</a></li>
                     <li><a href="#como-chegar">Como Chegar</a></li>
-                    <li><a href="#turismo">Turismo</a></li>
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contato">Contato</a></li>
                     <li><a href="#reserva" class="nav-cta">Reservar</a></li>
@@ -320,7 +346,7 @@
                 </div>
                 <div>
                     <img src="https://pousada-vale-do-cafe.vercel.app/img/vista-serra.jpg" alt="Vale do Café - vista das montanhas" loading="lazy" />
-                    <p style="text-align:center; font-size:0.85rem; color:#888; margin-top:8px;">🌄 Vista da região do Vale do Café</p>
+                    <p style="text-align:center; font-size:0.85rem; color:#888; margin-top:8px; font-family:'Inter',sans-serif;">🌄 Vista da região do Vale do Café</p>
                 </div>
             </div>
 
@@ -342,14 +368,13 @@
         </div>
     </section>
 
-    <!-- ===== NOVA SEÇÃO: PONTOS TURÍSTICOS DE IPIABAS ===== -->
+    <!-- ===== PONTOS TURÍSTICOS DE IPIABAS ===== -->
     <section class="section" id="pontos-turisticos">
         <div class="container">
             <h2 class="section-title animate-on-scroll">Pontos Turísticos de <span>Ipiabas</span></h2>
             <p class="section-subtitle animate-on-scroll">Conheça os principais atrativos da vila histórica, todos a uma curta distância da pousada.</p>
 
             <div class="turismo-ipiabas-grid">
-                <!-- 1. Igreja Nossa Senhora da Piedade -->
                 <div class="turismo-card animate-on-scroll">
                     <img src="https://pousada-vale-do-cafe.vercel.app/img/varanda-janelas.jpg" alt="Igreja Nossa Senhora da Piedade" loading="lazy" />
                     <div class="info">
@@ -359,7 +384,6 @@
                     </div>
                 </div>
 
-                <!-- 2. Casarão da Antiga Remonta -->
                 <div class="turismo-card animate-on-scroll">
                     <img src="https://pousada-vale-do-cafe.vercel.app/img/hero-patio.jpg" alt="Casarão da Antiga Remonta" loading="lazy" />
                     <div class="info">
@@ -369,7 +393,6 @@
                     </div>
                 </div>
 
-                <!-- 3. Túnel da Rede Mineira -->
                 <div class="turismo-card animate-on-scroll">
                     <img src="https://pousada-vale-do-cafe.vercel.app/img/tunel.jpg" alt="Túnel da Rede Mineira" loading="lazy" />
                     <div class="info">
@@ -379,7 +402,6 @@
                     </div>
                 </div>
 
-                <!-- 4. Estação Ferroviária -->
                 <div class="turismo-card animate-on-scroll">
                     <img src="https://pousada-vale-do-cafe.vercel.app/img/corredor-bancos.jpg" alt="Estação Ferroviária" loading="lazy" />
                     <div class="info">
@@ -389,7 +411,6 @@
                     </div>
                 </div>
 
-                <!-- 5. Pedra do Gavião -->
                 <div class="turismo-card animate-on-scroll">
                     <img src="https://pousada-vale-do-cafe.vercel.app/img/vista-serra.jpg" alt="Pedra do Gavião" loading="lazy" />
                     <div class="info">
@@ -399,7 +420,6 @@
                     </div>
                 </div>
 
-                <!-- 6. Cachoeira da Floresta -->
                 <div class="turismo-card animate-on-scroll">
                     <img src="https://pousada-vale-do-cafe.vercel.app/img/jardim.jpg" alt="Cachoeira da Floresta" loading="lazy" />
                     <div class="info">
@@ -409,7 +429,6 @@
                     </div>
                 </div>
 
-                <!-- 7. Fazendas Históricas -->
                 <div class="turismo-card animate-on-scroll">
                     <img src="https://pousada-vale-do-cafe.vercel.app/img/quarto-economico.jpg" alt="Fazendas históricas" loading="lazy" />
                     <div class="info">
@@ -418,6 +437,74 @@
                         <p>Visite as fazendas Cachoeira Grande, Santa Eufrásia, do Secretário, entre outras. Todas com visitação guiada e arquitetura do ciclo do café.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CIDADES PRÓXIMAS ===== -->
+    <section class="section" id="cidades-proximas" style="background: #f8f4ef;">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Cidades <span>Próximas</span></h2>
+            <p class="section-subtitle animate-on-scroll">Explore o Vale do Café além de Ipiabas. Destinos ricos em história, seresta, natureza e lazer.</p>
+
+            <div class="cidades-grid">
+                <div class="cidade-card animate-on-scroll">
+                    <img src="https://pousada-vale-do-cafe.vercel.app/img/cafe-mesa.jpg" alt="Conservatória" loading="lazy" />
+                    <div class="info">
+                        <h4>🎵 Conservatória</h4>
+                        <span class="distancia">📍 22 km (25 min)</span>
+                        <p>A "Capital da Seresta", famosa por seus saraus, bares históricos e o Festival da Seresta. Roteiro musical imperdível.</p>
+                    </div>
+                </div>
+
+                <div class="cidade-card animate-on-scroll">
+                    <img src="https://pousada-vale-do-cafe.vercel.app/img/salao-leitura.jpg" alt="Vassouras" loading="lazy" />
+                    <div class="info">
+                        <h4>🏛️ Vassouras</h4>
+                        <span class="distancia">📍 26 km (30 min)</span>
+                        <p>Cidade histórica com casarões imperiais, museus e o famoso Jardim Ecológico Uaná Etê. Um verdadeiro museu a céu aberto.</p>
+                    </div>
+                </div>
+
+                <div class="cidade-card animate-on-scroll">
+                    <img src="https://pousada-vale-do-cafe.vercel.app/img/redario.jpg" alt="Aldeia das Águas" loading="lazy" />
+                    <div class="info">
+                        <h4>💦 Aldeia das Águas</h4>
+                        <span class="distancia">📍 30 km (35 min)</span>
+                        <p>Parque aquático com piscinas, toboáguas e área de camping. Perfeito para famílias e quem busca diversão em meio à natureza.</p>
+                    </div>
+                </div>
+
+                <div class="cidade-card animate-on-scroll">
+                    <img src="https://pousada-vale-do-cafe.vercel.app/img/gramado.jpg" alt="Barra do Piraí" loading="lazy" />
+                    <div class="info">
+                        <h4>🏙️ Barra do Piraí</h4>
+                        <span class="distancia">📍 17 km (20 min)</span>
+                        <p>Sede do município, com o Casarão da Cultura, Museu do Café e o Parque do Cinquentenário. Centro comercial e de serviços.</p>
+                    </div>
+                </div>
+
+                <div class="cidade-card animate-on-scroll">
+                    <img src="https://pousada-vale-do-cafe.vercel.app/img/piano.jpg" alt="Valença" loading="lazy" />
+                    <div class="info">
+                        <h4>🎭 Valença</h4>
+                        <span class="distancia">📍 38 km (45 min)</span>
+                        <p>Conhecida pelo artesanato em pedra-sabão e pelo Carnaval tradicional. Vale a visita à Igreja Matriz e ao Museu da Imagem e do Som.</p>
+                    </div>
+                </div>
+
+                <div class="cidade-card animate-on-scroll">
+                    <img src="https://pousada-vale-do-cafe.vercel.app/img/quiosque.jpg" alt="Rio das Flores" loading="lazy" />
+                    <div class="info">
+                        <h4>🌸 Rio das Flores</h4>
+                        <span class="distancia">📍 53 km (55 min)</span>
+                        <p>Pequena cidade com charme rural, cachoeiras e o Santuário de Nossa Senhora do Carmo. Roteiro tranquilo para quem busca sossego.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align:center; margin-top:25px;">
+                <a href="https://www.portalvaledocafe.com.br/ipiabas.asp" target="_blank" class="btn btn-primary" style="background:var(--cor-escura); color:white; border-color:var(--cor-escura);">🌐 Portal Vale do Café – Mais roteiros</a>
             </div>
         </div>
     </section>
@@ -453,7 +540,7 @@
                         <div class="sub">Santa Eufrásia · Cachoeira Grande · São Fernando</div>
                         <div class="price">R$ 245 <small>/ diária</small></div>
                         <div class="features">✔ Cama casal · TV · Frigobar · Wi-Fi</div>
-                        <div style="font-size:0.9rem; color:#5a5a5a; margin-top:4px;">Anexos · Banheiro privativo</div>
+                        <div style="font-size:0.9rem; color:var(--cor-texto-claro); margin-top:4px; font-family:'Inter',sans-serif;">Anexos · Banheiro privativo</div>
                         <div class="com-ventilador">🌀 Possui ventilador</div>
                         <div style="margin-top:8px;"><a href="https://hotels.cloudbeds.com/pt-br/reservas/Et7myl?currency=brl" target="_blank" class="btn btn-primary" style="padding:6px 16px; font-size:0.8rem;">Consultar disponibilidade</a></div>
                     </div>
@@ -465,7 +552,7 @@
                         <div class="sub">São Roque · Paraíso · Cachoeira do Mato Dentro · Santa Clara</div>
                         <div class="price">R$ 285 <small>/ diária</small></div>
                         <div class="features">✔ Queen-size · Varanda · TV · Frigobar · Wi-Fi</div>
-                        <div style="font-size:0.9rem; color:#5a5a5a; margin-top:4px;">Anexos · Banheiro privativo</div>
+                        <div style="font-size:0.9rem; color:var(--cor-texto-claro); margin-top:4px; font-family:'Inter',sans-serif;">Anexos · Banheiro privativo</div>
                         <div class="com-ventilador">🌀 Possui ventilador</div>
                         <div style="margin-top:8px;"><a href="https://hotels.cloudbeds.com/pt-br/reservas/Et7myl?currency=brl" target="_blank" class="btn btn-primary" style="padding:6px 16px; font-size:0.8rem;">Consultar disponibilidade</a></div>
                     </div>
@@ -477,9 +564,9 @@
                         <div class="sub">São João da Prosperidade · Aliança · Taquara · Mulungu Vermelho</div>
                         <div class="price">R$ 400 <small>/ diária</small></div>
                         <div class="features">✔ 1 casal + 1 solteiro · TV · Frigobar · Wi-Fi</div>
-                        <div style="font-size:0.9rem; color:#5a5a5a; margin-top:4px;">Anexos · Banheiro privativo</div>
+                        <div style="font-size:0.9rem; color:var(--cor-texto-claro); margin-top:4px; font-family:'Inter',sans-serif;">Anexos · Banheiro privativo</div>
                         <div class="com-ventilador">🌀 Possui ventilador</div>
-                        <div style="font-size:0.85rem; color:#a67c52; margin-top:4px;">➕ Cama extra: R$ 100 / pessoa (mediante disponibilidade)</div>
+                        <div style="font-size:0.85rem; color:var(--cor-dourada-escura); margin-top:4px; font-family:'Inter',sans-serif;">➕ Cama extra: R$ 100 / pessoa (mediante disponibilidade)</div>
                         <div style="margin-top:8px;"><a href="https://hotels.cloudbeds.com/pt-br/reservas/Et7myl?currency=brl" target="_blank" class="btn btn-primary" style="padding:6px 16px; font-size:0.8rem;">Consultar disponibilidade</a></div>
                     </div>
                 </div>
@@ -487,7 +574,7 @@
         </div>
     </section>
 
-    <!-- ===== GALERIA COMPLETA ===== -->
+    <!-- ===== GALERIA ===== -->
     <section class="section" id="galeria">
         <div class="container">
             <h2 class="section-title animate-on-scroll">Galeria <span>de Fotos</span></h2>
@@ -564,80 +651,6 @@
         </div>
     </section>
 
-    <!-- ===== TURISMO REGIONAL (COM CIDADES PRÓXIMAS) ===== -->
-    <section class="section" id="turismo">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">Cidades <span>Próximas</span></h2>
-            <p class="section-subtitle animate-on-scroll">Explore o Vale do Café além de Ipiabas. Destinos ricos em história, seresta, natureza e lazer.</p>
-
-            <div class="cidades-grid">
-                <!-- Conservatória -->
-                <div class="cidade-card animate-on-scroll">
-                    <img src="https://pousada-vale-do-cafe.vercel.app/img/cafe-mesa.jpg" alt="Conservatória" loading="lazy" />
-                    <div class="info">
-                        <h4>🎵 Conservatória</h4>
-                        <span class="distancia">📍 22 km (25 min)</span>
-                        <p>A "Capital da Seresta", famosa por seus saraus, bares históricos e o Festival da Seresta. Roteiro musical imperdível.</p>
-                    </div>
-                </div>
-
-                <!-- Vassouras -->
-                <div class="cidade-card animate-on-scroll">
-                    <img src="https://pousada-vale-do-cafe.vercel.app/img/salao-leitura.jpg" alt="Vassouras" loading="lazy" />
-                    <div class="info">
-                        <h4>🏛️ Vassouras</h4>
-                        <span class="distancia">📍 26 km (30 min)</span>
-                        <p>Cidade histórica com casarões imperiais, museus e o famoso Jardim Ecológico Uaná Etê. Um verdadeiro museu a céu aberto.</p>
-                    </div>
-                </div>
-
-                <!-- Aldeia das Águas -->
-                <div class="cidade-card animate-on-scroll">
-                    <img src="https://pousada-vale-do-cafe.vercel.app/img/redario.jpg" alt="Aldeia das Águas" loading="lazy" />
-                    <div class="info">
-                        <h4>💦 Aldeia das Águas</h4>
-                        <span class="distancia">📍 30 km (35 min)</span>
-                        <p>Parque aquático com piscinas, toboáguas e área de camping. Perfeito para famílias e quem busca diversão em meio à natureza.</p>
-                    </div>
-                </div>
-
-                <!-- Barra do Piraí -->
-                <div class="cidade-card animate-on-scroll">
-                    <img src="https://pousada-vale-do-cafe.vercel.app/img/gramado.jpg" alt="Barra do Piraí" loading="lazy" />
-                    <div class="info">
-                        <h4>🏙️ Barra do Piraí</h4>
-                        <span class="distancia">📍 17 km (20 min)</span>
-                        <p>Sede do município, com o Casarão da Cultura, Museu do Café e o Parque do Cinquentenário. Centro comercial e de serviços.</p>
-                    </div>
-                </div>
-
-                <!-- Valença -->
-                <div class="cidade-card animate-on-scroll">
-                    <img src="https://pousada-vale-do-cafe.vercel.app/img/piano.jpg" alt="Valença" loading="lazy" />
-                    <div class="info">
-                        <h4>🎭 Valença</h4>
-                        <span class="distancia">📍 38 km (45 min)</span>
-                        <p>Conhecida pelo artesanato em pedra-sabão e pelo Carnaval tradicional. Vale a visita à Igreja Matriz e ao Museu da Imagem e do Som.</p>
-                    </div>
-                </div>
-
-                <!-- Rio das Flores -->
-                <div class="cidade-card animate-on-scroll">
-                    <img src="https://pousada-vale-do-cafe.vercel.app/img/quiosque.jpg" alt="Rio das Flores" loading="lazy" />
-                    <div class="info">
-                        <h4>🌸 Rio das Flores</h4>
-                        <span class="distancia">📍 53 km (55 min)</span>
-                        <p>Pequena cidade com charme rural, cachoeiras e o Santuário de Nossa Senhora do Carmo. Roteiro tranquilo para quem busca sossego.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div style="text-align:center; margin-top:25px;">
-                <a href="https://www.portalvaledocafe.com.br/ipiabas.asp" target="_blank" class="btn btn-primary" style="background:#1e2a36; color:white; border-color:#1e2a36;">🌐 Portal Vale do Café – Mais roteiros</a>
-            </div>
-        </div>
-    </section>
-
     <!-- ===== SELOS ===== -->
     <section class="section" id="selos">
         <div class="container">
@@ -648,7 +661,7 @@
                 <div class="selo animate-on-scroll">🏆 Travelers' Choice – TripAdvisor</div>
                 <div class="selo animate-on-scroll">🏅 Top Hotel RJ – ABIH-RJ</div>
             </div>
-            <p style="text-align:center; margin-top:15px; font-size:0.9rem; color:#888;">Consulta em 03/09/2026 · <a href="https://www.tripadvisor.com.br/Hotel_Review-g2572042-d11717425-Reviews-Pousada_Vale_Do_Cafe-Ipiabas_State_of_Rio_de_Janeiro.html" target="_blank" style="color:#a67c52;">Veja no TripAdvisor</a></p>
+            <p style="text-align:center; margin-top:15px; font-size:0.9rem; color:#888; font-family:'Inter',sans-serif;">Consulta em 03/09/2026 · <a href="https://www.tripadvisor.com.br/Hotel_Review-g2572042-d11717425-Reviews-Pousada_Vale_Do_Cafe-Ipiabas_State_of_Rio_de_Janeiro.html" target="_blank" style="color:var(--cor-dourada-escura); font-weight:600;">Veja no TripAdvisor</a></p>
         </div>
     </section>
 
@@ -663,7 +676,7 @@
                 <div class="depoimento animate-on-scroll"><p>"Paz e sossego em meio à natureza. Ideal para casais que buscam tranquilidade e romantismo."</p><div class="autor">— Carlos e Lúcia</div><div class="fonte">⭐ Facebook</div></div>
             </div>
             <p style="text-align:center; margin-top:20px;">
-                <a href="https://www.tripadvisor.com.br/Hotel_Review-g2572042-d11717425-Reviews-Pousada_Vale_Do_Cafe-Ipiabas_State_of_Rio_de_Janeiro.html" target="_blank" style="color:#a67c52; font-weight:600;">📋 Veja todas as avaliações no TripAdvisor →</a>
+                <a href="https://www.tripadvisor.com.br/Hotel_Review-g2572042-d11717425-Reviews-Pousada_Vale_Do_Cafe-Ipiabas_State_of_Rio_de_Janeiro.html" target="_blank" style="color:var(--cor-dourada-escura); font-weight:600; font-family:'Inter',sans-serif;">📋 Veja todas as avaliações no TripAdvisor →</a>
             </p>
         </div>
     </section>
@@ -703,7 +716,7 @@
                             <tr><td>Menos de 14 dias (incluindo de 14 a 7 dias)</td><td>Sem reembolso</td></tr>
                         </tbody>
                     </table>
-                    <p style="margin-top:8px;">Política exibida no momento da escolha da tarifa. Consulte a pousada para condições específicas.</p>
+                    <p style="margin-top:8px; font-family:'Inter',sans-serif;">Política exibida no momento da escolha da tarifa. Consulte a pousada para condições específicas.</p>
                 </div>
             </div>
 
@@ -724,7 +737,7 @@
                     <input type="tel" name="phone" placeholder="Telefone (opcional)" />
                     <textarea name="message" placeholder="Sua mensagem..." required></textarea>
                     <button type="submit">Enviar mensagem</button>
-                    <p style="font-size:0.8rem; color:#888; margin-top:6px;">* Para resposta imediata, use o WhatsApp.</p>
+                    <p style="font-size:0.8rem; color:#888; margin-top:6px; font-family:'Inter',sans-serif;">* Para resposta imediata, use o WhatsApp.</p>
                 </form>
                 <div class="contato-info">
                     <h3>Informações de contato</h3>
@@ -739,7 +752,7 @@
                         <a href="https://www.tripadvisor.com.br/Hotel_Review-g2572042-d11717425-Reviews-Pousada_Vale_Do_Cafe-Ipiabas_State_of_Rio_de_Janeiro.html" target="_blank">⭐ TripAdvisor</a>
                     </div>
                     <div style="margin-top:20px;">
-                        <p><strong>Fale conosco por intenção:</strong></p>
+                        <p style="font-family:'Playfair Display',serif; font-weight:600;">Fale conosco por intenção:</p>
                         <div class="whatsapp-buttons">
                             <a href="https://wa.me/5524981064432?text=Olá! Gostaria de consultar disponibilidade para hospedagem. Check-in: ___ Check-out: ___ Número de hóspedes: ___" target="_blank" class="btn-wpp">🏨 Hospedagem</a>
                             <a href="https://wa.me/5524981064432?text=Olá! Gostaria de consultar o Café do Machado para ___ pessoas, no dia ___" target="_blank" class="btn-wpp">☕ Café do Machado</a>
@@ -763,14 +776,14 @@
             <div class="footer-links">
                 <a href="#vale-cafe">Vale do Café</a>
                 <a href="#pontos-turisticos">Pontos Turísticos</a>
+                <a href="#cidades-proximas">Cidades Próximas</a>
                 <a href="#sobre">Sobre</a>
                 <a href="#quartos">Quartos</a>
                 <a href="#cafe">Café do Machado</a>
                 <a href="#como-chegar">Como Chegar</a>
-                <a href="#turismo">Cidades Próximas</a>
                 <a href="#contato">Contato</a>
             </div>
-            <p style="font-size:0.8rem; opacity:0.8;">© 2026 — Todos os direitos reservados.</p>
+            <p style="font-size:0.8rem; opacity:0.8; font-family:'Inter',sans-serif;">© 2026 — Todos os direitos reservados.</p>
         </div>
     </footer>
 
